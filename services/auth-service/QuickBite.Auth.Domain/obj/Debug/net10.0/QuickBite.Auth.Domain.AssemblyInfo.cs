@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Auth.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c68d113a16680f0b57006f45c75bdf47903ce93c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b89e958126679701f9e514bf0bf194b7609f3a48")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Auth.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Auth.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
