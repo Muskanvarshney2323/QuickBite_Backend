@@ -22,6 +22,8 @@ namespace QuickBite.Auth.API.Extensions
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
+
+
             return services;
         }
 
@@ -61,7 +63,8 @@ namespace QuickBite.Auth.API.Extensions
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "QuickBite Auth Service API",
-                    Version = "v1"
+                    Version = "v1",
+                    Description = "Authentication and Authorization APIs for QuickBite"
                 });
 
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

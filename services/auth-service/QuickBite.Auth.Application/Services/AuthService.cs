@@ -1,8 +1,6 @@
 using QuickBite.Auth.Application.DTOs;
-using QuickBite.Auth.Application.Exceptions;
 using QuickBite.Auth.Application.Interfaces;
 using QuickBite.Auth.Domain.Entities;
-using QuickBite.Auth.Domain.Enums;
 
 namespace QuickBite.Auth.Application.Services
 {
@@ -11,104 +9,64 @@ namespace QuickBite.Auth.Application.Services
         private readonly IUserRepository _userRepository;
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
 
-        public AuthService(IUserRepository userRepository, IJwtTokenGenerator jwtTokenGenerator)
+        public AuthService(
+            IUserRepository userRepository,
+            IJwtTokenGenerator jwtTokenGenerator)
         {
             _userRepository = userRepository;
             _jwtTokenGenerator = jwtTokenGenerator;
         }
 
-        public async Task<AuthResponseDto> RegisterAsync(RegisterRequestDto request)
+        public async Task<string> RegisterAsync(RegisterRequestDto request)
         {
-            var normalizedEmail = request.Email.Trim().ToLower();
-            var exists = await _userRepository.ExistsByEmailAsync(normalizedEmail);
+            var existingUser = await _userRepository.GetByEmailAsync(request.Email);
 
-            if (exists)
+            if (existingUser != null)
             {
-                throw new ConflictException("Email is already registered");
+                throw new Exception("User already exists with this email.");
             }
-
-            var role = NormalizeRole(request.Role);
 
             var user = new User
             {
-                UserId = Guid.NewGuid(),
-                FullName = request.FullName.Trim(),
-                Email = normalizedEmail,
-                Phone = request.Phone.Trim(),
+                FullName = request.FullName,
+                Email = request.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
-                Role = role,
-                CreatedAt = DateTime.UtcNow,
-                IsActive = true
+                Role = "Customer"
             };
 
             await _userRepository.AddAsync(user);
-            await _userRepository.SaveChangesAsync();
 
-            return BuildAuthResponse(user);
+            return "User registered successfully.";
         }
 
-        public async Task<AuthResponseDto> LoginAsync(LoginRequestDto request)
+        public async Task<string> LoginAsync(LoginRequestDto request)
         {
-            var normalizedEmail = request.Email.Trim().ToLower();
-            var user = await _userRepository.GetByEmailAsync(normalizedEmail);
+            var user = await _userRepository.GetByEmailAsync(request.Email);
 
-            if (user == null || !user.IsActive)
+            if (user == null)
             {
-                throw new UnauthorizedException("Invalid email or password");
+                throw new Exception("Invalid email or password.");
             }
 
-            var isValidPassword = BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash);
+            var isPasswordValid = BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash);
 
-            if (!isValidPassword)
+            if (!isPasswordValid)
             {
-                throw new UnauthorizedException("Invalid email or password");
+                throw new Exception("Invalid email or password.");
             }
 
-            return BuildAuthResponse(user);
+            return _jwtTokenGenerator.GenerateToken(user);
         }
 
-        private AuthResponseDto BuildAuthResponse(User user)
+        public async Task<User?> GetCurrentUserAsync(string email)
         {
-            var token = _jwtTokenGenerator.GenerateToken(user);
-
-            return new AuthResponseDto
-            {
-                Token = token,
-                Expiration = DateTime.UtcNow.AddMinutes(60),
-                User = new UserResponseDto
-                {
-                    UserId = user.UserId,
-                    FullName = user.FullName,
-                    Email = user.Email,
-                    Phone = user.Phone,
-                    Role = user.Role
-                }
-            };
+            return await _userRepository.GetByEmailAsync(email);
         }
 
-        private static string NormalizeRole(string? role)
+        public async Task<bool> ValidateTokenUserAsync(string email)
         {
-            if (string.IsNullOrWhiteSpace(role))
-            {
-                return UserRole.Customer;
-            }
-
-            var normalizedRole = role.Trim().ToLower();
-
-            return normalizedRole switch
-            {
-                "admin" => UserRole.Admin,
-                "customer" => UserRole.Customer,
-                "restaurantowner" => UserRole.RestaurantOwner,
-                "restaurant_owner" => UserRole.RestaurantOwner,
-                "restaurant owner" => UserRole.RestaurantOwner,
-                "owner" => UserRole.RestaurantOwner,
-                "deliverypartner" => UserRole.DeliveryPartner,
-                "delivery_partner" => UserRole.DeliveryPartner,
-                "delivery partner" => UserRole.DeliveryPartner,
-                "agent" => UserRole.DeliveryPartner,
-                _ => throw new ArgumentException("Invalid role provided")
-            };
+            var user = await _userRepository.GetByEmailAsync(email);
+            return user != null;
         }
     }
 }

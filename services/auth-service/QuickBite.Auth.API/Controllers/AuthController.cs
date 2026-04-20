@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using QuickBite.Auth.Application.DTOs;
 using QuickBite.Auth.Application.Interfaces;
-using QuickBite.Auth.Domain.Enums;
-using System.Security.Claims;
 
 namespace QuickBite.Auth.API.Controllers
 {
@@ -21,79 +20,84 @@ namespace QuickBite.Auth.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
-            var response = await _authService.RegisterAsync(request);
-            return Ok(response);
+            var result = await _authService.RegisterAsync(request);
+            return Ok(new { message = result });
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            var response = await _authService.LoginAsync(request);
-            return Ok(response);
+            var token = await _authService.LoginAsync(request);
+            return Ok(new { token });
         }
 
         [Authorize]
         [HttpGet("me")]
-        public IActionResult GetCurrentUser()
+        public async Task<IActionResult> GetCurrentUser()
         {
-            var user = new UserResponseDto
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrWhiteSpace(email))
             {
-                UserId = Guid.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var userId)
-                    ? userId
-                    : Guid.Empty,
-                FullName = User.FindFirstValue(ClaimTypes.Name) ?? string.Empty,
-                Email = User.FindFirstValue(ClaimTypes.Email) ?? string.Empty,
-                Phone = string.Empty,
-                Role = User.FindFirstValue(ClaimTypes.Role) ?? string.Empty
-            };
+                return Unauthorized(new { message = "Invalid token." });
+            }
+
+            var user = await _authService.GetCurrentUserAsync(email);
+
+            if (user == null)
+            {
+                return NotFound(new { message = "User not found." });
+            }
 
             return Ok(new
             {
-                message = "Authenticated user details fetched successfully",
-                user
+                user.UserId,
+                user.FullName,
+                user.Email,
+                user.Role
             });
         }
 
         [Authorize]
         [HttpGet("validate-token")]
-        public IActionResult ValidateToken()
+        public async Task<IActionResult> ValidateToken()
         {
-            return Ok(new
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrWhiteSpace(email))
             {
-                message = "Token is valid",
-                isAuthenticated = User.Identity?.IsAuthenticated ?? false,
-                role = User.FindFirstValue(ClaimTypes.Role)
-            });
+                return Unauthorized(new { message = "Invalid token." });
+            }
+
+            var isValidUser = await _authService.ValidateTokenUserAsync(email);
+
+            if (!isValidUser)
+            {
+                return Unauthorized(new { message = "User does not exist." });
+            }
+
+            return Ok(new { message = "Token is valid." });
         }
 
-        [Authorize(Roles = UserRole.Admin)]
+        [Authorize(Roles = "Admin")]
         [HttpGet("admin-only")]
         public IActionResult AdminOnly()
         {
-            return Ok(new
-            {
-                message = "Welcome Admin! You are authorized to access this endpoint."
-            });
+            return Ok(new { message = "Welcome Admin" });
         }
 
-        [Authorize(Roles = UserRole.Customer)]
+        [Authorize(Roles = "Customer")]
         [HttpGet("customer-only")]
         public IActionResult CustomerOnly()
         {
-            return Ok(new
-            {
-                message = "Welcome Customer! You are authorized to access this endpoint."
-            });
+            return Ok(new { message = "Welcome Customer" });
         }
 
-        [Authorize(Roles = UserRole.Admin + "," + UserRole.RestaurantOwner)]
+        [Authorize(Roles = "Admin,Owner")]
         [HttpGet("admin-or-owner")]
         public IActionResult AdminOrOwner()
         {
-            return Ok(new
-            {
-                message = "Welcome! This endpoint can be accessed by Admin or Restaurant Owner."
-            });
+            return Ok(new { message = "Welcome Admin or Owner" });
         }
     }
 }
