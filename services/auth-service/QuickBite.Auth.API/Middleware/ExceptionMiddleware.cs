@@ -23,6 +23,10 @@ namespace QuickBite.Auth.API.Middleware
             {
                 await WriteResponseAsync(context, HttpStatusCode.Unauthorized, "Unauthorized", ex.Message);
             }
+            catch (UnauthorizedAccessException ex)
+            {
+                await WriteResponseAsync(context, HttpStatusCode.Unauthorized, "Unauthorized", ex.Message);
+            }
             catch (ConflictException ex)
             {
                 await WriteResponseAsync(context, HttpStatusCode.Conflict, "Conflict", ex.Message);

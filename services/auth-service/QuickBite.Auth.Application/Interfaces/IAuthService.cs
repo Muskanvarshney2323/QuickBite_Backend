@@ -1,5 +1,4 @@
 using QuickBite.Auth.Application.DTOs;
-using QuickBite.Auth.Domain.Entities;
 
 namespace QuickBite.Auth.Application.Interfaces
 {
@@ -7,7 +6,14 @@ namespace QuickBite.Auth.Application.Interfaces
     {
         Task<string> RegisterAsync(RegisterRequestDto request);
         Task<string> LoginAsync(LoginRequestDto request);
-        Task<User?> GetCurrentUserAsync(string email);
+        Task<UserResponseDto?> GetCurrentUserAsync(string email);
         Task<bool> ValidateTokenUserAsync(string email);
+        Task<UserResponseDto?> GetUserByIdAsync(Guid userId);
+        Task<UserResponseDto?> GetUserByEmailAsync(string email);
+        Task<UserResponseDto> UpdateProfileAsync(string email, UpdateProfileRequestDto request);
+        Task ChangePasswordAsync(string email, ChangePasswordRequestDto request);
+        Task DeactivateAccountAsync(string email);
+        Task<string> RefreshTokenAsync(string email);
+        Task LogoutAsync(string email);
     }
 }
