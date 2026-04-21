@@ -1,5 +1,6 @@
 namespace QuickBite.Restaurant.Application.DTOs
 {
+    // DTO used for sending restaurant data in API responses
     public class RestaurantResponseDto
     {
         public Guid Id { get; set; }
@@ -21,5 +22,11 @@ namespace QuickBite.Restaurant.Application.DTOs
         public bool IsApproved { get; set; }
 
         public bool IsOpen { get; set; }
+
+        public decimal MinimumOrderAmount { get; set; }
+
+        public int EstimatedDeliveryTimeInMinutes { get; set; }
+
+        public double AverageRating { get; set; }
     }
 }

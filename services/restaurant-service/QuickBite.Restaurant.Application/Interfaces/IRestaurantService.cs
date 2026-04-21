@@ -17,5 +17,17 @@ namespace QuickBite.Restaurant.Application.Interfaces
         Task<bool> ApproveRestaurantAsync(Guid id);
 
         Task<bool> ToggleOpenStatusAsync(Guid id);
+
+        Task<IEnumerable<RestaurantResponseDto>> GetRestaurantsByCityAsync(string city);
+
+        Task<IEnumerable<RestaurantResponseDto>> GetRestaurantsByCuisineAsync(string cuisine);
+
+        Task<IEnumerable<RestaurantResponseDto>> GetRestaurantsByOwnerIdAsync(Guid ownerId);
+
+        Task<IEnumerable<RestaurantResponseDto>> GetApprovedRestaurantsAsync();
+
+        Task<IEnumerable<RestaurantResponseDto>> GetOpenRestaurantsAsync();
+
+        Task<IEnumerable<RestaurantResponseDto>> SearchRestaurantsByNameAsync(string name);
     }
 }

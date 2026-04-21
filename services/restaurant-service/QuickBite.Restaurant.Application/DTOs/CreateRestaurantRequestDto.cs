@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QuickBite.Restaurant.Application.DTOs
 {
+    // DTO used when creating a new restaurant
     public class CreateRestaurantRequestDto
     {
         [Required]
@@ -24,5 +25,11 @@ namespace QuickBite.Restaurant.Application.DTOs
 
         [Required]
         public Guid OwnerId { get; set; }
+
+        // Minimum order value for this restaurant
+        public decimal MinimumOrderAmount { get; set; }
+
+        // Estimated delivery time in minutes
+        public int EstimatedDeliveryTimeInMinutes { get; set; }
     }
 }

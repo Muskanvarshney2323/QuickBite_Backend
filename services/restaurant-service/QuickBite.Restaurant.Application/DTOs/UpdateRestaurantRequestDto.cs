@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QuickBite.Restaurant.Application.DTOs
 {
+    // DTO used when updating restaurant details
     public class UpdateRestaurantRequestDto
     {
         [Required]
@@ -21,5 +22,11 @@ namespace QuickBite.Restaurant.Application.DTOs
 
         [Required]
         public string Phone { get; set; } = string.Empty;
+
+        // Updated minimum order amount
+        public decimal MinimumOrderAmount { get; set; }
+
+        // Updated estimated delivery time in minutes
+        public int EstimatedDeliveryTimeInMinutes { get; set; }
     }
 }
