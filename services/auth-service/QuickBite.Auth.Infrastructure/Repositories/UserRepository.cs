@@ -17,7 +17,7 @@ namespace QuickBite.Auth.Infrastructure.Repositories
         public async Task<User?> GetByEmailAsync(string email)
         {
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Email == email);
+                .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
         }
 
         public async Task<User?> GetByIdAsync(Guid userId)
@@ -29,12 +29,18 @@ namespace QuickBite.Auth.Infrastructure.Repositories
         public async Task<bool> ExistsByEmailAsync(string email)
         {
             return await _context.Users
-                .AnyAsync(u => u.Email == email);
+                .AnyAsync(u => u.Email.ToLower() == email.ToLower());
         }
 
         public async Task AddAsync(User user)
         {
             await _context.Users.AddAsync(user);
+        }
+
+        public Task UpdateAsync(User user)
+        {
+            _context.Users.Update(user);
+            return Task.CompletedTask;
         }
 
         public async Task SaveChangesAsync()
