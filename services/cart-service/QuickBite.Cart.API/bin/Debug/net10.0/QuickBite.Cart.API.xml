@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.Cart.API</name>
+    </assembly>
+    <members>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.AddItemToCart(QuickBite.Cart.Application.DTOs.AddCartItemRequestDto)">
+            <summary>
+            Adds an item to the user's cart
+            </summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.GetCartByUserId(System.Guid)">
+            <summary>
+            Gets cart details for a user
+            </summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.UpdateCartItem(System.Guid,QuickBite.Cart.Application.DTOs.UpdateCartItemRequestDto)">
+            <summary>
+            Updates quantity of a cart item
+            </summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.RemoveCartItem(System.Guid)">
+            <summary>
+            Removes an item from the cart
+            </summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.ClearCart(System.Guid)">
+            <summary>
+            Clears entire cart
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>
