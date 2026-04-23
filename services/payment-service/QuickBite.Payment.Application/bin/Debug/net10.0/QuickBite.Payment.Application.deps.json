@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "QuickBite.Payment.Application/1.0.0": {
+        "dependencies": {
+          "QuickBite.Payment.Domain": "1.0.0"
+        },
+        "runtime": {
+          "QuickBite.Payment.Application.dll": {}
+        }
+      },
+      "QuickBite.Payment.Domain/1.0.0": {
+        "runtime": {
+          "QuickBite.Payment.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuickBite.Payment.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuickBite.Payment.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

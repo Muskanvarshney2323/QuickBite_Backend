@@ -1,0 +1,6 @@
+@QuickBite.Payment.API_HostAddress = http://localhost:5114
+
+GET {{QuickBite.Payment.API_HostAddress}}/api/v1/wallet/balance/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+###
