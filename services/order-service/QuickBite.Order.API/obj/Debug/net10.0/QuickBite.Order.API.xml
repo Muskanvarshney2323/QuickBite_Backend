@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.Order.API</name>
+    </assembly>
+    <members>
+        <member name="T:QuickBite.Order.API.Controllers.OrderController">
+            <summary>
+            Exposes /api/v1/orders endpoints for placement, retrieval,
+            status management, agent assignment, cancellation, and reorder.
+            </summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.PlaceOrder(QuickBite.Order.Application.DTOs.PlaceOrderRequestDto)">
+            <summary>  place a new order.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.GetOrderById(System.Guid)">
+            <summary>  fetch a single order.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.GetOrdersByCustomer(System.Guid)">
+            <summary>  all orders for a customer.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.GetOrdersByRestaurant(System.Guid)">
+            <summary>  all orders for a restaurant.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.GetActiveOrders">
+            <summary>  all currently active orders (PLACED/CONFIRMED/PREPARING/PICKED_UP).</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.UpdateStatus(System.Guid,QuickBite.Order.Application.DTOs.UpdateStatusRequestDto)">
+            <summary>  update an order's lifecycle status.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.AssignAgent(System.Guid,QuickBite.Order.Application.DTOs.AssignDeliveryAgentRequestDto)">
+            <summary>  assign a delivery agent.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.Cancel(System.Guid,QuickBite.Order.Application.DTOs.CancelOrderRequestDto)">
+            <summary>  cancel an order (refund triggered for prepaid orders).</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.Reorder(QuickBite.Order.Application.DTOs.ReorderRequestDto)">
+            <summary>POST /api/v1/orders/reorder - place a new order from a previous one.</summary>
+        </member>
+        <member name="M:QuickBite.Order.API.Controllers.OrderController.GetOrderCount(System.Guid)">
+            <summary>GET /api/v1/orders/count/{restaurantId} - total order count for a restaurant.</summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>
