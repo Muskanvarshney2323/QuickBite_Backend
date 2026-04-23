@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuickBite.Menu.Application.DTOs.MenuCategory;
 using QuickBite.Menu.Application.Interfaces;
@@ -65,9 +66,12 @@ namespace QuickBite.Menu.API.Controllers
         /// Create a new menu category
         /// </summary>
         /// <param name="request">Category details</param>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Create([FromBody] CreateMenuCategoryRequestDto request)
         {
             if (!ModelState.IsValid)
@@ -83,9 +87,12 @@ namespace QuickBite.Menu.API.Controllers
         /// </summary>
         /// <param name="id">Category ID</param>
         /// <param name="request">Updated details</param>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpPut("{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateMenuCategoryRequestDto request)
         {
             var isUpdated = await _menuCategoryService.UpdateAsync(id, request);
@@ -100,9 +107,12 @@ namespace QuickBite.Menu.API.Controllers
         /// Delete a menu category
         /// </summary>
         /// <param name="id">Category ID</param>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpDelete("{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Delete(Guid id)
         {
             var isDeleted = await _menuCategoryService.DeleteAsync(id);

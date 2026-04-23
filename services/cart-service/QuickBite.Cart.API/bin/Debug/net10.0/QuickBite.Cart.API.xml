@@ -4,30 +4,37 @@
         <name>QuickBite.Cart.API</name>
     </assembly>
     <members>
-        <member name="M:QuickBite.Cart.API.Controllers.CartController.AddItemToCart(QuickBite.Cart.Application.DTOs.AddCartItemRequestDto)">
+        <member name="T:QuickBite.Cart.API.Controllers.CartController">
             <summary>
-            Adds an item to the user's cart
+            Single-restaurant ordering is enforced by the service layer.
             </summary>
         </member>
-        <member name="M:QuickBite.Cart.API.Controllers.CartController.GetCartByUserId(System.Guid)">
-            <summary>
-            Gets cart details for a user
-            </summary>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.GetCartByCustomer(System.Guid)">
+            <summary>  fetch a customer's cart.</summary>
         </member>
-        <member name="M:QuickBite.Cart.API.Controllers.CartController.UpdateCartItem(System.Guid,QuickBite.Cart.Application.DTOs.UpdateCartItemRequestDto)">
-            <summary>
-            Updates quantity of a cart item
-            </summary>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.GetAllCarts">
+            <summary> fetch all carts (admin / diagnostics).</summary>
         </member>
-        <member name="M:QuickBite.Cart.API.Controllers.CartController.RemoveCartItem(System.Guid)">
-            <summary>
-            Removes an item from the cart
-            </summary>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.AddItem(QuickBite.Cart.Application.DTOs.AddCartItemRequestDto)">
+            <summary> add an item to the cart.</summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.UpdateQuantity(System.Guid,QuickBite.Cart.Application.DTOs.UpdateCartItemRequestDto)">
+            <summary> update the quantity of a cart item.</summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.RemoveItem(System.Guid)">
+            <summary> remove a single item.</summary>
         </member>
         <member name="M:QuickBite.Cart.API.Controllers.CartController.ClearCart(System.Guid)">
-            <summary>
-            Clears entire cart
-            </summary>
+            <summary> remove everything from the customer's cart.</summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.CartTotal(System.Guid)">
+            <summary> compute current cart total.</summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.ChangeRestaurant(QuickBite.Cart.Application.DTOs.ChangeRestaurantRequestDto)">
+            <summary>POST  switch the cart to a different restaurant (clears items).</summary>
+        </member>
+        <member name="M:QuickBite.Cart.API.Controllers.CartController.ApplyPromo(QuickBite.Cart.Application.DTOs.ApplyPromoCodeRequestDto)">
+            <summary> apply a promo code to the customer's cart.</summary>
         </member>
         <member name="T:Program">
             <summary>

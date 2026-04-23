@@ -5,15 +5,20 @@ namespace QuickBite.Cart.Application.DTOs;
 /// </summary>
 public class CartItemResponseDto
 {
-    public Guid CartItemId { get; set; }
+    public Guid ItemId { get; set; }
 
     public Guid MenuItemId { get; set; }
 
-    public string MenuItemName { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
-    public decimal UnitPrice { get; set; }
+    public decimal Price { get; set; }
 
     public int Quantity { get; set; }
 
-    public decimal TotalPrice { get; set; }
+    public string? Customization { get; set; }
+
+    /// <summary>
+    /// Convenience total for this line (Price * Quantity).
+    /// </summary>
+    public decimal LineTotal { get; set; }
 }

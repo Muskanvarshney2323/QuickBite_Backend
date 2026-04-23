@@ -9,14 +9,15 @@ using QuickBite.Cart.Infrastructure.Repositories;
 namespace QuickBite.Cart.Infrastructure.DependencyInjection;
 
 /// <summary>
-/// Registers infrastructure and application services.
+/// Registers Cart-Service infrastructure (DbContext) and application services.
 /// </summary>
 public static class ServiceRegistration
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        // PostgreSQL via Npgsql, matching the rest of the QuickBite services.
         services.AddDbContext<CartDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<ICartRepository, CartRepository>();
         services.AddScoped<ICartService, CartService>();

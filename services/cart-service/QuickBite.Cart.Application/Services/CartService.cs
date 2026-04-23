@@ -5,7 +5,9 @@ using QuickBite.Cart.Domain.Entities;
 namespace QuickBite.Cart.Application.Services;
 
 /// <summary>
-/// Handles business logic for cart operations.
+/// Business logic for cart operations.
+/// Enforces: one active cart per customer, all items bound to the same restaurant,
+/// server-computed TotalPrice, and price snapshots captured at the time of add.
 /// </summary>
 public class CartService : ICartService
 {
@@ -16,20 +18,25 @@ public class CartService : ICartService
         _cartRepository = cartRepository;
     }
 
-    /// <summary>
-    /// Adds a new item to the user's cart.
-    /// If cart does not exist, it creates a new cart first.
-    /// If the same menu item already exists, it increases the quantity.
-    /// </summary>
-    public async Task<CartResponseDto> AddItemToCartAsync(AddCartItemRequestDto request)
+    /// <inheritdoc />
+    public async Task<CartResponseDto?> GetCartByCustomerAsync(Guid customerId)
     {
-        var cart = await _cartRepository.GetCartByUserIdAsync(request.UserId);
+        var cart = await _cartRepository.FindByCustomerIdAsync(customerId);
+        return cart is null ? null : MapCartToResponse(cart);
+    }
 
-        if (cart == null)
+    /// <inheritdoc />
+    public async Task<CartResponseDto> AddItemAsync(AddCartItemRequestDto request)
+    {
+        var cart = await _cartRepository.FindByCustomerIdAsync(request.CustomerId);
+
+        if (cart is null)
         {
+            // No cart yet - create one bound to this restaurant.
             cart = new Domain.Entities.Cart
             {
-                UserId = request.UserId,
+                CustomerId = request.CustomerId,
+                RestaurantId = request.RestaurantId,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
@@ -37,13 +44,24 @@ public class CartService : ICartService
             await _cartRepository.AddCartAsync(cart);
             await _cartRepository.SaveChangesAsync();
         }
-
-        var existingItem = cart.CartItems.FirstOrDefault(x => x.MenuItemId == request.MenuItemId);
-
-        if (existingItem != null)
+        else if (cart.RestaurantId != request.RestaurantId)
         {
-            existingItem.Quantity += request.Quantity;
-            await _cartRepository.UpdateCartItemAsync(existingItem);
+            // Single-restaurant ordering rule: cannot mix items from different restaurants.
+            throw new InvalidOperationException(
+                "Cart already contains items from a different restaurant. " +
+                "Clear the cart or call ChangeRestaurant before adding items from a new restaurant.");
+        }
+
+        // If the same menu item (with the same customisation) already exists, bump quantity;
+        // otherwise add a new line with a fresh price snapshot.
+        var existing = cart.CartItems.FirstOrDefault(x =>
+            x.MenuItemId == request.MenuItemId &&
+            string.Equals(x.Customization ?? string.Empty, request.Customization ?? string.Empty, StringComparison.Ordinal));
+
+        if (existing is not null)
+        {
+            existing.Quantity += request.Quantity;
+            _cartRepository.UpdateCartItem(existing);
         }
         else
         {
@@ -51,125 +69,192 @@ public class CartService : ICartService
             {
                 CartId = cart.Id,
                 MenuItemId = request.MenuItemId,
-                MenuItemName = request.MenuItemName,
-                UnitPrice = request.UnitPrice,
-                Quantity = request.Quantity
+                Name = request.Name,
+                Price = request.Price,
+                Quantity = request.Quantity,
+                Customization = request.Customization
             };
-
             await _cartRepository.AddCartItemAsync(cartItem);
+            cart.CartItems.Add(cartItem);
         }
 
+        RecomputeTotal(cart);
         cart.UpdatedAt = DateTime.UtcNow;
-        await _cartRepository.UpdateCartAsync(cart);
+        _cartRepository.UpdateCart(cart);
         await _cartRepository.SaveChangesAsync();
 
-        var updatedCart = await _cartRepository.GetCartByUserIdAsync(request.UserId);
-        return MapCartToResponse(updatedCart!);
+        var refreshed = await _cartRepository.FindByCustomerIdAsync(request.CustomerId);
+        return MapCartToResponse(refreshed!);
     }
 
-    /// <summary>
-    /// Returns full cart details for a specific user.
-    /// </summary>
-    public async Task<CartResponseDto?> GetCartByUserIdAsync(Guid userId)
+    /// <inheritdoc />
+    public async Task<bool> RemoveItemAsync(Guid cartItemId)
     {
-        var cart = await _cartRepository.GetCartByUserIdAsync(userId);
+        var cartItem = await _cartRepository.GetCartItemByIdAsync(cartItemId);
+        if (cartItem is null) return false;
 
-        if (cart == null)
-            return null;
+        var cart = await _cartRepository.FindByCartIdAsync(cartItem.CartId);
+
+        _cartRepository.RemoveCartItem(cartItem);
+        await _cartRepository.SaveChangesAsync();
+
+        if (cart is not null)
+        {
+            // Reload cart so the removed item is gone from the tracked collection.
+            cart = await _cartRepository.FindByCartIdAsync(cart.Id);
+            if (cart is not null)
+            {
+                RecomputeTotal(cart);
+                cart.UpdatedAt = DateTime.UtcNow;
+                _cartRepository.UpdateCart(cart);
+                await _cartRepository.SaveChangesAsync();
+            }
+        }
+
+        return true;
+    }
+
+    /// <inheritdoc />
+    public async Task<CartResponseDto?> UpdateQuantityAsync(Guid cartItemId, UpdateCartItemRequestDto request)
+    {
+        var cartItem = await _cartRepository.GetCartItemByIdAsync(cartItemId);
+        if (cartItem is null) return null;
+
+        cartItem.Quantity = request.Quantity;
+        _cartRepository.UpdateCartItem(cartItem);
+
+        var cart = await _cartRepository.FindByCartIdAsync(cartItem.CartId);
+        if (cart is not null)
+        {
+            // The tracked cartItem inside cart.CartItems is the same instance, so the quantity
+            // change is already reflected and RecomputeTotal will see the new value.
+            RecomputeTotal(cart);
+            cart.UpdatedAt = DateTime.UtcNow;
+            _cartRepository.UpdateCart(cart);
+        }
+
+        await _cartRepository.SaveChangesAsync();
+
+        var refreshed = cart is null ? null : await _cartRepository.FindByCartIdAsync(cart.Id);
+        return refreshed is null ? null : MapCartToResponse(refreshed);
+    }
+
+    /// <inheritdoc />
+    public async Task<bool> ClearCartAsync(Guid customerId)
+    {
+        var cart = await _cartRepository.FindByCustomerIdAsync(customerId);
+        if (cart is null) return false;
+
+        _cartRepository.ClearItems(cart);
+        cart.CartItems.Clear();
+        cart.TotalPrice = 0m;
+        cart.UpdatedAt = DateTime.UtcNow;
+        _cartRepository.UpdateCart(cart);
+
+        await _cartRepository.SaveChangesAsync();
+        return true;
+    }
+
+    /// <inheritdoc />
+    public async Task<decimal> CartTotalAsync(Guid customerId)
+    {
+        var cart = await _cartRepository.FindByCustomerIdAsync(customerId);
+        if (cart is null) return 0m;
+
+        return cart.CartItems.Sum(i => i.Price * i.Quantity);
+    }
+
+    /// <inheritdoc />
+    public async Task<CartResponseDto> ChangeRestaurantAsync(ChangeRestaurantRequestDto request)
+    {
+        var cart = await _cartRepository.FindByCustomerIdAsync(request.CustomerId);
+
+        if (cart is null)
+        {
+            // No existing cart: create a fresh one bound to the new restaurant.
+            cart = new Domain.Entities.Cart
+            {
+                CustomerId = request.CustomerId,
+                RestaurantId = request.NewRestaurantId,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+            await _cartRepository.AddCartAsync(cart);
+            await _cartRepository.SaveChangesAsync();
+            return MapCartToResponse(cart);
+        }
+
+        // Clear all existing items because single-restaurant ordering is enforced.
+        _cartRepository.ClearItems(cart);
+        cart.CartItems.Clear();
+        cart.RestaurantId = request.NewRestaurantId;
+        cart.TotalPrice = 0m;
+        cart.UpdatedAt = DateTime.UtcNow;
+        _cartRepository.UpdateCart(cart);
+
+        await _cartRepository.SaveChangesAsync();
+        return MapCartToResponse(cart);
+    }
+
+    /// <inheritdoc />
+    public async Task<CartResponseDto?> ApplyPromoCodeAsync(ApplyPromoCodeRequestDto request)
+    {
+        var cart = await _cartRepository.FindByCustomerIdAsync(request.CustomerId);
+        if (cart is null) return null;
+
+        // Placeholder promo engine: real discount lookup would live in a dedicated
+        // promo service. For now we accept a flat 10% off for any non-empty code.
+        var subtotal = cart.CartItems.Sum(i => i.Price * i.Quantity);
+        decimal discounted = string.IsNullOrWhiteSpace(request.PromoCode)
+            ? subtotal
+            : Math.Round(subtotal * 0.9m, 2);
+
+        cart.TotalPrice = discounted;
+        cart.UpdatedAt = DateTime.UtcNow;
+        _cartRepository.UpdateCart(cart);
+        await _cartRepository.SaveChangesAsync();
 
         return MapCartToResponse(cart);
     }
 
-    /// <summary>
-    /// Updates quantity of a cart item.
-    /// </summary>
-    public async Task<CartResponseDto?> UpdateCartItemAsync(Guid cartItemId, UpdateCartItemRequestDto request)
+    /// <inheritdoc />
+    public async Task<IReadOnlyList<CartResponseDto>> GetAllCartsAsync()
     {
-        var cartItem = await _cartRepository.GetCartItemByIdAsync(cartItemId);
-
-        if (cartItem == null)
-            return null;
-
-        cartItem.Quantity = request.Quantity;
-        await _cartRepository.UpdateCartItemAsync(cartItem);
-
-        var cart = await _cartRepository.GetCartByIdAsync(cartItem.CartId);
-        if (cart != null)
-        {
-            cart.UpdatedAt = DateTime.UtcNow;
-            await _cartRepository.UpdateCartAsync(cart);
-        }
-
-        await _cartRepository.SaveChangesAsync();
-
-        var updatedCart = await _cartRepository.GetCartByIdAsync(cartItem.CartId);
-        return updatedCart == null ? null : MapCartToResponse(updatedCart);
+        var carts = await _cartRepository.GetAllAsync();
+        return carts.Select(MapCartToResponse).ToList();
     }
 
     /// <summary>
-    /// Removes one item from the cart.
+    /// Recomputes TotalPrice from the current CartItems collection.
     /// </summary>
-    public async Task<bool> RemoveCartItemAsync(Guid cartItemId)
+    private static void RecomputeTotal(Domain.Entities.Cart cart)
     {
-        var cartItem = await _cartRepository.GetCartItemByIdAsync(cartItemId);
-
-        if (cartItem == null)
-            return false;
-
-        var cart = await _cartRepository.GetCartByIdAsync(cartItem.CartId);
-
-        await _cartRepository.RemoveCartItemAsync(cartItem);
-
-        if (cart != null)
-        {
-            cart.UpdatedAt = DateTime.UtcNow;
-            await _cartRepository.UpdateCartAsync(cart);
-        }
-
-        await _cartRepository.SaveChangesAsync();
-        return true;
+        cart.TotalPrice = cart.CartItems.Sum(i => i.Price * i.Quantity);
     }
 
     /// <summary>
-    /// Removes all items from the user's cart.
-    /// </summary>
-    public async Task<bool> ClearCartAsync(Guid userId)
-    {
-        var cart = await _cartRepository.GetCartByUserIdAsync(userId);
-
-        if (cart == null)
-            return false;
-
-        await _cartRepository.ClearCartAsync(cart);
-        cart.UpdatedAt = DateTime.UtcNow;
-
-        await _cartRepository.UpdateCartAsync(cart);
-        await _cartRepository.SaveChangesAsync();
-
-        return true;
-    }
-
-    /// <summary>
-    /// Converts Cart entity into response DTO.
+    /// Converts a Cart entity (with items) into a response DTO.
     /// </summary>
     private static CartResponseDto MapCartToResponse(Domain.Entities.Cart cart)
     {
         var items = cart.CartItems.Select(item => new CartItemResponseDto
         {
-            CartItemId = item.Id,
+            ItemId = item.Id,
             MenuItemId = item.MenuItemId,
-            MenuItemName = item.MenuItemName,
-            UnitPrice = item.UnitPrice,
+            Name = item.Name,
+            Price = item.Price,
             Quantity = item.Quantity,
-            TotalPrice = item.UnitPrice * item.Quantity
+            Customization = item.Customization,
+            LineTotal = item.Price * item.Quantity
         }).ToList();
 
         return new CartResponseDto
         {
             CartId = cart.Id,
-            UserId = cart.UserId,
+            CustomerId = cart.CustomerId,
+            RestaurantId = cart.RestaurantId,
             Items = items,
-            GrandTotal = items.Sum(x => x.TotalPrice)
+            TotalPrice = cart.TotalPrice
         };
     }
 }
