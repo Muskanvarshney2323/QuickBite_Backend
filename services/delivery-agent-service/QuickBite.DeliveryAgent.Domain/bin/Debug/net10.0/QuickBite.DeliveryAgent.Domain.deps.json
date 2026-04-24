@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "QuickBite.DeliveryAgent.Domain/1.0.0": {
+        "runtime": {
+          "QuickBite.DeliveryAgent.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuickBite.DeliveryAgent.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
