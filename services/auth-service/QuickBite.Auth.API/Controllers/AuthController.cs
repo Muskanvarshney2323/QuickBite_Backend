@@ -170,7 +170,7 @@ namespace QuickBite.Auth.API.Controllers
             return Ok(new { message = "Welcome Customer" });
         }
 
-        [Authorize(Roles = "Admin,Owner")]
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpGet("admin-or-owner")]
         public IActionResult AdminOrOwner()
         {

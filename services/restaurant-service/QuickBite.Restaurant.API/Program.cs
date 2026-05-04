@@ -6,40 +6,66 @@ using QuickBite.Restaurant.Application.Interfaces;
 using QuickBite.Restaurant.Application.Services;
 using QuickBite.Restaurant.Infrastructure.Data;
 using QuickBite.Restaurant.Infrastructure.Repositories;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add controller support
+// Add services to container
 builder.Services.AddControllers();
-
-// Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(options =>
 {
-    options.EnableAnnotations();
-
+    // Swagger basic info
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "QuickBite Restaurant Service API",
         Version = "v1",
-        Description = "Restaurant Service APIs for QuickBite"
+        Description = "Restaurant Service APIs with JWT Authentication"
+    });
+
+    // Enable Swagger annotations like [SwaggerOperation], [SwaggerResponse]
+    options.EnableAnnotations();
+
+    // Add JWT Bearer token support in Swagger
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Description = "Enter JWT token like: Bearer {your token}",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
+    });
+
+    // Apply Bearer token globally in Swagger
+    options.AddSecurityRequirement(document =>
+    {
+        OpenApiSecuritySchemeReference schemeRef = new("Bearer", document);
+
+        return new OpenApiSecurityRequirement
+        {
+            [schemeRef] = []
+        };
     });
 });
 
-// Add database connection
+// PostgreSQL DbContext
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register dependency injection
+// Dependency Injection
 builder.Services.AddScoped<IRestaurantRepository, RestaurantRepository>();
 builder.Services.AddScoped<IRestaurantService, RestaurantService>();
 
-// JWT authentication setup
-var jwtKey = builder.Configuration["Jwt:Key"];
-var jwtIssuer = builder.Configuration["Jwt:Issuer"];
-var jwtAudience = builder.Configuration["Jwt:Audience"];
+// Read JWT settings
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var jwtKey = jwtSettings["Key"] ?? throw new Exception("JWT Key is missing in appsettings.json");
+var jwtIssuer = jwtSettings["Issuer"];
+var jwtAudience = jwtSettings["Audience"];
 
+// JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -51,16 +77,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwtIssuer,
             ValidAudience = jwtAudience,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey!))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
         };
     });
 
-// Authorization service
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Enable Swagger in development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -69,11 +93,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Authentication and Authorization middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Map controllers
 app.MapControllers();
 
 app.Run();

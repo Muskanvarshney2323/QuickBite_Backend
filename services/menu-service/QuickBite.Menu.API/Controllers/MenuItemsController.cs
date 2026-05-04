@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuickBite.Menu.Application.DTOs.MenuItem;
 using QuickBite.Menu.Application.Interfaces;
@@ -60,8 +61,11 @@ namespace QuickBite.Menu.API.Controllers
         /// <summary>
         /// Create a new menu item
         /// </summary>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Create([FromBody] CreateMenuItemRequestDto request)
         {
             var createdItem = await _menuItemService.CreateAsync(request);
@@ -72,8 +76,11 @@ namespace QuickBite.Menu.API.Controllers
         /// <summary>
         /// Update an existing menu item
         /// </summary>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpPut("{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateMenuItemRequestDto request)
         {
             var isUpdated = await _menuItemService.UpdateAsync(id, request);
@@ -87,8 +94,11 @@ namespace QuickBite.Menu.API.Controllers
         /// <summary>
         /// Delete a menu item
         /// </summary>
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpDelete("{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Delete(Guid id)
         {
             var isDeleted = await _menuItemService.DeleteAsync(id);

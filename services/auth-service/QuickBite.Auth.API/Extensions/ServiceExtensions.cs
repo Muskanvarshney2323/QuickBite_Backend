@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using QuickBite.Auth.Application.Interfaces;
 using QuickBite.Auth.Application.Services;
 using QuickBite.Auth.Infrastructure.Context;
@@ -16,13 +16,11 @@ namespace QuickBite.Auth.API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<AuthDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
-
-
 
             return services;
         }
@@ -56,44 +54,37 @@ namespace QuickBite.Auth.API.Extensions
 
         public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
         {
+            const string schemeId = "Bearer";
+
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "QuickBite Auth Service API",
+                    Title = "QuickBite.Auth.API",
                     Version = "v1",
                     Description = "Authentication and Authorization APIs for QuickBite"
                 });
 
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                options.AddSecurityDefinition(schemeId, new OpenApiSecurityScheme
                 {
-                    Name = "Authorization",
-                    Description = "Enter JWT token like: Bearer {your token}",
-                    In = ParameterLocation.Header,
                     Type = SecuritySchemeType.Http,
                     Scheme = "bearer",
-                    BearerFormat = "JWT"
+                    BearerFormat = "JWT",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Description = "Enter: Bearer {your JWT token}"
                 });
 
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
                 {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        Array.Empty<string>()
-                    }
+                    [new OpenApiSecuritySchemeReference(schemeId, document)] = new List<string>()
                 });
             });
 
             return services;
         }
+
     }
 }

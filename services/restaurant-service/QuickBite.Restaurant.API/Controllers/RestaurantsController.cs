@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuickBite.Restaurant.Application.DTOs;
 using QuickBite.Restaurant.Application.Interfaces;
@@ -18,15 +19,18 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Create a new restaurant.
+        /// Only Owner can create a restaurant.
         /// </summary>
         [HttpPost]
-        // [Authorize(Roles = "Owner")]
+        [Authorize(Roles = "Owner")]
         [SwaggerOperation(
             Summary = "Create restaurant",
             Description = "This API is used to create a new restaurant."
         )]
         [SwaggerResponse(201, "Restaurant created successfully")]
         [SwaggerResponse(400, "Invalid request data")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> CreateRestaurant([FromBody] CreateRestaurantRequestDto request)
         {
             // Call service layer to create restaurant
@@ -38,8 +42,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get all restaurants.
+        /// This API is public.
         /// </summary>
         [HttpGet]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get all restaurants",
             Description = "This API returns all restaurants."
@@ -54,8 +60,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get restaurant by id.
+        /// This API is public.
         /// </summary>
         [HttpGet("{id}")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get restaurant by id",
             Description = "This API returns restaurant details using restaurant id."
@@ -78,8 +86,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get restaurants by city.
+        /// This API is public.
         /// </summary>
         [HttpGet("city/{city}")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get restaurants by city",
             Description = "This API returns all restaurants available in a given city."
@@ -94,8 +104,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get restaurants by cuisine.
+        /// This API is public.
         /// </summary>
         [HttpGet("cuisine/{cuisine}")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get restaurants by cuisine",
             Description = "This API returns restaurants based on cuisine type like Indian or Chinese."
@@ -110,13 +122,17 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get restaurants by owner id.
+        /// Only Owner and Admin can access this API.
         /// </summary>
         [HttpGet("owner/{ownerId}")]
+        [Authorize(Roles = "Owner,Admin")]
         [SwaggerOperation(
             Summary = "Get restaurants by owner",
             Description = "This API returns all restaurants created by a specific owner."
         )]
         [SwaggerResponse(200, "Restaurants fetched successfully")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> GetRestaurantsByOwner(Guid ownerId)
         {
             // Filter restaurants by owner id
@@ -126,8 +142,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get only approved restaurants.
+        /// This API is public.
         /// </summary>
         [HttpGet("approved")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get approved restaurants",
             Description = "This API returns only approved restaurants."
@@ -142,8 +160,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Get only open restaurants.
+        /// This API is public.
         /// </summary>
         [HttpGet("open")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Get open restaurants",
             Description = "This API returns only restaurants that are currently open."
@@ -158,8 +178,10 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Search restaurants by name.
+        /// This API is public.
         /// </summary>
         [HttpGet("search")]
+        [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Search restaurant by name",
             Description = "This API searches restaurants by full or partial name."
@@ -174,15 +196,18 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Update restaurant details.
+        /// Only Owner can update restaurant data.
         /// </summary>
         [HttpPut("{id}")]
-        // [Authorize(Roles = "Owner")]
+        [Authorize(Roles = "Owner")]
         [SwaggerOperation(
             Summary = "Update restaurant",
             Description = "This API is used to update restaurant details."
         )]
         [SwaggerResponse(200, "Restaurant updated successfully")]
         [SwaggerResponse(404, "Restaurant not found")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> UpdateRestaurant(Guid id, [FromBody] UpdateRestaurantRequestDto request)
         {
             // Update restaurant data
@@ -199,15 +224,18 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Delete restaurant by id.
+        /// Only Admin can delete restaurant.
         /// </summary>
         [HttpDelete("{id}")]
-        // [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [SwaggerOperation(
             Summary = "Delete restaurant",
             Description = "This API is used to delete a restaurant."
         )]
         [SwaggerResponse(200, "Restaurant deleted successfully")]
         [SwaggerResponse(404, "Restaurant not found")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> DeleteRestaurant(Guid id)
         {
             // Delete restaurant from database
@@ -224,15 +252,18 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Approve restaurant by id.
+        /// Only Admin can approve restaurant.
         /// </summary>
         [HttpPut("{id}/approve")]
-        // [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [SwaggerOperation(
             Summary = "Approve restaurant",
             Description = "This API is used by admin to approve a restaurant."
         )]
         [SwaggerResponse(200, "Restaurant approved successfully")]
         [SwaggerResponse(404, "Restaurant not found")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> ApproveRestaurant(Guid id)
         {
             // Approve restaurant by changing IsApproved to true
@@ -249,15 +280,18 @@ namespace QuickBite.Restaurant.API.Controllers
 
         /// <summary>
         /// Toggle restaurant open/close status.
+        /// Only Owner can change open/close status.
         /// </summary>
         [HttpPut("{id}/toggle-open")]
-        // [Authorize(Roles = "Owner")]
+        [Authorize(Roles = "Owner")]
         [SwaggerOperation(
             Summary = "Toggle restaurant open status",
             Description = "This API is used to open or close the restaurant."
         )]
         [SwaggerResponse(200, "Restaurant status updated successfully")]
         [SwaggerResponse(404, "Restaurant not found")]
+        [SwaggerResponse(401, "Unauthorized")]
+        [SwaggerResponse(403, "Forbidden")]
         public async Task<IActionResult> ToggleOpenStatus(Guid id)
         {
             // Toggle IsOpen value between true and false
