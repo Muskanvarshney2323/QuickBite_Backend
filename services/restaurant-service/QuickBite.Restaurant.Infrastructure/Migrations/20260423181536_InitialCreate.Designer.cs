@@ -13,14 +13,17 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
 {
     [DbContext(typeof(RestaurantDbContext))]
     [Migration("20260423181536_InitialCreate")]
-    partial class InitialCreate
+    partial class InitialCreate{}
+    [Migration("20260422172706_InitialPostgres")]
+    partial class InitialPostgres
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
                 .HasAnnotation("ProductVersion", "10.0.6")
+                .HasAnnotation("ProductVersion", "10.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -77,7 +80,6 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
 
                     b.ToTable("Restaurants");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

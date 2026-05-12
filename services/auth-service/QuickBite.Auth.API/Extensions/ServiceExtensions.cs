@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using QuickBite.Auth.Application.Interfaces;
 using QuickBite.Auth.Application.Services;
 using QuickBite.Auth.Infrastructure.Context;
@@ -74,6 +74,8 @@ namespace QuickBite.Auth.API.Extensions
 
         public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
         {
+            const string schemeId = "Bearer";
+
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen(options =>
@@ -85,33 +87,33 @@ namespace QuickBite.Auth.API.Extensions
                     Description = "Authentication and Authorization APIs for QuickBite"
                 });
 
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                options.AddSecurityDefinition(schemeId, new OpenApiSecurityScheme
                 {
+<<<<<<< HEAD
                     Name = "Authorization",
                     Type = SecuritySchemeType.Http,
                     Scheme = "bearer",
                     BearerFormat = "JWT",
                     In = ParameterLocation.Header,
                     Description = "Enter token like: Bearer {your JWT token}"
+=======
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Description = "Enter: Bearer {your JWT token}"
+>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
                 });
 
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
                 {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        Array.Empty<string>()
-                    }
+                    [new OpenApiSecuritySchemeReference(schemeId, document)] = new List<string>()
                 });
             });
 
             return services;
         }
+
     }
 }
