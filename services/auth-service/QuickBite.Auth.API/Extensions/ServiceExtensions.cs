@@ -90,6 +90,14 @@ namespace QuickBite.Auth.API.Extensions
                 options.AddSecurityDefinition(schemeId, new OpenApiSecurityScheme
                 {
 <<<<<<< HEAD
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Description = "Enter: Bearer {your JWT token}"
+=======
+<<<<<<< HEAD
                     Name = "Authorization",
                     Type = SecuritySchemeType.Http,
                     Scheme = "bearer",
@@ -104,6 +112,7 @@ namespace QuickBite.Auth.API.Extensions
                     In = ParameterLocation.Header,
                     Description = "Enter: Bearer {your JWT token}"
 >>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
+>>>>>>> 44243b21b06a86f89e76746c8c98acb44cd4dab3
                 });
 
                 options.AddSecurityRequirement(document => new OpenApiSecurityRequirement

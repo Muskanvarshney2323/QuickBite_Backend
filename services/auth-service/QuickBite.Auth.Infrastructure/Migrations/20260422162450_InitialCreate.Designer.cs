@@ -19,6 +19,7 @@ namespace QuickBite.Auth.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
+#pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "10.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
@@ -68,6 +69,7 @@ namespace QuickBite.Auth.Infrastructure.Migrations
 
                     b.ToTable("Users", (string)null);
                 });
+#pragma warning restore 612, 618
         }
     }
 }
