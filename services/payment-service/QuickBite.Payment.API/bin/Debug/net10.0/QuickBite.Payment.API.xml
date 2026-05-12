@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.Payment.API</name>
+    </assembly>
+    <members>
+        <member name="T:QuickBite.Payment.API.Controllers.PaymentsController">
+            <summary>
+            Exposes /api/v1/payments endpoints for processing payments,
+            retrieving payment records, refunds, and status updates.
+            </summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.Process(QuickBite.Payment.Application.DTOs.ProcessPaymentRequestDto)">
+            <summary>POST /api/v1/payments/process - process a payment for an order.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.GetByOrder(System.Guid)">
+            <summary>GET /api/v1/payments/byOrder/{orderId} - fetch the payment for an order.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.GetByCustomer(System.Guid)">
+            <summary>GET /api/v1/payments/byCustomer/{customerId} - all payments by a customer.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.Refund(System.Guid,QuickBite.Payment.Application.DTOs.RefundRequestDto)">
+            <summary>POST /api/v1/payments/{paymentId}/refund - refund a captured payment.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.UpdateStatus(System.Guid,QuickBite.Payment.Application.DTOs.UpdatePaymentStatusRequestDto)">
+            <summary>PUT /api/v1/payments/{paymentId}/status - update a payment's status.</summary>
+        </member>
+        <member name="T:QuickBite.Payment.API.Controllers.WalletController">
+            <summary>
+            Exposes /api/v1/wallet endpoints for balance retrieval,
+            top-ups, paying for orders from the wallet, and statement retrieval.
+            </summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.WalletController.GetBalance(System.Guid)">
+            <summary>GET /api/v1/wallet/balance/{customerId} - get the customer's wallet balance.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.WalletController.AddToWallet(QuickBite.Payment.Application.DTOs.AddToWalletRequestDto)">
+            <summary>POST /api/v1/wallet/addToWallet - top up the customer's wallet.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.WalletController.PayFromWallet(QuickBite.Payment.Application.DTOs.PayFromWalletRequestDto)">
+            <summary>POST /api/v1/wallet/payFromWallet - pay for an order from the wallet balance.</summary>
+        </member>
+        <member name="M:QuickBite.Payment.API.Controllers.WalletController.GetStatements(System.Guid)">
+            <summary>GET /api/v1/wallet/statements/{customerId} - get the customer's wallet ledger.</summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

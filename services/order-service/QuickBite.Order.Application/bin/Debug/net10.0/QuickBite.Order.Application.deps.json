@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "QuickBite.Order.Application/1.0.0": {
+        "dependencies": {
+          "QuickBite.Order.Domain": "1.0.0"
+        },
+        "runtime": {
+          "QuickBite.Order.Application.dll": {}
+        }
+      },
+      "QuickBite.Order.Domain/1.0.0": {
+        "runtime": {
+          "QuickBite.Order.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuickBite.Order.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuickBite.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
