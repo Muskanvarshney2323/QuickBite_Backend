@@ -1,0 +1,8 @@
+Ž
+‚C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\obj\Debug\net10.0\Microsoft.AspNetCore.App.SourceGenerators\Microsoft.AspNetCore.SourceGenerators.PublicProgramSourceGenerator\PublicTopLevelProgram.Generated.g.csutf-8´
+¨C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\obj\Debug\net10.0\QuickBite.Review.API.MvcApplicationPartsAssemblyInfo.csutf-8¡
+•C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\obj\Debug\net10.0\QuickBite.Review.API.AssemblyInfo.csutf-8¬
+ C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8£
+—C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\obj\Debug\net10.0\QuickBite.Review.API.GlobalUsings.g.csutf-8r
+iC:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\Program.csutf-8‡
+~C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\Controllers\ReviewController.csutf-8

@@ -1,0 +1,475 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.0.0.0",
+        "fileVersion": "5.0.0-2.25569.105 (fad253f5)",
+        "semanticVersion": "5.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/appsettings.json",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 27,
+                  "endLine": 3,
+                  "endColumn": 219
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Order not found' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 29,
+                  "endLine": 52,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 29,
+                  "endLine": 93,
+                  "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 29,
+                  "endLine": 107,
+                  "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 29,
+                  "endLine": 121,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6960",
+          "level": "warning",
+          "message": "This controller has multiple responsibilities and could be split into 2 smaller controllers.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 14,
+                  "endLine": 20,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 38,
+                  "endLine": 154,
+                  "endColumn": 56
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 38,
+                  "endLine": 100,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 38,
+                  "endLine": 114,
+                  "endColumn": 44
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 38,
+                  "endLine": 77,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 38,
+                  "endLine": 47,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 38,
+                  "endLine": 141,
+                  "endColumn": 51
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 38,
+                  "endLine": 59,
+                  "endColumn": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 38,
+                  "endLine": 68,
+                  "endColumn": 59
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 38,
+                  "endLine": 35,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 38,
+                  "endLine": 128,
+                  "endColumn": 45
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Controllers/OrderController.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 38,
+                  "endLine": 86,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "May belong to responsibility #1.",
+              "1": "May belong to responsibility #2.",
+              "10": "May belong to responsibility #2.",
+              "2": "May belong to responsibility #2.",
+              "3": "May belong to responsibility #2.",
+              "4": "May belong to responsibility #2.",
+              "5": "May belong to responsibility #2.",
+              "6": "May belong to responsibility #2.",
+              "7": "May belong to responsibility #2.",
+              "8": "May belong to responsibility #2.",
+              "9": "May belong to responsibility #2."
+            }
+          }
+        },
+        {
+          "ruleId": "S5122",
+          "level": "warning",
+          "message": "Make sure this permissive CORS policy is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 9,
+                  "endLine": 25,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 11,
+                  "endLine": 41,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 11,
+                  "endLine": 43,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 11,
+                  "endLine": 45,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 11,
+                  "endLine": 47,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.API/Program.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 1,
+                  "endLine": 156,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General or reserved exceptions should never be thrown",
+          "fullDescription": "This rule raises an issue when a general or reserved exception is thrown.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Credentials should not be hard-coded",
+          "fullDescription": "Hard-coding credentials in source code or binaries makes it easy for attackers to extract sensitive information, especially in distributed or open-source applications. This practice exposes your application to significant security risks.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5122": {
+          "id": "S5122",
+          "shortDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive",
+          "fullDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive. It has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6960": {
+          "id": "S6960",
+          "shortDescription": "Controllers should not have mixed responsibilities",
+          "fullDescription": "ASP.NET controllers should not have mixed responsibilities. Following the Single Responsibility Principle (SRP), they should be kept lean and focused on a single, separate concern. In short, they should have a single reason to change.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

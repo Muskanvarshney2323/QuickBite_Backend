@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>QuickBite.Review.Infrastructure</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>1d2e3f4a-d39a-4b2a-7bc8-3f4a5b6c7d8e</ProjectGuid>
+  <FullPath>C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\QuickBite.Review.Infrastructure.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\.sonarqube\conf\27\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\.sonarqube\out\27\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\.sonarqube\out\27</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\.sonarqube\out\27\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net10.0</TargetFramework>
+</ProjectInfo>

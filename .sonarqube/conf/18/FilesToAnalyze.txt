@@ -1,0 +1,5 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\Entities\Order.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\Entities\OrderItem.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\Enums\OrderStatus.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\Enums\PaymentMode.cs

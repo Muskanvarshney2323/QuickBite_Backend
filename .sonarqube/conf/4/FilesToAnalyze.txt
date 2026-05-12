@@ -1,0 +1,4 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Domain\Entities\MenuCategory.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Domain\Entities\MenuItem.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Domain\Interfaces\IMenuCategoryRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Domain\Interfaces\IMenuItemRepository.cs

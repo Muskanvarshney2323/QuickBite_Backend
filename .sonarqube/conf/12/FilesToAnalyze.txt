@@ -1,0 +1,10 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\Controllers\MenuCategoriesController.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\Controllers\MenuItemsController.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\Program.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\obj\Debug\net10.0\QuickBite.Menu.API.GlobalUsings.g.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\obj\Debug\net10.0\QuickBite.Menu.API.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\obj\Debug\net10.0\QuickBite.Menu.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\appsettings.Development.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\appsettings.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\Properties\launchSettings.json

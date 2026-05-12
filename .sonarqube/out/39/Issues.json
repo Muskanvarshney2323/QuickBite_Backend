@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.0.0.0",
+        "fileVersion": "5.0.0-2.25569.105 (fad253f5)",
+        "semanticVersion": "5.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "MSTEST0001",
+          "level": "warning",
+          "message": "Explicitly enable or disable tests parallelization",
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2701",
+          "level": "warning",
+          "message": "Remove or correct this assertion.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Review.Tests/ReviewServiceTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 9,
+                  "endLine": 18,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MSTEST0032",
+          "level": "warning",
+          "message": "Review or remove the assertion as its condition is known to be always true",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Review.Tests/ReviewServiceTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 9,
+                  "endLine": 18,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "MSTEST0001": {
+          "id": "MSTEST0001",
+          "shortDescription": "Explicitly enable or disable tests parallelization",
+          "fullDescription": "By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute '[Parallelize]' to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute '[DoNotParallelize]'.",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0001",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true
+          }
+        },
+        "MSTEST0032": {
+          "id": "MSTEST0032",
+          "shortDescription": "Assertion condition is always true",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0032",
+          "properties": {
+            "category": "Design",
+            "isEnabledByDefault": true
+          }
+        },
+        "S2701": {
+          "id": "S2701",
+          "shortDescription": "Literal boolean values should not be used in assertions",
+          "fullDescription": "Using literal boolean values in assertions can lead to less readable and less informative unit tests. When a test fails, it’s important to have a clear understanding of what the test was checking and why it failed. Most of the testing frameworks provide more explicit assertion methods that will provide a more helpful error message if the test fails.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

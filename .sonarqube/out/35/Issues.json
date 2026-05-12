@@ -1,0 +1,895 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.0.0.0",
+        "fileVersion": "5.0.0-2.25569.105 (fad253f5)",
+        "semanticVersion": "5.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'numeric(18,2)' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Data/OrderDbContext.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 63,
+                  "endLine": 29,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Data/OrderDbContext.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 60,
+                  "endLine": 30,
+                  "endColumn": 75
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Data/OrderDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 63,
+                  "endLine": 31,
+                  "endColumn": 78
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Data/OrderDbContext.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 57,
+                  "endLine": 70,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S3459",
+          "level": "warning",
+          "message": "Remove unassigned auto-property 'PaymentId', or set its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 21,
+                  "endLine": 154,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private set accessor in property 'PaymentId'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 38,
+                  "endLine": 154,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Orders' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 41,
+                  "endLine": 55,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 24,
+                  "endLine": 67,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 24,
+                  "endLine": 72,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 24,
+                  "endLine": 77,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 24,
+                  "endLine": 82,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 24,
+                  "endLine": 87,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 23,
+                  "endLine": 98,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'numeric(18,2)' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 63,
+                  "endLine": 22,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 60,
+                  "endLine": 23,
+                  "endColumn": 75
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 63,
+                  "endLine": 24,
+                  "endColumn": 78
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/Migrations/20260423185640_InitialCreate.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 57,
+                  "endLine": 45,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/Stubs.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 9,
+                  "endLine": 52,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/Stubs.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 9,
+                  "endLine": 23,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/Stubs.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 9,
+                  "endLine": 30,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 66,
+                  "endLine": 24,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Remove this hardcoded path-delimiter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 66,
+                  "endLine": 25,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 9,
+                  "endLine": 26,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 13,
+                  "endLine": 34,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 13,
+                  "endLine": 51,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 17,
+                  "endLine": 59,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 21,
+                  "endLine": 65,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 13,
+                  "endLine": 71,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 13,
+                  "endLine": 77,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 13,
+                  "endLine": 83,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6664",
+          "level": "warning",
+          "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 13,
+                  "endLine": 99,
+                  "endColumn": 109
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 13,
+                  "endLine": 119,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 13,
+                  "endLine": 135,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+              "1": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed."
+            }
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 13,
+                  "endLine": 93,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 13,
+                  "endLine": 99,
+                  "endColumn": 109
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 17,
+                  "endLine": 107,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 17,
+                  "endLine": 114,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 13,
+                  "endLine": 119,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 17,
+                  "endLine": 131,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 13,
+                  "endLine": 135,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 140,
+                  "startColumn": 13,
+                  "endLine": 141,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1873",
+          "level": "note",
+          "message": "Evaluation of this argument may be expensive and unnecessary if logging is disabled",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/order-service/QuickBite.Order.Infrastructure/ExternalServices/HttpPaymentGateway.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 13,
+                  "endLine": 147,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1873": {
+          "id": "CA1873",
+          "shortDescription": "Avoid potentially expensive logging",
+          "fullDescription": "In many situations, logging is disabled or set to a log level that results in an unnecessary evaluation for this argument.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1873",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S1075": {
+          "id": "S1075",
+          "shortDescription": "URIs should not be hardcoded",
+          "fullDescription": "Hard-coding a URI makes it difficult to test a program for a variety of reasons:",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "This rule raises an issue when a private/internal type or member is never referenced in the code.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3459": {
+          "id": "S3459",
+          "shortDescription": "Unassigned members should be removed",
+          "fullDescription": "Fields and auto-properties that are never assigned to hold the default values for their types. They are either pointless code or, more likely, mistakes.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6664": {
+          "id": "S6664",
+          "shortDescription": "The code block contains too many logging calls",
+          "fullDescription": "A code block should not contain too many logging statements of a specific level.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

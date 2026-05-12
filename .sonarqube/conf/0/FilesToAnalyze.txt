@@ -1,0 +1,9 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\Program.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.GlobalUsings.g.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\appsettings.Development.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\appsettings.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\QuickBite.ApiGateway.http
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\Properties\launchSettings.json

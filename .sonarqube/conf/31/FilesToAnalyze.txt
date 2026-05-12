@@ -1,0 +1,12 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\AssignDeliveryAgentRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\CancelOrderRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\OrderItemResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\OrderResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\PlaceOrderItemDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\PlaceOrderRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\ReorderRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\DTOs\UpdateStatusRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\Interfaces\IExternalServices.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\Interfaces\IOrderRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\Interfaces\IOrderService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\Services\OrderService.cs

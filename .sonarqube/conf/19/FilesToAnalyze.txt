@@ -1,0 +1,10 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\Controllers\DeliveryController.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\Program.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\obj\Debug\net10.0\QuickBite.DeliveryAgent.API.GlobalUsings.g.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\obj\Debug\net10.0\QuickBite.DeliveryAgent.API.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\obj\Debug\net10.0\QuickBite.DeliveryAgent.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\appsettings.Development.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\appsettings.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\QuickBite.DeliveryAgent.API.http
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\Properties\launchSettings.json

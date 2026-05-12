@@ -1,0 +1,2 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Domain\Entities\Review.cs

@@ -1,0 +1,4 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Domain\Entities\Notification.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Domain\Enums\NotificationChannel.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Domain\Enums\NotificationType.cs

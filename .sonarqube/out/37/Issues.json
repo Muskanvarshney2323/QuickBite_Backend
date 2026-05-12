@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.0.0.0",
+        "fileVersion": "5.0.0-2.25569.105 (fad253f5)",
+        "semanticVersion": "5.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Order.Tests/OrderServiceTests.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 28,
+                  "endLine": 73,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MSTEST0037",
+          "level": "warning",
+          "message": "Use 'Assert.HasCount' instead of 'Assert.AreEqual'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Order.Tests/OrderServiceTests.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 9,
+                  "endLine": 183,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Order.Tests/OrderServiceTests.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 28,
+                  "endLine": 183,
+                  "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Divyanshu%20Dev/OneDrive/Desktop/QuickBite/services/Testing/QuickBite.Order.Tests/OrderServiceTests.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 28,
+                  "endLine": 183,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixModeKey": "CodeFixModeSimple",
+              "ProperAssertMethodNameKey": "HasCount"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "MSTEST0037": {
+          "id": "MSTEST0037",
+          "shortDescription": "Use proper 'Assert' methods",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0037",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\DTOs\AddReviewRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\DTOs\ReviewResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\DTOs\UpdateReviewRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\Interfaces\IReviewRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\Interfaces\IReviewService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\Services\ReviewService.cs

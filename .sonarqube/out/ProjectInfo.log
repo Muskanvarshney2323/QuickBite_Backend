@@ -1,0 +1,69 @@
+Product projects
+---------------------------------------
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\QuickBite.ApiGateway.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Domain\QuickBite.Auth.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\QuickBite.Auth.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\QuickBite.DeliveryAgent.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.API\QuickBite.Menu.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\QuickBite.Auth.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Application\QuickBite.Notification.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Infrastructure\QuickBite.Cart.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Infrastructure\QuickBite.Notification.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\restaurant-service\QuickBite.Restaurant.Domain\QuickBite.Restaurant.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Domain\QuickBite.Order.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.API\QuickBite.DeliveryAgent.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Domain\QuickBite.Cart.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\QuickBite.Payment.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Domain\QuickBite.Review.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\restaurant-service\QuickBite.Restaurant.Application\QuickBite.Restaurant.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\QuickBite.Review.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\restaurant-service\QuickBite.Restaurant.Infrastructure\QuickBite.Restaurant.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.API\QuickBite.Auth.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\QuickBite.Review.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\restaurant-service\QuickBite.Restaurant.API\QuickBite.Restaurant.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.API\QuickBite.Cart.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\QuickBite.DeliveryAgent.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.API\QuickBite.Review.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\QuickBite.Order.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Infrastructure\QuickBite.Order.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Domain\QuickBite.Menu.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.API\QuickBite.Order.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Application\QuickBite.Payment.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.API\QuickBite.Notification.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Infrastructure\QuickBite.Payment.Infrastructure.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.API\QuickBite.Payment.API.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\QuickBite.Cart.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\QuickBite.Menu.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\QuickBite.DeliveryAgent.Application.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Domain\QuickBite.Notification.Domain.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Infrastructure\QuickBite.Menu.Infrastructure.csproj
+
+
+Test projects
+---------------------------------------
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Auth.Tests\QuickBite.Auth.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.DeliveryAgent.Tests\QuickBite.DeliveryAgent.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Cart.Tests\QuickBite.Cart.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Menu.Tests\QuickBite.Menu.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Notification.Tests\QuickBite.Notification.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Order.Tests\QuickBite.Order.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Restaurant.Tests\QuickBite.Restaurant.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Review.Tests\QuickBite.Review.Tests.csproj
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\Testing\QuickBite.Payment.Tests\QuickBite.Payment.Tests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

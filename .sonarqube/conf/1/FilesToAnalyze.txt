@@ -1,0 +1,2 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Domain\Entities\User.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Domain\Enums\UserRole.cs
