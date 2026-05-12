@@ -12,23 +12,17 @@ using QuickBite.Menu.Infrastructure.Data;
 namespace QuickBite.Menu.Infrastructure.Migrations
 {
     [DbContext(typeof(MenuDbContext))]
-<<<<<<<< HEAD:services/menu-service/QuickBite.Menu.Infrastructure/Migrations/20260423182034_InitialCreate.Designer.cs
-    [Migration("20260423182034_InitialCreate")]
-========
     [Migration("20260423063816_InitialCreate")]
->>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef:services/menu-service/QuickBite.Menu.Infrastructure/Migrations/20260423063816_InitialCreate.Designer.cs
     partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
-<<<<<<<< HEAD:services/menu-service/QuickBite.Menu.Infrastructure/Migrations/20260423182034_InitialCreate.Designer.cs
                 .HasAnnotation("ProductVersion", "10.0.6")
-========
+
                 .HasAnnotation("ProductVersion", "10.0.7")
->>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef:services/menu-service/QuickBite.Menu.Infrastructure/Migrations/20260423063816_InitialCreate.Designer.cs
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -105,7 +99,6 @@ namespace QuickBite.Menu.Infrastructure.Migrations
                 {
                     b.Navigation("MenuItems");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

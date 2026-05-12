@@ -14,18 +14,3 @@ C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\refint\QuickBite.Notification.Application.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.pdb
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\ref\QuickBite.Notification.Application.dll
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\bin\Debug\net10.0\QuickBite.Notification.Application.deps.json
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\bin\Debug\net10.0\QuickBite.Notification.Application.dll
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\bin\Debug\net10.0\QuickBite.Notification.Application.pdb
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\bin\Debug\net10.0\QuickBite.Notification.Domain.dll
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\bin\Debug\net10.0\QuickBite.Notification.Domain.pdb
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.csproj.AssemblyReference.cache
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.AssemblyInfoInputs.cache
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.AssemblyInfo.cs
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.csproj.CoreCompileInputs.cache
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBit.2443D520.Up2Date
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.dll
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\refint\QuickBite.Notification.Application.dll
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\QuickBite.Notification.Application.pdb
-C:\Users\HP\Downloads\services\notification-service\QuickBite.Notification.Application\obj\Debug\net10.0\ref\QuickBite.Notification.Application.dll

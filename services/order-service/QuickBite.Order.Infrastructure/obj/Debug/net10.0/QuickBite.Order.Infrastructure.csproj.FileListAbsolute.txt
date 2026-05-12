@@ -18,22 +18,3 @@ C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBi
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.pdb
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.genruntimeconfig.cache
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\ref\QuickBite.Order.Infrastructure.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Infrastructure.deps.json
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Infrastructure.runtimeconfig.json
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Infrastructure.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Infrastructure.pdb
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Application.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Domain.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Domain.pdb
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\bin\Debug\net10.0\QuickBite.Order.Application.pdb
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.AssemblyInfo.cs
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBit.91BAEBBD.Up2Date
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\refint\QuickBite.Order.Infrastructure.dll
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.pdb
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\QuickBite.Order.Infrastructure.genruntimeconfig.cache
-C:\Users\HP\Downloads\services\order-service\QuickBite.Order.Infrastructure\obj\Debug\net10.0\ref\QuickBite.Order.Infrastructure.dll

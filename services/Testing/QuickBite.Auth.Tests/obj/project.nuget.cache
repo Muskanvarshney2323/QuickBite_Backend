@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mYEHZiqsVgo=",
+  "dgSpecHash": "51Lxq138Rec=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

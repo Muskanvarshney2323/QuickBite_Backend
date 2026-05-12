@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj": {}
+    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\QuickBite.Cart.Application.csproj": {
@@ -674,14 +674,14 @@
         }
       }
     },
-    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj": {
+    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj",
         "projectName": "QuickBite.Cart.Tests",
-        "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj",
+        "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\QuickBite.Cart.Tests.csproj",
         "packagesPath": "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Cart.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Divyanshu Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,22 +1,3 @@
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.deps.json
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.runtimeconfig.json
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Application.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Application.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.AssemblyInfo.cs
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBit.B0914C5B.Up2Date
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\refint\QuickBite.DeliveryAgent.Infrastructure.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.genruntimeconfig.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\obj\Debug\net10.0\ref\QuickBite.DeliveryAgent.Infrastructure.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.deps.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.runtimeconfig.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Infrastructure\bin\Debug\net10.0\QuickBite.DeliveryAgent.Infrastructure.dll

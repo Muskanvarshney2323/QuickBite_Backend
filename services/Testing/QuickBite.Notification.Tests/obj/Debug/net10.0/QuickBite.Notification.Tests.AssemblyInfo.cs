@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Notification.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92bfb63404fde7cdcab82e0d634b1986019e9038")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aa0592964e0d6f4faa858772697ac53c53585ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Notification.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Notification.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
