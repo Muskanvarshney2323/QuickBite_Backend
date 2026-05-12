@@ -1,0 +1,9 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\AddCartItemRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\ApplyPromoCodeRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\CartItemResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\CartResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\ChangeRestaurantRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\DTOs\UpdateCartItemRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\Interfaces\ICartRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\Interfaces\ICartService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\Services\CartService.cs

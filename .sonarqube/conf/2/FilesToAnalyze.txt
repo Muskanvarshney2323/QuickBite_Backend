@@ -1,0 +1,3 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Domain\Entities\Cart.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Domain\Entities\CartItem.cs

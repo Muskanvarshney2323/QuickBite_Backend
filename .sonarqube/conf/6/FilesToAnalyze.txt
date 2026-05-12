@@ -1,0 +1,10 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuCategory\CreateMenuCategoryRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuCategory\MenuCategoryResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuCategory\UpdateMenuCategoryRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuItem\CreateMenuItemRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuItem\MenuItemResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\DTOs\MenuItem\UpdateMenuItemRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\Interfaces\IMenuCategoryService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\Interfaces\IMenuItemService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\Services\MenuCategoryService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\menu-service\QuickBite.Menu.Application\Services\MenuItemService.cs

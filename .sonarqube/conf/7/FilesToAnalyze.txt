@@ -1,0 +1,12 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\AssignOrderRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\CompleteDeliveryRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\DeliveryAgentResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\DeliveryHistoryRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\NearbyAgentsRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\RegisterAgentRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\SetAvailabilityRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\UpdateLocationRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\DTOs\UpdateRatingRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\Interfaces\IDeliveryRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\Interfaces\IDeliveryService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Application\Services\DeliveryService.cs

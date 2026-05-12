@@ -2580,11 +2580,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Payment.Tests\\QuickBite.Payment.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\QuickBite.Payment.Tests.csproj",
       "projectName": "QuickBite.Payment.Tests",
-      "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Payment.Tests\\QuickBite.Payment.Tests.csproj",
+      "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\QuickBite.Payment.Tests.csproj",
       "packagesPath": "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Payment.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Divyanshu Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

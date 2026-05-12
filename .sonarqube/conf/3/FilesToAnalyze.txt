@@ -1,0 +1,3 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\Entities\DeliveryAgent.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\Enums\VehicleType.cs

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj": {}
+    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\QuickBite.Auth.Application.csproj": {
@@ -688,14 +688,14 @@
         }
       }
     },
-    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj": {
+    "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
         "projectName": "QuickBite.Auth.Tests",
-        "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
+        "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\QuickBite.Auth.Tests.csproj",
         "packagesPath": "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Auth.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Divyanshu Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

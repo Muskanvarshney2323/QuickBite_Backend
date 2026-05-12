@@ -2441,11 +2441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Notification.Tests\\QuickBite.Notification.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\QuickBite.Notification.Tests.csproj",
       "projectName": "QuickBite.Notification.Tests",
-      "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Notification.Tests\\QuickBite.Notification.Tests.csproj",
+      "projectPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\QuickBite.Notification.Tests.csproj",
       "packagesPath": "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.Notification.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Divyanshu Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

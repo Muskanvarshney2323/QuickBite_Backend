@@ -1,14 +1,3 @@
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.deps.json
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.AssemblyInfoInputs.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.AssemblyInfo.cs
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.csproj.CoreCompileInputs.cache
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\refint\QuickBite.DeliveryAgent.Domain.dll
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\QuickBite.DeliveryAgent.Domain.pdb
-C:\Users\HP\Downloads\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net10.0\ref\QuickBite.DeliveryAgent.Domain.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.deps.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net10.0\QuickBite.DeliveryAgent.Domain.pdb

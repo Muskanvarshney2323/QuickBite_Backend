@@ -1,128 +1,115 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi;
+using Microsoft.OpenApi.Models;
 using QuickBite.Auth.Application.Interfaces;
 using QuickBite.Auth.Application.Services;
 using QuickBite.Auth.Infrastructure.Context;
 using QuickBite.Auth.Infrastructure.Repositories;
 using QuickBite.Auth.Infrastructure.Security;
-using System.Security.Claims;
+
 using System.Text;
 
 namespace QuickBite.Auth.API.Extensions
 {
     public static class ServiceExtensions
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
+        // Register application services
+        public static IServiceCollection AddApplicationServices(
+            this IServiceCollection services,
+            IConfiguration configuration)
         {
+            // Add DbContext
             services.AddDbContext<AuthDbContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(
+                    configuration.GetConnectionString("DefaultConnection")));
 
+            // Register repositories
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IAuthService, AuthService>();
+
+            // Register services
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+            services.AddScoped<AuthService>();
 
             return services;
         }
 
-        public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
+        // Configure JWT Authentication
+        public static IServiceCollection AddJwtAuthentication(
+            this IServiceCollection services,
+            IConfiguration configuration)
         {
             var jwtSettings = configuration.GetSection("JwtSettings");
 
-            var key = jwtSettings["Key"];
-            var issuer = jwtSettings["Issuer"];
-            var audience = jwtSettings["Audience"];
-
-            if (string.IsNullOrWhiteSpace(key))
-            {
-                throw new Exception("JWT Key is missing in appsettings.json.");
-            }
-
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+            var secretKey = jwtSettings["Secret"];
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                    options.RequireHttpsMetadata = false;
-                    options.SaveToken = true;
+                    options.TokenValidationParameters =
+                        new TokenValidationParameters
+                        {
+                            ValidateIssuer = true,
+                            ValidateAudience = true,
+                            ValidateLifetime = true,
+                            ValidateIssuerSigningKey = true,
 
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidIssuer = issuer,
+                            ValidIssuer = jwtSettings["Issuer"],
+                            ValidAudience = jwtSettings["Audience"],
 
-                        ValidateAudience = true,
-                        ValidAudience = audience,
-
-                        ValidateLifetime = true,
-
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = securityKey,
-
-                        ClockSkew = TimeSpan.Zero,
-
-                        NameClaimType = ClaimTypes.Name,
-                        RoleClaimType = ClaimTypes.Role
-                    };
+                            IssuerSigningKey = new SymmetricSecurityKey(
+                                Encoding.UTF8.GetBytes(secretKey!))
+                        };
                 });
-
-            services.AddAuthorization();
 
             return services;
         }
 
-        public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
+        // Configure Swagger
+        public static IServiceCollection AddSwaggerDocumentation(
+            this IServiceCollection services)
         {
-            const string schemeId = "Bearer";
-
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "QuickBite.Auth.API",
+                    Title = "QuickBite Auth API",
                     Version = "v1",
-                    Description = "Authentication and Authorization APIs for QuickBite"
+                    Description = "Authentication APIs for QuickBite"
                 });
 
-                options.AddSecurityDefinition(schemeId, new OpenApiSecurityScheme
-                {
-<<<<<<< HEAD
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "bearer",
-                    BearerFormat = "JWT",
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Description = "Enter: Bearer {your JWT token}"
-=======
-<<<<<<< HEAD
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "bearer",
-                    BearerFormat = "JWT",
-                    In = ParameterLocation.Header,
-                    Description = "Enter token like: Bearer {your JWT token}"
-=======
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "bearer",
-                    BearerFormat = "JWT",
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Description = "Enter: Bearer {your JWT token}"
->>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
->>>>>>> 44243b21b06a86f89e76746c8c98acb44cd4dab3
-                });
+                // Add JWT Authentication to Swagger
+                options.AddSecurityDefinition("Bearer",
+                    new OpenApiSecurityScheme
+                    {
+                        Name = "Authorization",
+                        Type = SecuritySchemeType.Http,
+                        Scheme = "bearer",
+                        BearerFormat = "JWT",
+                        In = ParameterLocation.Header,
+                        Description = "Enter JWT Token"
+                    });
 
-                options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
-                {
-                    [new OpenApiSecuritySchemeReference(schemeId, document)] = new List<string>()
-                });
+                options.AddSecurityRequirement(
+                    new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            Array.Empty<string>()
+                        }
+                    });
             });
 
             return services;
         }
-
     }
 }

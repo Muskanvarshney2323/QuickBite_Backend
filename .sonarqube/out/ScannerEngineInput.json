@@ -1,0 +1,1896 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.2.1"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1778608015000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "QuickBite"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.vscode\\settings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\.vscode\\settings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\Dockerfile,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\docker-compose.yml"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D,F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1,E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0,A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C,C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E,A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2,1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E,B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7,3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0,B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E,7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4,D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9,AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6,C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9,0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D,A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D,FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C,3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0,C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F,D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F,1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E,F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C,C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4,F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB,EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B,6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3,5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2,4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1,6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3,8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5,7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4,8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5,A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7,B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8,E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A,5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2,B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8,0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D,D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA,9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6,A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7,DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5,D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F,E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA,2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F,FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.projectKey",
+      "value": "QuickBite:B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.projectName",
+      "value": "QuickBite.ApiGateway"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\QuickBite.ApiGateway.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\QuickBite.ApiGateway.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\QuickBite.ApiGateway.http,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\QuickBite.ApiGateway.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\bin\\Debug\\net10.0\\QuickBite.ApiGateway.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\bin\\Debug\\net10.0\\QuickBite.ApiGateway.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\bin\\Debug\\net10.0\\QuickBite.ApiGateway.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\QuickBite.ApiGateway.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\api-gateway\\QuickBite.ApiGateway\\obj\\Debug\\net10.0\\staticwebassets.build.json"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "B2C3D4E5-F6A7-48B9-0C1D-2E3F4A5B6C7D.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.projectKey",
+      "value": "QuickBite:F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.projectName",
+      "value": "QuickBite.Auth.Domain"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\obj\\QuickBite.Auth.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\bin\\Debug\\net10.0\\QuickBite.Auth.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\obj\\Debug\\net10.0\\QuickBite.Auth.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\Entities\\User.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Domain\\Enums\\UserRole.cs"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "F6A7B8C9-DAB0-4CFD-4A5B-6C7D8E9FA0B1.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.projectKey",
+      "value": "QuickBite:E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.projectName",
+      "value": "QuickBite.Auth.Application"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\obj\\QuickBite.Auth.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\bin\\Debug\\net10.0\\QuickBite.Auth.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\obj\\Debug\\net10.0\\QuickBite.Auth.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\AuthResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\ChangePasswordRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\LoginRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\LogoutRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\RefreshTokenRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\RegisterRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\UpdateProfileRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\DTOs\\UserResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Exceptions\\ConflictException.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Exceptions\\UnauthorizedException.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Interfaces\\IAuthService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Interfaces\\IJwtTokenGenerator.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Interfaces\\IUserRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\Services\\AuthService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Application\\.gitignore"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\10"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\10\\Issues.json"
+    },
+    {
+      "key": "E5F6A7B8-C9DA-4BEC-3F4A-5B6C7D8E9FA0.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\10\\Telemetry.json"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.projectKey",
+      "value": "QuickBite:A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.projectName",
+      "value": "QuickBite.DeliveryAgent.Infrastructure"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod3"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\obj\\QuickBite.DeliveryAgent.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\Data\\DeliveryAgentDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\Migrations\\20260424120000_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\Migrations\\20260424120000_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\Migrations\\DeliveryAgentDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Infrastructure\\Repositories\\DeliveryRepository.cs"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\11"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\11\\Issues.json"
+    },
+    {
+      "key": "A5B6C7D8-B1C2-47AC-5FA6-B7C8D9EAFB0C.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\11\\Telemetry.json"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.projectKey",
+      "value": "QuickBite:C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.projectName",
+      "value": "QuickBite.Menu.API"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod4"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\QuickBite.Menu.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\bin\\Debug\\net10.0\\QuickBite.Menu.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\bin\\Debug\\net10.0\\QuickBite.Menu.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\bin\\Debug\\net10.0\\QuickBite.Menu.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\QuickBite.Menu.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\Controllers\\MenuCategoriesController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\Controllers\\MenuItemsController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\QuickBite.Menu.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\QuickBite.Menu.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.API\\obj\\Debug\\net10.0\\QuickBite.Menu.API.MvcApplicationPartsAssemblyInfo.cs"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\12"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\12\\Issues.json"
+    },
+    {
+      "key": "C7D8E9FA-D3E4-49CE-7BC8-D9EAFB0C1D2E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\12\\Telemetry.json"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.projectKey",
+      "value": "QuickBite:A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.projectName",
+      "value": "QuickBite.Auth.Infrastructure"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod5"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\obj\\QuickBite.Auth.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Auth.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Auth.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Auth.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Configurations\\UserConfiguration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Context\\AuthDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Migrations\\20260423180842_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Migrations\\20260423180842_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Migrations\\AuthDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Repositories\\UserRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\Security\\JwtTokenGenerator.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.Infrastructure\\.gitignore"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\13"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\13\\Issues.json"
+    },
+    {
+      "key": "A7B8C9DA-B1C2-4D0E-5B6C-7D8E9FA0B1C2.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\13\\Telemetry.json"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.projectKey",
+      "value": "QuickBite:1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.projectName",
+      "value": "QuickBite.Notification.Application"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod6"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\obj\\QuickBite.Notification.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\bin\\Debug\\net10.0\\QuickBite.Notification.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\obj\\Debug\\net10.0\\QuickBite.Notification.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\DTOs\\NotificationResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\DTOs\\SendBulkNotificationRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\DTOs\\SendNotificationRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\Interfaces\\INotificationRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\Interfaces\\INotificationService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Application\\Services\\NotificationService.cs"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\14"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\14\\Issues.json"
+    },
+    {
+      "key": "1D2E3F4A-D9EA-4FC4-D123-3F4A5B6C7D8E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\14\\Telemetry.json"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.projectKey",
+      "value": "QuickBite:B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.projectName",
+      "value": "QuickBite.Cart.Infrastructure"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod7"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\obj\\QuickBite.Cart.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Cart.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Cart.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Cart.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\Data\\CartDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Infrastructure\\Repositories\\CartRepository.cs"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\15"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\15\\Issues.json"
+    },
+    {
+      "key": "B0C1D2E3-F6A7-425D-0AB1-C2D3E4F5A6B7.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\15\\Telemetry.json"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.projectKey",
+      "value": "QuickBite:3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.projectName",
+      "value": "QuickBite.Notification.Infrastructure"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod8"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\obj\\QuickBite.Notification.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Notification.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Notification.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Notification.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\Data\\NotificationDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\Migrations\\20260424140000_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\Migrations\\20260424140000_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\Migrations\\NotificationDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Infrastructure\\Repositories\\NotificationRepository.cs"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\16"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\16\\Issues.json"
+    },
+    {
+      "key": "3F4A5B6C-FB01-41E6-F345-5B6C7D8E9FA0.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\16\\Telemetry.json"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.projectKey",
+      "value": "QuickBite:B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.projectName",
+      "value": "QuickBite.Restaurant.Domain"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod9"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain\\obj\\QuickBite.Restaurant.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain\\obj\\Debug\\net10.0\\QuickBite.Restaurant.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Domain\\Entities\\Restaurant.cs"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\17"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\17\\Issues.json"
+    },
+    {
+      "key": "B7C8D9EA-3D34-45C4-1BC2-D9EAFB0C1D2E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\17\\Telemetry.json"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.projectKey",
+      "value": "QuickBite:7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.projectName",
+      "value": "QuickBite.Order.Domain"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod10"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\obj\\QuickBite.Order.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\bin\\Debug\\net10.0\\QuickBite.Order.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\obj\\Debug\\net10.0\\QuickBite.Order.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\Entities\\Order.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\Entities\\OrderItem.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\Enums\\OrderStatus.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Domain\\Enums\\PaymentMode.cs"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\18"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\18\\Issues.json"
+    },
+    {
+      "key": "7D8E9FA0-3F45-452A-3789-9FA0B1C2D3E4.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\18\\Telemetry.json"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.projectKey",
+      "value": "QuickBite:D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.projectName",
+      "value": "QuickBite.DeliveryAgent.API"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod11"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\QuickBite.DeliveryAgent.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\Controllers\\DeliveryController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.API\\QuickBite.DeliveryAgent.API.http"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\19"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\19\\Issues.json"
+    },
+    {
+      "key": "D2E3F4A5-B8C9-447F-2CD3-E4F5A6B7C8D9.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\19\\Telemetry.json"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.projectKey",
+      "value": "QuickBite:AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.projectName",
+      "value": "QuickBite.Cart.Domain"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod12"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\obj\\QuickBite.Cart.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\bin\\Debug\\net10.0\\QuickBite.Cart.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\obj\\Debug\\net10.0\\QuickBite.Cart.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\Entities\\Cart.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Domain\\Entities\\CartItem.cs"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\2"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\2\\Issues.json"
+    },
+    {
+      "key": "AB0C1D2E-F5A6-414C-9FA0-B1C2D3E4F5A6.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\2\\Telemetry.json"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.projectKey",
+      "value": "QuickBite:C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.projectName",
+      "value": "QuickBite.Payment.Domain"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod13"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\obj\\QuickBite.Payment.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\bin\\Debug\\net10.0\\QuickBite.Payment.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\obj\\Debug\\net10.0\\QuickBite.Payment.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Entities\\Payment.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Entities\\Wallet.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Entities\\WalletStatement.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Enums\\PaymentMode.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Enums\\PaymentStatus.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Domain\\Enums\\WalletStatementType.cs"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\20"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\20\\Issues.json"
+    },
+    {
+      "key": "C2D3E4F5-8E9A-407F-8CDE-E4F5A6B7C8D9.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\20\\Telemetry.json"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.projectKey",
+      "value": "QuickBite:0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.projectName",
+      "value": "QuickBite.Review.Domain"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod14"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\obj\\QuickBite.Review.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\bin\\Debug\\net10.0\\QuickBite.Review.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\obj\\Debug\\net10.0\\QuickBite.Review.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Domain\\Entities\\Review.cs"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\21"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\21\\Issues.json"
+    },
+    {
+      "key": "0C1D2E3F-C289-4A19-6AB7-2E3F4A5B6C7D.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\21\\Telemetry.json"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.projectKey",
+      "value": "QuickBite:A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.projectName",
+      "value": "QuickBite.Restaurant.Application"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod15"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\obj\\QuickBite.Restaurant.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\obj\\Debug\\net10.0\\QuickBite.Restaurant.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\DTOs\\CreateRestaurantRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\DTOs\\RestaurantRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\DTOs\\UpdateRestaurantRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\Interfaces\\IRestaurantRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\Interfaces\\IRestaurantService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Application\\Services\\RestaurantService.cs"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\22"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\22\\Issues.json"
+    },
+    {
+      "key": "A6B7C8D9-2C23-44B3-0AB1-C8D9EAFB0C1D.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\22\\Telemetry.json"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.projectKey",
+      "value": "QuickBite:FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.projectName",
+      "value": "QuickBite.Review.Application"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod16"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\obj\\QuickBite.Review.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\bin\\Debug\\net10.0\\QuickBite.Review.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\obj\\Debug\\net10.0\\QuickBite.Review.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\DTOs\\AddReviewRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\DTOs\\ReviewResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\DTOs\\UpdateReviewRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\Interfaces\\IReviewRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\Interfaces\\IReviewService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Application\\Services\\ReviewService.cs"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\23"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\23\\Issues.json"
+    },
+    {
+      "key": "FB0C1D2E-B178-4908-5FA6-1D2E3F4A5B6C.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\23\\Telemetry.json"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.projectKey",
+      "value": "QuickBite:3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.projectName",
+      "value": "QuickBite.Auth.Tests"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod17"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\obj\\QuickBite.Auth.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\QuickBite.Auth.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\QuickBite.Auth.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\obj\\Debug\\net10.0\\QuickBite.Auth.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\AuthServiceTests.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Auth.Tests\\MSTestSettings.cs"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\24"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\24\\Issues.json"
+    },
+    {
+      "key": "3F4A5B6C-F5BC-4D4C-9DEA-5B6C7D8E9FA0.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\24\\Telemetry.json"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.projectKey",
+      "value": "QuickBite:C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.projectName",
+      "value": "QuickBite.Restaurant.Infrastructure"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod18"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\obj\\QuickBite.Restaurant.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Restaurant.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\bin\\Debug\\net10.0\\BuildHost-netcore\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\bin\\Debug\\net10.0\\BuildHost-netcore\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Data\\RestaurantDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Data\\RestaurantDbContextFactory.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Migrations\\20260512164459_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Migrations\\20260512164459_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Migrations\\RestaurantDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.Infrastructure\\Repositories\\RestaurantRepository.cs"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\25"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\25\\Issues.json"
+    },
+    {
+      "key": "C8D9EAFB-4E45-46D5-2CD3-EAFB0C1D2E3F.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\25\\Telemetry.json"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.projectKey",
+      "value": "QuickBite:D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.projectName",
+      "value": "QuickBite.Auth.API"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod19"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\QuickBite.Auth.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\bin\\Debug\\net10.0\\QuickBite.Auth.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\bin\\Debug\\net10.0\\QuickBite.Auth.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\bin\\Debug\\net10.0\\QuickBite.Auth.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\QuickBite.Auth.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\Controllers\\AuthController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\Extensions\\ServiceExtensions.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\Middleware\\ExceptionMiddleware.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\QuickBite.Auth.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\QuickBite.Auth.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\auth-service\\QuickBite.Auth.API\\obj\\Debug\\net10.0\\QuickBite.Auth.API.MvcApplicationPartsAssemblyInfo.cs"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\26"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\26\\Issues.json"
+    },
+    {
+      "key": "D4E5F6A7-B8C9-4ADB-2E3F-4A5B6C7D8E9F.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\26\\Telemetry.json"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.projectKey",
+      "value": "QuickBite:1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.projectName",
+      "value": "QuickBite.Review.Infrastructure"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod20"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\obj\\QuickBite.Review.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Review.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Review.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Review.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\Data\\ReviewDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\Migrations\\20260424130000_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\Migrations\\20260424130000_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\Migrations\\ReviewDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.Infrastructure\\Repositories\\ReviewRepository.cs"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\27"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\27\\Issues.json"
+    },
+    {
+      "key": "1D2E3F4A-D39A-4B2A-7BC8-3F4A5B6C7D8E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\27\\Telemetry.json"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.projectKey",
+      "value": "QuickBite:F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.projectName",
+      "value": "QuickBite.Restaurant.API"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod21"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\QuickBite.Restaurant.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\bin\\Debug\\net10.0\\QuickBite.Restaurant.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\bin\\Debug\\net10.0\\QuickBite.Restaurant.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\bin\\Debug\\net10.0\\QuickBite.Restaurant.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\QuickBite.Restaurant.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\Controllers\\RestaurantsController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\QuickBite.Restaurant.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\QuickBite.Restaurant.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\obj\\Debug\\net10.0\\QuickBite.Restaurant.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\restaurant-service\\QuickBite.Restaurant.API\\QuickBite.Restaurant.API.http"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\28"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\28\\Issues.json"
+    },
+    {
+      "key": "F5A6B7C8-1B12-43A2-BFA0-B7C8D9EAFB0C.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\28\\Telemetry.json"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.projectKey",
+      "value": "QuickBite:C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.projectName",
+      "value": "QuickBite.Cart.API"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod22"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\QuickBite.Cart.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\bin\\Debug\\net10.0\\QuickBite.Cart.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\bin\\Debug\\net10.0\\QuickBite.Cart.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\bin\\Debug\\net10.0\\QuickBite.Cart.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\QuickBite.Cart.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\Controllers\\CartController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\QuickBite.Cart.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\QuickBite.Cart.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\obj\\Debug\\net10.0\\QuickBite.Cart.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.API\\QuickBite.Cart.API.http"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\29"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\29\\Issues.json"
+    },
+    {
+      "key": "C9DAB0C1-D3E4-4F2A-7D8E-9FA0B1C2D3E4.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\29\\Telemetry.json"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.projectKey",
+      "value": "QuickBite:F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.projectName",
+      "value": "QuickBite.DeliveryAgent.Domain"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod23"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\obj\\QuickBite.DeliveryAgent.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\Entities\\DeliveryAgent.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Domain\\Enums\\VehicleType.cs"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\3"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\3\\Issues.json"
+    },
+    {
+      "key": "F4A5B6C7-DAB0-469B-4EF5-A6B7C8D9EAFB.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\3\\Telemetry.json"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.projectKey",
+      "value": "QuickBite:EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.projectName",
+      "value": "QuickBite.Review.API"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod24"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\QuickBite.Review.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\bin\\Debug\\net10.0\\QuickBite.Review.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\bin\\Debug\\net10.0\\QuickBite.Review.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\bin\\Debug\\net10.0\\QuickBite.Review.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\QuickBite.Review.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\Controllers\\ReviewController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\QuickBite.Review.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\QuickBite.Review.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\obj\\Debug\\net10.0\\QuickBite.Review.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\review-service\\QuickBite.Review.API\\QuickBite.Review.API.http"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\30"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\30\\Issues.json"
+    },
+    {
+      "key": "EAFB0C1D-A067-48F7-4EF5-0C1D2E3F4A5B.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\30\\Telemetry.json"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.projectKey",
+      "value": "QuickBite:6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.projectName",
+      "value": "QuickBite.Order.Application"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod25"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\obj\\QuickBite.Order.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\bin\\Debug\\net10.0\\QuickBite.Order.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\obj\\Debug\\net10.0\\QuickBite.Order.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\AssignDeliveryAgentRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\CancelOrderRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\OrderItemResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\OrderResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\PlaceOrderItemDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\PlaceOrderRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\ReorderRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\DTOs\\UpdateStatusRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\Interfaces\\IExternalServices.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\Interfaces\\IOrderRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\Interfaces\\IOrderService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Application\\Services\\OrderService.cs"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\31"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\31\\Issues.json"
+    },
+    {
+      "key": "6C7D8E9F-2E34-4419-2678-8E9FA0B1C2D3.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\31\\Telemetry.json"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.projectKey",
+      "value": "QuickBite:5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.projectName",
+      "value": "QuickBite.DeliveryAgent.Tests"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod26"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\obj\\QuickBite.DeliveryAgent.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\DeliveryServiceTests.cs"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\32"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\32\\Issues.json"
+    },
+    {
+      "key": "5B6C7D8E-B7DE-4F6E-BFA0-7D8E9FA0B1C2.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\32\\Telemetry.json"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.projectKey",
+      "value": "QuickBite:4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.projectName",
+      "value": "QuickBite.Cart.Tests"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod27"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\obj\\QuickBite.Cart.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\QuickBite.Cart.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\QuickBite.Cart.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\obj\\Debug\\net10.0\\QuickBite.Cart.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\MSTestSettings.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Cart.Tests\\Test1.cs"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\33"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\33\\Issues.json"
+    },
+    {
+      "key": "4A5B6C7D-A6CD-4E5D-AEF0-6C7D8E9FA0B1.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\33\\Telemetry.json"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.projectKey",
+      "value": "QuickBite:6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.projectName",
+      "value": "QuickBite.Menu.Tests"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod28"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\obj\\QuickBite.Menu.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\QuickBite.Menu.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\QuickBite.Menu.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\obj\\Debug\\net10.0\\QuickBite.Menu.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Menu.Tests\\MenuServiceTests.cs"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\34"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\34\\Issues.json"
+    },
+    {
+      "key": "6C7D8E9F-C8EF-40AF-0AB1-8E9FA0B1C2D3.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\34\\Telemetry.json"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.projectKey",
+      "value": "QuickBite:8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.projectName",
+      "value": "QuickBite.Order.Infrastructure"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod29"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\obj\\QuickBite.Order.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Order.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Order.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Order.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Data\\OrderDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Data\\OrderDbContextFactory.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\ExternalServices\\HttpPaymentGateway.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\ExternalServices\\Stubs.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Migrations\\20260423185640_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Migrations\\20260423185640_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Migrations\\20260510112803_AddUpdatedAtToOrders.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Migrations\\20260510112803_AddUpdatedAtToOrders.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Migrations\\OrderDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.Infrastructure\\Repositories\\OrderRepository.cs"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\35"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\35\\Issues.json"
+    },
+    {
+      "key": "8E9FA0B1-4A56-463B-489A-A0B1C2D3E4F5.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\35\\Telemetry.json"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.projectKey",
+      "value": "QuickBite:7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.projectName",
+      "value": "QuickBite.Notification.Tests"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod30"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\obj\\QuickBite.Notification.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\QuickBite.Notification.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\QuickBite.Notification.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\obj\\Debug\\net10.0\\QuickBite.Notification.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Notification.Tests\\NotificationServiceTests.cs"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\36"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\36\\Issues.json"
+    },
+    {
+      "key": "7D8E9FA0-D9FA-41B0-1BC2-9FA0B1C2D3E4.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\36\\Telemetry.json"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.projectKey",
+      "value": "QuickBite:8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.projectName",
+      "value": "QuickBite.Order.Tests"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod31"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\obj\\QuickBite.Order.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\QuickBite.Order.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\QuickBite.Order.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\obj\\Debug\\net10.0\\QuickBite.Order.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\MSTestSettings.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Order.Tests\\OrderServiceTests.cs"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\37"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\37\\Issues.json"
+    },
+    {
+      "key": "8E9FA0B1-EAB0-42C1-2CD3-A0B1C2D3E4F5.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\37\\Telemetry.json"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.projectKey",
+      "value": "QuickBite:A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.projectName",
+      "value": "QuickBite.Restaurant.Tests"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod32"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\obj\\QuickBite.Restaurant.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\QuickBite.Restaurant.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\obj\\Debug\\net10.0\\QuickBite.Restaurant.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Restaurant.Tests\\RestaurantServiceTests.cs"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\38"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\38\\Issues.json"
+    },
+    {
+      "key": "A0B1C2D3-0C12-44E3-4EF5-C2D3E4F5A6B7.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\38\\Telemetry.json"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.projectKey",
+      "value": "QuickBite:B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.projectName",
+      "value": "QuickBite.Review.Tests"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod33"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\obj\\QuickBite.Review.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\QuickBite.Review.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\QuickBite.Review.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\obj\\Debug\\net10.0\\QuickBite.Review.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Review.Tests\\ReviewServiceTests.cs"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\39"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\39\\Issues.json"
+    },
+    {
+      "key": "B1C2D3E4-1D23-45F4-5FA6-D3E4F5A6B7C8.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\39\\Telemetry.json"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.projectKey",
+      "value": "QuickBite:E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.projectName",
+      "value": "QuickBite.Menu.Domain"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod34"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\obj\\QuickBite.Menu.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\bin\\Debug\\net10.0\\QuickBite.Menu.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\obj\\Debug\\net10.0\\QuickBite.Menu.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\Entities\\MenuCategory.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\Entities\\MenuItem.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\Interfaces\\IMenuCategoryRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Domain\\Interfaces\\IMenuItemRepository.cs"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\4"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\4\\Issues.json"
+    },
+    {
+      "key": "E9FAFB0C-F5A6-4BE0-9DEA-FB0C1D2E3F4A.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\4\\Telemetry.json"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.projectKey",
+      "value": "QuickBite:5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.projectName",
+      "value": "QuickBite.Order.API"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod35"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\QuickBite.Order.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\bin\\Debug\\net10.0\\QuickBite.Order.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\bin\\Debug\\net10.0\\QuickBite.Order.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\bin\\Debug\\net10.0\\QuickBite.Order.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\QuickBite.Order.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\Controllers\\OrderController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\QuickBite.Order.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\QuickBite.Order.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\obj\\Debug\\net10.0\\QuickBite.Order.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\order-service\\QuickBite.Order.API\\QuickBite.Order.API.http"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\40"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\40\\Issues.json"
+    },
+    {
+      "key": "5B6C7D8E-1D23-4308-1567-7D8E9FA0B1C2.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\40\\Telemetry.json"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.projectKey",
+      "value": "QuickBite:B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.projectName",
+      "value": "QuickBite.Payment.Application"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod36"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\obj\\QuickBite.Payment.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\bin\\Debug\\net10.0\\QuickBite.Payment.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\obj\\Debug\\net10.0\\QuickBite.Payment.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\AddToWalletRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\PayFromWalletRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\PaymentResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\ProcessPaymentRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\RefundRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\UpdatePaymentStatusRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\WalletBalanceResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\DTOs\\WalletStatementResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\Interfaces\\IPaymentGatewayClient.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\Interfaces\\IPaymentRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\Interfaces\\IPaymentService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\Interfaces\\IWalletRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\Services\\PaymentService.cs"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\41"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\41\\Issues.json"
+    },
+    {
+      "key": "B1C2D3E4-7D89-496E-7BCD-D3E4F5A6B7C8.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\41\\Telemetry.json"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.projectKey",
+      "value": "QuickBite:0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.projectName",
+      "value": "QuickBite.Notification.API"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod37"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\QuickBite.Notification.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\bin\\Debug\\net10.0\\QuickBite.Notification.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\bin\\Debug\\net10.0\\QuickBite.Notification.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\bin\\Debug\\net10.0\\QuickBite.Notification.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\QuickBite.Notification.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\Controllers\\NotificationController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\QuickBite.Notification.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\QuickBite.Notification.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\obj\\Debug\\net10.0\\QuickBite.Notification.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.API\\QuickBite.Notification.API.http"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\42"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\42\\Issues.json"
+    },
+    {
+      "key": "0C1D2E3F-C8D9-4EB3-C012-2E3F4A5B6C7D.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\42\\Telemetry.json"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.projectKey",
+      "value": "QuickBite:D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.projectName",
+      "value": "QuickBite.Payment.Infrastructure"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod38"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\obj\\QuickBite.Payment.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Payment.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Payment.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Payment.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Data\\PaymentDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\DependencyInjection\\ServiceRegistration.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\ExternalServices\\StubPaymentGatewayClient.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Migrations\\20260423192053_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Migrations\\20260423192053_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Migrations\\PaymentDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Repositories\\PaymentRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Infrastructure\\Repositories\\WalletRepository.cs"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\43"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\43\\Issues.json"
+    },
+    {
+      "key": "D3E4F5A6-9FA0-4180-9DEF-F5A6B7C8D9EA.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\43\\Telemetry.json"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.projectKey",
+      "value": "QuickBite:9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.projectName",
+      "value": "QuickBite.Payment.Tests"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod39"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.tests",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\obj\\QuickBite.Payment.Tests.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\QuickBite.Payment.Tests.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\QuickBite.Payment.Tests.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\obj\\Debug\\net10.0\\QuickBite.Payment.Tests.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-musl-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\linux-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\osx-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-arm64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x64\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_arm64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x64.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\bin\\Debug\\net10.0\\runtimes\\win-x86\\native\\Cov_x86.config,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.Payment.Tests\\PaymentServiceTests.cs"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\44"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\44\\Issues.json"
+    },
+    {
+      "key": "9FA0B1C2-FB01-43D2-3DE4-B1C2D3E4F5A6.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\44\\Telemetry.json"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.projectKey",
+      "value": "QuickBite:A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.projectName",
+      "value": "QuickBite.Payment.API"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod40"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\QuickBite.Payment.API.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\Properties\\launchSettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\bin\\Debug\\net10.0\\appsettings.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\bin\\Debug\\net10.0\\QuickBite.Payment.API.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\bin\\Debug\\net10.0\\QuickBite.Payment.API.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\bin\\Debug\\net10.0\\QuickBite.Payment.API.staticwebassets.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\QuickBite.Payment.API.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\Controllers\\PaymentsController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\Controllers\\WalletController.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\Program.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\QuickBite.Payment.API.GlobalUsings.g.cs,\"C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs\",C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\QuickBite.Payment.API.AssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\obj\\Debug\\net10.0\\QuickBite.Payment.API.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.API\\QuickBite.Payment.API.http"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\45"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\45\\Issues.json"
+    },
+    {
+      "key": "A0B1C2D3-6C78-485D-6ABC-C2D3E4F5A6B7.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\45\\Telemetry.json"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.projectKey",
+      "value": "QuickBite:DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.projectName",
+      "value": "QuickBite.Cart.Application"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod41"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\obj\\QuickBite.Cart.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\bin\\Debug\\net10.0\\QuickBite.Cart.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\obj\\Debug\\net10.0\\QuickBite.Cart.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\AddCartItemRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\ApplyPromoCodeRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\CartItemResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\CartResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\ChangeRestaurantRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\DTOs\\UpdateCartItemRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\Interfaces\\ICartRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\Interfaces\\ICartService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\cart-service\\QuickBite.Cart.Application\\Services\\CartService.cs"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\5"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\5\\Issues.json"
+    },
+    {
+      "key": "DAB0C1D2-E4F5-403B-8E9F-A0B1C2D3E4F5.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\5\\Telemetry.json"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.projectKey",
+      "value": "QuickBite:D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.projectName",
+      "value": "QuickBite.Menu.Application"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod42"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\obj\\QuickBite.Menu.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\bin\\Debug\\net10.0\\QuickBite.Menu.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\obj\\Debug\\net10.0\\QuickBite.Menu.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuCategory\\CreateMenuCategoryRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuCategory\\MenuCategoryResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuCategory\\UpdateMenuCategoryRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuItem\\CreateMenuItemRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuItem\\MenuItemResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\DTOs\\MenuItem\\UpdateMenuItemRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\Interfaces\\IMenuCategoryService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\Interfaces\\IMenuItemService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\Services\\MenuCategoryService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Application\\Services\\MenuItemService.cs"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\6"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\6\\Issues.json"
+    },
+    {
+      "key": "D8E9FAFB-E4F5-4ADF-8CD9-EAFB0C1D2E3F.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\6\\Telemetry.json"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.projectKey",
+      "value": "QuickBite:E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.projectName",
+      "value": "QuickBite.DeliveryAgent.Application"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod43"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\obj\\QuickBite.DeliveryAgent.Application.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\bin\\Debug\\net10.0\\QuickBite.DeliveryAgent.Application.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\obj\\Debug\\net10.0\\QuickBite.DeliveryAgent.Application.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\AssignOrderRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\CompleteDeliveryRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\DeliveryAgentResponseDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\DeliveryHistoryRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\NearbyAgentsRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\RegisterAgentRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\SetAvailabilityRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\UpdateLocationRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\DTOs\\UpdateRatingRequestDto.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\Interfaces\\IDeliveryRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\Interfaces\\IDeliveryService.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\delivery-agent-service\\QuickBite.DeliveryAgent.Application\\Services\\DeliveryService.cs"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\7"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\7\\Issues.json"
+    },
+    {
+      "key": "E3F4A5B6-C9DA-458A-3DE4-F5A6B7C8D9EA.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\7\\Telemetry.json"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.projectKey",
+      "value": "QuickBite:2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.projectName",
+      "value": "QuickBite.Notification.Domain"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod44"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\obj\\QuickBite.Notification.Domain.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\bin\\Debug\\net10.0\\QuickBite.Notification.Domain.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\obj\\Debug\\net10.0\\QuickBite.Notification.Domain.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\Common\\BaseEntity.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\Entities\\Notification.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\Enums\\NotificationChannel.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\notification-service\\QuickBite.Notification.Domain\\Enums\\NotificationType.cs"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\8"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\8\\Issues.json"
+    },
+    {
+      "key": "2E3F4A5B-EAF0-40D5-E234-4A5B6C7D8E9F.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\8\\Telemetry.json"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.projectKey",
+      "value": "QuickBite:FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.projectName",
+      "value": "QuickBite.Menu.Infrastructure"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.projectBaseDir",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.working.directory",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\.sonar\\mod45"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.sources",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\obj\\project.assets.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\obj\\QuickBite.Menu.Infrastructure.csproj.nuget.dgspec.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Menu.Infrastructure.deps.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\bin\\Debug\\net10.0\\QuickBite.Menu.Infrastructure.runtimeconfig.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\obj\\Debug\\net10.0\\QuickBite.Menu.Infrastructure.sourcelink.json,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Data\\MenuDbContext.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Migrations\\20260423063816_InitialCreate.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Migrations\\20260423063816_InitialCreate.Designer.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Migrations\\MenuDbContextModelSnapshot.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Repositories\\MenuCategoryRepository.cs,C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\menu-service\\QuickBite.Menu.Infrastructure\\Repositories\\MenuItemRepository.cs"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\9"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\9\\Issues.json"
+    },
+    {
+      "key": "FAFB0C1D-A6B7-4CF1-AEF0-0C1D2E3F4A5B.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\.sonarqube\\out\\9\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}

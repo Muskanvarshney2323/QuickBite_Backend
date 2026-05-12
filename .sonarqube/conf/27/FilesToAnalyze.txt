@@ -1,0 +1,6 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\Data\ReviewDbContext.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\DependencyInjection\ServiceRegistration.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\Migrations\20260424130000_InitialCreate.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\Migrations\20260424130000_InitialCreate.Designer.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\Migrations\ReviewDbContextModelSnapshot.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Infrastructure\Repositories\ReviewRepository.cs

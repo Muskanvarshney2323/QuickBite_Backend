@@ -1,0 +1,8 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Configurations\UserConfiguration.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Context\AuthDbContext.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Migrations\20260423180842_InitialCreate.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Migrations\20260423180842_InitialCreate.Designer.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Migrations\AuthDbContextModelSnapshot.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Repositories\UserRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\Security\JwtTokenGenerator.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Infrastructure\.gitignore

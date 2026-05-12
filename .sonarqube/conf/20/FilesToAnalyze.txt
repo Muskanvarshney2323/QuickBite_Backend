@@ -1,0 +1,7 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Common\BaseEntity.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Entities\Payment.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Entities\Wallet.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Entities\WalletStatement.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Enums\PaymentMode.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Enums\PaymentStatus.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\payment-service\QuickBite.Payment.Domain\Enums\WalletStatementType.cs

@@ -1,0 +1,15 @@
+﻿C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\AuthResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\ChangePasswordRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\LoginRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\LogoutRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\RefreshTokenRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\RegisterRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\UpdateProfileRequestDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\DTOs\UserResponseDto.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Exceptions\ConflictException.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Exceptions\UnauthorizedException.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Interfaces\IAuthService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Interfaces\IJwtTokenGenerator.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Interfaces\IUserRepository.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\Services\AuthService.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\auth-service\QuickBite.Auth.Application\.gitignore

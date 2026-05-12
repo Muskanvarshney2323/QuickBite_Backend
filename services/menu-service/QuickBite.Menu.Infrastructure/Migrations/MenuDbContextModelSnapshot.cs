@@ -17,11 +17,10 @@ namespace QuickBite.Menu.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-<<<<<<< HEAD
+
                 .HasAnnotation("ProductVersion", "10.0.6")
-=======
+
                 .HasAnnotation("ProductVersion", "10.0.7")
->>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -98,7 +97,6 @@ namespace QuickBite.Menu.Infrastructure.Migrations
                 {
                     b.Navigation("MenuItems");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

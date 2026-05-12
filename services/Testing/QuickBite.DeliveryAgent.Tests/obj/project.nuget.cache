@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2qpM9WozU4c=",
+  "dgSpecHash": "2sC0gr13/PE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\MSTESTING\\QuickBite.DeliveryAgent.Tests\\QuickBite.DeliveryAgent.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\Testing\\QuickBite.DeliveryAgent.Tests\\QuickBite.DeliveryAgent.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\microsoft.applicationinsights\\2.23.0\\microsoft.applicationinsights.2.23.0.nupkg.sha512",
