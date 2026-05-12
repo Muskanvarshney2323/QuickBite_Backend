@@ -1,10 +1,16 @@
-QuickBite Backend 🚀
-QuickBite is a Food Delivery Application built with a Microservices Architecture. Each service handles a specific feature, making the system scalable, maintainable, and easy to understand.
+# **QuickBite Backend** 🚀
 
-📋 What is This Project?
+> **Quick overview:** QuickBite is a Food Delivery Application built with a Microservices Architecture. Each service handles a specific feature, making the system scalable, maintainable, and easy to understand.
+>
+> **Designed for:** rapid backend development, service isolation, and independent deployment.
+
+## 📋 What is This Project?
+
 Think of QuickBite like a real food delivery app (like Zomato or Swiggy). The backend is divided into independent services, where each service is responsible for one specific job.
 
-🏗️ Architecture Overview
+## 🏗️ Architecture Overview
+
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                   API Gateway (Entry Point)                  │
 │            Routes all requests to correct service             │
@@ -16,153 +22,138 @@ Think of QuickBite like a real food delivery app (like Zomato or Swiggy). The ba
     └───────────┘  └──────────┘  └─────────┘  └────────────┘
 
     ┌──────────┐  ┌────────────┐  ┌─────────┐  ┌──────────┐
-    │  Payment │  │  Notification│  │  Menu  │  │  Cart    │
-    │ Service  │  │    Service   │  │Service │  │ Service  │
+    │  Payment │  │  Notification│  │  Menu │ │  Cart    │
+    │ Service  │  │    Service   │  │Service │ │ Service  │
     └──────────┘  └────────────┘  └─────────┘  └──────────┘
 
     ┌──────────────┐
     │ Review Service│
     └──────────────┘
-🔧 Microservices Explained (Simple Words)
-1. Auth Service 🔐
-What it does: Handles login and registration for all users.
+```
 
-In simple terms: When you open the app and enter your email/password, this service checks if you exist in the database. If yes, it gives you a "token" (like a special ID card) that proves you're logged in. Without this, you can't access other features.
+## 🔧 Microservices Explained (Simple Words)
 
-Key Functions:
+### 1. Auth Service 🔐
 
-User signup (register new account)
-User login (verify email & password)
-Generate authentication tokens
-Password management
-Who uses it: Customers, Restaurant Owners, Delivery Partners
+- What it does: Handles login and registration for all users.
+- In simple terms: When you open the app and enter your email/password, this service checks if you exist in the database. If yes, it gives you a token (like a special ID card) that proves you're logged in. Without this, you can't access other features.
+- Key Functions:
+  - User signup (register new account)
+  - User login (verify email & password)
+  - Generate authentication tokens
+  - Password management
+- Who uses it: Customers, Restaurant Owners, Delivery Partners
 
-2. Restaurant Service 🍽️
-What it does: Manages all restaurant information and their profiles.
+### 2. Restaurant Service 🍽️
 
-In simple terms: This is like a yellow pages for restaurants. It stores all restaurant details - their name, location, food types they serve, whether they're open/closed, photos, and ratings. When you search for restaurants in the app, this service provides the data.
+- What it does: Manages all restaurant information and their profiles.
+- In simple terms: This is like a yellow pages for restaurants. It stores all restaurant details — name, location, cuisine, open/closed status, photos, and ratings. When you search for restaurants in the app, this service provides the data.
+- Key Functions:
+  - Add/edit restaurant profile
+  - View restaurant details
+  - Filter restaurants by city and cuisine
+  - Approve/reject restaurants (admin only)
+  - Toggle restaurant open/closed status
+- Who uses it: Restaurant Owners, Customers, Admin
 
-Key Functions:
+### 3. Menu Service 📝
 
-Add/edit restaurant profile
-View restaurant details
-Filter restaurants by city, cuisine
-Approve/reject restaurants (admin only)
-Toggle restaurant open/closed status
-Who uses it: Restaurant Owners (to manage their profile), Customers (to browse restaurants), Admin (to approve new restaurants)
+- What it does: Manages all food items and dishes for each restaurant.
+- In simple terms: Every restaurant has a menu with different dishes, prices, and descriptions. This service stores that information.
+- Key Functions:
+  - Create/edit menu items
+  - Set prices and availability
+  - Categorize items (veg, non-veg, etc.)
+  - Show items by restaurant
+- Who uses it: Restaurant Owners, Customers
 
-3. Menu Service 📝
-What it does: Manages all food items and dishes for each restaurant.
+### 4. Cart Service 🛒
 
-In simple terms: Every restaurant has a menu with different dishes, prices, and descriptions. This service stores all that information. When you tap on a restaurant in the app, the menu service shows you "Biryani - ₹250", "Butter Chicken - ₹300", etc.
+- What it does: Manages shopping carts for customers.
+- In simple terms: Just like a physical shopping cart in a store, this service keeps track of items you want to order before checkout.
+- Key Functions:
+  - Add items to cart
+  - Remove items from cart
+  - Update item quantities
+  - Calculate total price
+  - Clear cart after order
+- Who uses it: Customers
 
-Key Functions:
+### 5. Order Service 📦
 
-Create/edit menu items
-Set prices and availability
-Categorize items (veg, non-veg, etc.)
-Show items by restaurant
-Who uses it: Restaurant Owners (to add/update their menu), Customers (to see what they can order)
+- What it does: Manages all orders from creation to delivery.
+- In simple terms: Once you finish shopping and pay, this service creates an order and tracks it. You can see order status, history, and manage cancellations.
+- Key Functions:
+  - Create new orders
+  - Track order status
+  - View order history
+  - Calculate bill with taxes/discounts
+  - Manage order cancellations
+- Who uses it: Customers, Restaurant Owners, Delivery Partners
 
-4. Cart Service 🛒
-What it does: Manages shopping carts for customers.
+### 6. Delivery Service 🚴
 
-In simple terms: Just like a physical shopping cart in a store, this service keeps track of items you want to order before you checkout. You add items, increase quantities, remove items - all managed here.
+- What it does: Manages delivery partners and delivery tracking.
+- In simple terms: This service handles delivery partners. It stores their information, tracks assigned orders, and manages availability.
+- Key Functions:
+  - Register delivery partners
+  - Track delivery partner location
+  - Assign orders to delivery partners
+  - Update delivery status
+  - Rate delivery partners
+- Who uses it: Delivery Partners, Customers
 
-Key Functions:
+### 7. Payment Service 💳
 
-Add items to cart
-Remove items from cart
-Update item quantities
-Calculate total price
-Clear cart after order
-Who uses it: Customers (to add items before ordering)
+- What it does: Handles all payment transactions.
+- In simple terms: When you pay for your order with card, UPI, or wallet, this service processes the payment and records the transaction.
+- Key Functions:
+  - Process payments (card, UPI, wallet)
+  - Refund failed payments
+  - Store transaction history
+  - Generate invoices
+  - Handle failed payment retries
+- Who uses it: Customers
 
-5. Order Service 📦
-What it does: Manages all orders from creation to delivery.
+### 8. Notification Service 📢
 
-In simple terms: Once you finish shopping and pay, this service creates an "order" and tracks it. You can see the order status (preparing, out for delivery, delivered), order history, and manage your orders.
+- What it does: Sends notifications to users.
+- In simple terms: This service sends updates like “Your order has been confirmed,” “Delivery partner is nearby,” and “Your delivery is complete.”
+- Key Functions:
+  - Send order confirmation messages
+  - Send delivery updates
+  - Send promotional messages
+  - Track notification delivery
+  - Manage user notification preferences
+- Who uses it: All users
 
-Key Functions:
+### 9. Review Service ⭐
 
-Create new orders
-Track order status
-View order history
-Calculate bill with taxes/discounts
-Manage order cancellations
-Who uses it: Customers (to place and track orders), Restaurant Owners (to see incoming orders), Delivery Partners (to pick up orders)
+- What it does: Manages customer reviews and ratings.
+- In simple terms: After receiving an order, customers can rate and review the restaurant. This helps others decide where to order.
+- Key Functions:
+  - Create reviews and ratings
+  - View restaurant reviews
+  - Delete/edit reviews
+  - Calculate average rating
+  - Filter reviews by rating
+- Who uses it: Customers
 
-6. Delivery Service 🚴
-What it does: Manages delivery partners and delivery tracking.
+### 10. API Gateway 🚪
 
-In simple terms: This service handles "delivery boys/girls". It stores their information, tracks which orders they're delivering, their location, and whether they're available to take new orders.
+- What it does: The single entry point for all requests.
+- In simple terms: Think of it as a security guard at the entrance of a building. All requests come here first, it checks authorization, then routes them to the correct service.
+- Key Functions:
+  - Route requests to the correct service
+  - Authentication/Authorization checks
+  - Rate limiting
+  - Load balancing
+  - API documentation (Swagger)
+- Who uses it: Frontend apps (web/mobile)
 
-Key Functions:
+## 🗂️ Project Structure
 
-Register delivery partners
-Track delivery partner location
-Assign orders to delivery partners
-Update delivery status
-Rate delivery partners
-Who uses it: Delivery Partners (to register and accept orders), Customers (to see who's delivering their order)
-
-7. Payment Service 💳
-What it does: Handles all payment transactions.
-
-In simple terms: When you pay for your order using credit card, UPI, or wallet, this service processes that payment. It connects to payment gateways (like Stripe, Razorpay) and records the transaction.
-
-Key Functions:
-
-Process payments (card, UPI, wallet)
-Refund failed payments
-Store transaction history
-Generate invoices
-Handle failed payment retries
-Who uses it: Customers (to pay for orders)
-
-8. Notification Service 📢
-What it does: Sends notifications to users.
-
-In simple terms: This service sends you updates like "Your order has been confirmed", "Delivery partner is nearby", "Your delivery is complete". It can send via SMS, Email, or In-App notifications.
-
-Key Functions:
-
-Send order confirmation messages
-Send delivery updates
-Send promotional messages
-Track notification delivery
-User notification preferences
-Who uses it: All users (to get updates about their orders/activities)
-
-9. Review Service ⭐
-What it does: Manages customer reviews and ratings.
-
-In simple terms: After you receive your order, you can rate and review the restaurant. This service stores all reviews, ratings, and comments. It helps other customers decide which restaurants to try.
-
-Key Functions:
-
-Create reviews and ratings
-View reviews for restaurants
-Delete/edit your reviews
-Calculate average rating
-Filter reviews by rating
-Who uses it: Customers (to leave reviews and read reviews)
-
-10. API Gateway 🚪
-What it does: The single entry point for all requests.
-
-In simple terms: Think of it as a security guard at the entrance of a building. All requests come here first, it checks if you're authorized, then routes you to the correct service. It also balances traffic load.
-
-Key Functions:
-
-Route requests to correct service
-Authentication/Authorization check
-Rate limiting (prevent spam)
-Load balancing
-API documentation (Swagger)
-Who uses it: Frontend apps (web/mobile) - they connect only to the gateway, not directly to services
-
-🗂️ Project Structure
+```text
 QuickBite/
 ├── services/
 │   ├── api-gateway/                    # Entry point service
@@ -183,98 +174,116 @@ QuickBite/
 │   └── Testing/                        # Unit Tests
 ├── QuickBite.sln                       # Main Solution File
 └── README.md                           # This file
-📚 Architecture Pattern: Clean Architecture
-Each microservice follows a 4-Layer Architecture:
+```
 
-1. API Layer (Controllers)
-Receives HTTP requests
-Validates input
-Returns responses
-2. Application Layer (Business Logic)
-Contains main business logic
-Processes data
-Handles workflows
-3. Domain Layer (Core Models)
-Defines core entities and models
-Business rules
-No dependencies on other layers
-4. Infrastructure Layer (Database & External Services)
-Database access (SQL Server)
-External API calls
-Data persistence
-🚀 Quick Start
-Prerequisites
-.NET 7 or higher
-SQL Server (for database)
-Visual Studio or VS Code
-Setup & Run
-Clone the repository
+## 📚 Architecture Pattern: Clean Architecture
 
+Each microservice follows a 4-layer architecture:
+
+1. **API Layer (Controllers)**
+   - Receives HTTP requests
+   - Validates input
+   - Returns responses
+2. **Application Layer (Business Logic)**
+   - Contains main business logic
+   - Processes data
+   - Handles workflows
+3. **Domain Layer (Core Models)**
+   - Defines core entities and models
+   - Contains business rules
+   - Has no dependencies on other layers
+4. **Infrastructure Layer (Database & External Services)**
+   - Database access (SQL Server)
+   - External API calls
+   - Data persistence
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- .NET 7 or higher
+- SQL Server
+- Visual Studio or VS Code
+
+### Setup & Run
+
+```bash
 git clone <repo-url>
 cd QuickBite
-Open the solution
+```
 
-# Using Visual Studio
-QuickBite.sln
+Open the solution:
 
-# Or using terminal
-dotnet sln list
-Set up Database
+- In Visual Studio: `QuickBite.sln`
+- Or in terminal: `dotnet sln list`
 
-Update connection string in appsettings.json for each service
-Run migrations for each service
-Run individual services
+### Set up Database
 
+> **⚠️ Important:** Each service uses its own database connection settings. Update `appsettings.json` separately for each service before running migrations.
+
+- Update connection string in `appsettings.json` for each service
+- Run migrations for each service
+
+### Run individual services
+
+```bash
 cd services/api-gateway/QuickBite.ApiGateway
 dotnet run
+```
 
-# In another terminal
+In another terminal:
+
+```bash
 cd services/auth-service/QuickBite.Auth.API
 dotnet run
+```
 
-# Similarly for other services...
-Access API Documentation
+Repeat for other services as needed.
 
-Open browser: http://localhost:5000/swagger (check actual port)
-See all available endpoints and test them
-🔗 How Services Communicate
+### Access API Documentation
+
+Open your browser at: `http://localhost:5000/swagger` (check actual port)
+
+## 🔗 How Services Communicate
+
 Services communicate through REST APIs:
 
-Frontend → API Gateway (single entry point)
-API Gateway → Auth Service (verify user)
-API Gateway → Restaurant Service (get restaurants)
-Cart Service → Menu Service (validate items exist)
-Order Service → Cart Service (fetch cart items)
-Order Service → Notification Service (send confirmation)
-Payment Service → Order Service (update payment status)
-🔐 Authentication Flow
-1. User enters email & password
-        ↓
-2. Auth Service validates credentials
-        ↓
-3. Auth Service generates JWT Token
-        ↓
-4. Token sent to frontend
-        ↓
-5. Frontend includes token in all future requests
-        ↓
-6. API Gateway verifies token
-        ↓
-7. Request processed by appropriate service
-📊 Database Schema
-Each service has its own database (following microservices principle):
+- Frontend → API Gateway
+- API Gateway → Auth Service
+- API Gateway → Restaurant Service
+- Cart Service → Menu Service
+- Order Service → Cart Service
+- Order Service → Notification Service
+- Payment Service → Order Service
 
-Auth Service: Stores users, passwords, roles
-Restaurant Service: Stores restaurant details, profiles
-Menu Service: Stores food items, prices
-Cart Service: Stores cart items temporarily
-Order Service: Stores order details, history
-Delivery Service: Stores delivery partner info
-Payment Service: Stores transaction records
-Review Service: Stores reviews and ratings
-🧪 Testing
+## 🔐 Authentication Flow
+
+1. User enters email & password
+2. Auth Service validates credentials
+3. Auth Service generates JWT token
+4. Token sent to frontend
+5. Frontend includes token in future requests
+6. API Gateway verifies token
+7. Request processed by the appropriate service
+
+## 📊 Database Schema
+
+Each service has its own database:
+
+- Auth Service: Stores users, passwords, roles
+- Restaurant Service: Stores restaurant details, profiles
+- Menu Service: Stores food items, prices
+- Cart Service: Stores cart items temporarily
+- Order Service: Stores order details, history
+- Delivery Service: Stores delivery partner info
+- Payment Service: Stores transaction records
+- Review Service: Stores reviews and ratings
+
+## 🧪 Testing
+
 Each service has a test project:
 
+```text
 services/Testing/
 ├── QuickBite.Auth.Tests/
 ├── QuickBite.Restaurant.Tests/
@@ -285,48 +294,69 @@ services/Testing/
 ├── QuickBite.Payment.Tests/
 ├── QuickBite.Notification.Tests/
 └── QuickBite.Review.Tests/
+```
+
 Run tests:
 
+```bash
 dotnet test
-🐛 Common Issues & Solutions
-Problem	Solution
-Service won't start	Check port is available, update connection strings
-Database not found	Ensure SQL Server is running, check appsettings.json
-401 Unauthorized	Make sure JWT token is valid and included in headers
-Service timeout	Check if dependent services are running
-📝 API Example: Ordering Food
-User logs in → Auth Service returns token
-Browse restaurants → Restaurant Service returns list
-View menu → Menu Service returns items
-Add to cart → Cart Service stores items
-Place order → Order Service creates order
-Payment → Payment Service processes payment
-Order confirmation → Notification Service sends message
-Delivery assignment → Delivery Service assigns partner
-Tracking → Notification Service updates status
-Order delivered → Review Service allows rating
-👥 User Roles
-Customer: Can browse, order, pay, review, track delivery
-Restaurant Owner: Can manage restaurant, add menu items, view orders
-Delivery Partner: Can accept orders, update delivery status
-Admin: Can approve restaurants, manage users, view reports
-🔄 Development Workflow
-Create feature branch
-Make changes in relevant service
-Write tests
-Test locally (run all services)
-Create Pull Request
-Code review
-Merge to main branch
-Deploy
-📞 Support
+```
+
+## 🐛 Common Issues & Solutions
+
+> **🔧 Troubleshooting tip:** Start here if a service fails to launch or if requests return unexpected status codes.
+
+| Problem             | Solution                                                  |
+| ------------------- | --------------------------------------------------------- |
+| Service won't start | Check port availability and update connection strings     |
+| Database not found  | Ensure SQL Server is running and check `appsettings.json` |
+| 401 Unauthorized    | Make sure JWT token is valid and included in headers      |
+| Service timeout     | Check if dependent services are running                   |
+
+> **✅ Pro tip:** Use separate terminal sessions for each microservice and validate individual startup logs first.
+
+## 📝 API Example: Ordering Food
+
+- User logs in → Auth Service returns token
+- Browse restaurants → Restaurant Service returns list
+- View menu → Menu Service returns items
+- Add to cart → Cart Service stores items
+- Place order → Order Service creates order
+- Payment → Payment Service processes payment
+- Order confirmation → Notification Service sends message
+- Delivery assignment → Delivery Service assigns partner
+- Tracking → Notification Service updates status
+- Order delivered → Review Service allows rating
+
+## 👥 User Roles
+
+- Customer: Browse, order, pay, review, track delivery
+- Restaurant Owner: Manage restaurant, add menu items, view orders
+- Delivery Partner: Accept orders, update delivery status
+- Admin: Approve restaurants, manage users, view reports
+
+## 🔄 Development Workflow
+
+- Create feature branch
+- Make changes in relevant service
+- Write tests
+- Test locally (run all services)
+- Create Pull Request
+- Code review
+- Merge to main branch
+- Deploy
+
+## 📞 Support
+
 For issues or questions:
 
-Check service logs
-Review API documentation (Swagger)
-Check test cases for usage examples
-Refer to individual service README files
-📜 License
-This project is part of QuickBite Food Delivery Application.
+- Check service logs
+- Review API documentation (Swagger)
+- Check test cases for usage examples
+- Refer to individual service README files
+
+## 📜 License
+
+This project is part of the QuickBite Food Delivery Application.
 
 Happy Coding! 🎉
