@@ -23,9 +23,10 @@ public class PaymentsController : ControllerBase
         _paymentService = paymentService;
     }
 
-    /// <summary>POST /api/v1/payments/process - process a payment for an order.</summary>
+    /// <summary>Process payment for an order (COD, CARD, UPI, or WALLET).</summary>
     [HttpPost("process")]
-    [SwaggerOperation(Summary = "Process payment", Description = "Charges the customer via the configured gateway and creates a Payment record.")]
+    [AllowAnonymous]
+    [SwaggerOperation(Summary = "Process payment", Description = "Creates payment record and charges gateway if applicable.")]
     [SwaggerResponse(201, "Payment processed", typeof(PaymentResponseDto))]
     [SwaggerResponse(400, "Invalid request")]
     public async Task<IActionResult> Process([FromBody] ProcessPaymentRequestDto request)
@@ -41,8 +42,9 @@ public class PaymentsController : ControllerBase
         }
     }
 
-    /// <summary>GET /api/v1/payments/byOrder/{orderId} - fetch the payment for an order.</summary>
+    /// <summary>Get payment record for a specific order.</summary>
     [HttpGet("byOrder/{orderId:guid}")]
+    [AllowAnonymous]
     [SwaggerOperation(Summary = "Get payment by order")]
     [SwaggerResponse(200, "Payment found", typeof(PaymentResponseDto))]
     [SwaggerResponse(404, "Payment not found")]
@@ -52,7 +54,7 @@ public class PaymentsController : ControllerBase
         return result is null ? NotFound("Payment not found.") : Ok(result);
     }
 
-    /// <summary>GET /api/v1/payments/byCustomer/{customerId} - all payments by a customer.</summary>
+    /// <summary>Get all payments for a customer.</summary>
     [HttpGet("byCustomer/{customerId:guid}")]
     [SwaggerOperation(Summary = "Get payments by customer")]
     [SwaggerResponse(200, "Payments fetched", typeof(IReadOnlyList<PaymentResponseDto>))]
@@ -62,9 +64,10 @@ public class PaymentsController : ControllerBase
         return Ok(result);
     }
 
-    /// <summary>POST /api/v1/payments/{paymentId}/refund - refund a captured payment.</summary>
+    /// <summary>Refund a PAID payment (wallet credit or gateway reversal).</summary>
     [HttpPost("{paymentId:guid}/refund")]
-    [SwaggerOperation(Summary = "Refund payment", Description = "Refunds a previously PAID payment. Wallet refunds credit the wallet; gateway refunds hit the SDK.")]
+    [AllowAnonymous]
+    [SwaggerOperation(Summary = "Refund payment", Description = "Refunds via wallet or gateway based on payment mode.")]
     [SwaggerResponse(200, "Payment refunded", typeof(PaymentResponseDto))]
     [SwaggerResponse(400, "Cannot refund in current state")]
     [SwaggerResponse(404, "Payment not found")]
@@ -81,7 +84,7 @@ public class PaymentsController : ControllerBase
         }
     }
 
-    /// <summary>PUT /api/v1/payments/{paymentId}/status - update a payment's status.</summary>
+    /// <summary>Update payment status (PENDING, PAID, FAILED, REFUNDED).</summary>
     [HttpPut("{paymentId:guid}/status")]
     [SwaggerOperation(Summary = "Update payment status")]
     [SwaggerResponse(200, "Status updated", typeof(PaymentResponseDto))]

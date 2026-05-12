@@ -36,6 +36,8 @@ public class OrderDbContext : DbContext
 
             entity.Property(x => x.OrderDate).IsRequired();
 
+            entity.Property(x => x.UpdatedAt).IsRequired();
+
             entity.Property(x => x.DeliveryAddress)
                   .HasMaxLength(500)
                   .IsRequired();

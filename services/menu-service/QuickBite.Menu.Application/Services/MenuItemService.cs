@@ -16,31 +16,9 @@ namespace QuickBite.Menu.Application.Services
             _menuItemRepository = menuItemRepository;
         }
 
-        // Returns all menu items
-        public async Task<IEnumerable<MenuItemResponseDto>> GetAllAsync()
+        // Converts database entity into response DTO.
+        private static MenuItemResponseDto MapToDto(MenuItem item)
         {
-            var items = await _menuItemRepository.GetAllAsync();
-
-            return items.Select(item => new MenuItemResponseDto
-            {
-                Id = item.Id,
-                Name = item.Name,
-                Description = item.Description,
-                Price = item.Price,
-                IsAvailable = item.IsAvailable,
-                ImageUrl = item.ImageUrl,
-                MenuCategoryId = item.MenuCategoryId
-            });
-        }
-
-        // Returns menu item by id
-        public async Task<MenuItemResponseDto?> GetByIdAsync(Guid id)
-        {
-            var item = await _menuItemRepository.GetByIdAsync(id);
-
-            if (item == null)
-                return null;
-
             return new MenuItemResponseDto
             {
                 Id = item.Id,
@@ -49,25 +27,39 @@ namespace QuickBite.Menu.Application.Services
                 Price = item.Price,
                 IsAvailable = item.IsAvailable,
                 ImageUrl = item.ImageUrl,
-                MenuCategoryId = item.MenuCategoryId
+                MenuCategoryId = item.MenuCategoryId,
+                RestaurantId = item.MenuCategory?.RestaurantId ?? Guid.Empty,
+                Category = item.MenuCategory?.Name ?? "Menu Items",
+                CategoryName = item.MenuCategory?.Name ?? "Menu Items"
             };
+        }
+
+        // Returns all menu items
+        public async Task<IEnumerable<MenuItemResponseDto>> GetAllAsync()
+        {
+            var items = await _menuItemRepository.GetAllAsync();
+            return items.Select(MapToDto);
+        }
+
+        // Returns menu item by id
+        public async Task<MenuItemResponseDto?> GetByIdAsync(Guid id)
+        {
+            var item = await _menuItemRepository.GetByIdAsync(id);
+            return item == null ? null : MapToDto(item);
         }
 
         // Returns menu items by category id
         public async Task<IEnumerable<MenuItemResponseDto>> GetByCategoryIdAsync(Guid categoryId)
         {
             var items = await _menuItemRepository.GetByCategoryIdAsync(categoryId);
+            return items.Select(MapToDto);
+        }
 
-            return items.Select(item => new MenuItemResponseDto
-            {
-                Id = item.Id,
-                Name = item.Name,
-                Description = item.Description,
-                Price = item.Price,
-                IsAvailable = item.IsAvailable,
-                ImageUrl = item.ImageUrl,
-                MenuCategoryId = item.MenuCategoryId
-            });
+        // Returns menu items for one selected restaurant only
+        public async Task<IEnumerable<MenuItemResponseDto>> GetByRestaurantIdAsync(Guid restaurantId)
+        {
+            var items = await _menuItemRepository.GetByRestaurantIdAsync(restaurantId);
+            return items.Select(MapToDto);
         }
 
         // Creates a new menu item
@@ -86,16 +78,9 @@ namespace QuickBite.Menu.Application.Services
 
             await _menuItemRepository.AddAsync(item);
 
-            return new MenuItemResponseDto
-            {
-                Id = item.Id,
-                Name = item.Name,
-                Description = item.Description,
-                Price = item.Price,
-                IsAvailable = item.IsAvailable,
-                ImageUrl = item.ImageUrl,
-                MenuCategoryId = item.MenuCategoryId
-            };
+            // Reload item with category data so RestaurantId and CategoryName are returned.
+            var createdItem = await _menuItemRepository.GetByIdAsync(item.Id);
+            return MapToDto(createdItem ?? item);
         }
 
         // Updates an existing menu item

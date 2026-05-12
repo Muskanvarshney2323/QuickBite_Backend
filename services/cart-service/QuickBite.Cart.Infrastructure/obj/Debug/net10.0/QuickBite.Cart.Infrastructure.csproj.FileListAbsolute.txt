@@ -1,3 +1,22 @@
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.deps.json
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.runtimeconfig.json
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Application.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Domain.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Domain.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Application.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBit.2D2CC4AD.Up2Date
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\refint\QuickBite.Cart.Infrastructure.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\QuickBite.Cart.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Infrastructure\obj\Debug\net10.0\ref\QuickBite.Cart.Infrastructure.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.deps.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.runtimeconfig.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Infrastructure\bin\Debug\net10.0\QuickBite.Cart.Infrastructure.dll

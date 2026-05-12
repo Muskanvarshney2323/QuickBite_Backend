@@ -1,3 +1,18 @@
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.deps.json
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Domain.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Domain.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.AssemblyInfoInputs.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.AssemblyInfo.cs
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBit.CA3712EC.Up2Date
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\refint\QuickBite.Cart.Application.dll
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\QuickBite.Cart.Application.pdb
+C:\Users\HP\Downloads\services\cart-service\QuickBite.Cart.Application\obj\Debug\net10.0\ref\QuickBite.Cart.Application.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.deps.json
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.dll
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\cart-service\QuickBite.Cart.Application\bin\Debug\net10.0\QuickBite.Cart.Application.pdb

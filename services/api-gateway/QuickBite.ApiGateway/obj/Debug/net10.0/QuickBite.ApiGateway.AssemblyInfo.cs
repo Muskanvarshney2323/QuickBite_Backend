@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.ApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8993a8c950cfdb70952a17065cf3bb4f2219366a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92bfb63404fde7cdcab82e0d634b1986019e9038")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.ApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.ApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

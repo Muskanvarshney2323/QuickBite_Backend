@@ -26,7 +26,9 @@ namespace QuickBite.Restaurant.Infrastructure.Repositories
         // Fetch all restaurants
         public async Task<IEnumerable<RestaurantEntity>> GetAllAsync()
         {
-            return await _context.Restaurants.ToListAsync();
+            return await _context.Restaurants
+                .OrderBy(r => r.Name)
+                .ToListAsync();
         }
 
         // Fetch restaurant by id
@@ -92,8 +94,14 @@ namespace QuickBite.Restaurant.Infrastructure.Repositories
         // Search restaurants by name
         public async Task<IEnumerable<RestaurantEntity>> SearchByNameAsync(string name)
         {
+            if (string.IsNullOrWhiteSpace(name))
+                return await GetAllAsync();
+
+            var keyword = name.Trim().ToLower();
+
             return await _context.Restaurants
-                .Where(r => r.Name.Contains(name))
+                .Where(r => r.Name.ToLower().Contains(keyword) || r.Cuisine.ToLower().Contains(keyword))
+                .OrderBy(r => r.Name)
                 .ToListAsync();
         }
     }

@@ -6,10 +6,10 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ----- CORS: let Flutter / React frontends call the gateway -----
+// ---------------- CORS ----------------
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
         policy.AllowAnyOrigin()
               .AllowAnyHeader()
@@ -17,29 +17,17 @@ builder.Services.AddCors(options =>
     });
 });
 
-// ----- YARP: load routes and clusters from appsettings.json -----
-// This is the actual reverse proxy. It reads the "ReverseProxy" section
-// and forwards incoming requests to the right microservice based on the URL path.
+// ---------------- YARP Reverse Proxy ----------------
 builder.Services
     .AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
-// ----- JWT Authentication (same settings as all microservices) -----
-// The gateway validates the token once, then forwards the request.
-// Each microservice will also validate again for safety.
+// ---------------- JWT Authentication ----------------
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
-var jwtKey = jwtSettings["Key"];
-var jwtIssuer = jwtSettings["Issuer"];
-var jwtAudience = jwtSettings["Audience"];
 
-if (string.IsNullOrWhiteSpace(jwtKey))
-    throw new Exception("JwtSettings:Key is missing in appsettings.json.");
-if (string.IsNullOrWhiteSpace(jwtIssuer))
-    throw new Exception("JwtSettings:Issuer is missing in appsettings.json.");
-if (string.IsNullOrWhiteSpace(jwtAudience))
-    throw new Exception("JwtSettings:Audience is missing in appsettings.json.");
-if (jwtKey.Length < 32)
-    throw new Exception("JwtSettings:Key must be at least 32 characters long.");
+var jwtKey = jwtSettings["Key"] ?? throw new Exception("JwtSettings:Key is missing.");
+var jwtIssuer = jwtSettings["Issuer"] ?? throw new Exception("JwtSettings:Issuer is missing.");
+var jwtAudience = jwtSettings["Audience"] ?? throw new Exception("JwtSettings:Audience is missing.");
 
 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
 
@@ -53,16 +41,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = signingKey,
-
             ValidateIssuer = true,
             ValidIssuer = jwtIssuer,
-
             ValidateAudience = true,
             ValidAudience = jwtAudience,
-
             ValidateLifetime = true,
             ClockSkew = TimeSpan.Zero,
-
             NameClaimType = ClaimTypes.Name,
             RoleClaimType = ClaimTypes.Role
         };
@@ -70,52 +54,80 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// ----- Swagger (gateway-level landing page) -----
+// ---------------- Swagger ----------------
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "QuickBite API Gateway",
         Version = "v1",
-        Description = "Single entry point for all QuickBite microservices. " +
-                      "Forwards /api/v1/auth -> Auth-Service, /api/v1/cart -> Cart-Service, etc."
+        Description = "Single entry point for all QuickBite microservices."
+    });
+
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "Enter token like this: Bearer your_token_here",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
     });
 });
 
 var app = builder.Build();
 
+// ---------------- Swagger UI ----------------
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+
+    app.UseSwaggerUI(options =>
+    {
+        options.RoutePrefix = "swagger";
+
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "QuickBite API Gateway");
+
+        options.SwaggerEndpoint("/auth/swagger/v1/swagger.json", "Auth Service");
+        options.SwaggerEndpoint("/restaurant/swagger/v1/swagger.json", "Restaurant Service");
+        options.SwaggerEndpoint("/menu/swagger/v1/swagger.json", "Menu Service");
+        options.SwaggerEndpoint("/cart/swagger/v1/swagger.json", "Cart Service");
+        options.SwaggerEndpoint("/order/swagger/v1/swagger.json", "Order Service");
+        options.SwaggerEndpoint("/payment/swagger/v1/swagger.json", "Payment Service");
+    });
 }
 
-app.UseCors();
+// ---------------- Middleware ----------------
+app.UseCors("AllowFrontend");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Friendly root page so people know the gateway is alive.
+// Only gateway test endpoint
 app.MapGet("/", () => Results.Ok(new
 {
     service = "QuickBite API Gateway",
     status = "running",
-    docs = "/swagger",
-    routes = new[]
-    {
-        "/api/v1/auth/**          -> Auth-Service (5234)",
-        "/api/v1/cart/**          -> Cart-Service (5111)",
-        "/api/v1/menu/**          -> Menu-Service (5281)",
-        "/api/v1/orders/**        -> Order-Service (5113)",
-        "/api/v1/payments/**      -> Payment-Service (5114)",
-        "/api/v1/restaurants/**   -> Restaurant-Service (5167)",
-        "/api/v1/agents/**        -> Delivery-Agent-Service (5115)",
-        "/api/v1/reviews/**       -> Review-Service (5116)",
-        "/api/v1/notifications/** -> Notification-Service (5117)"
-    }
+    swagger = "http://localhost:5000/swagger"
 }));
 
-// Tell YARP to handle everything else.
+// Real APIs are forwarded by YARP from appsettings.json
 app.MapReverseProxy();
 
 app.Run();
