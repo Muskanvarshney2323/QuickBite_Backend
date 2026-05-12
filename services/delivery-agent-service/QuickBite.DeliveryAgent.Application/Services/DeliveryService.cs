@@ -181,4 +181,14 @@ public class DeliveryService : IDeliveryService
             TotalDeliveries = agent.TotalDeliveries
         };
     }
+    // TODO: Implement GetDeliveryHistoryAsync by integrating with Order Service API
+    // For now, returns empty collection since delivery agents belong to this service
+    // but orders belong to the Order Service and require inter-service communication.
+    public async Task<IEnumerable<object>> GetDeliveryHistoryAsync(Guid agentId)
+    {
+        // This should call the Order Service API to fetch delivery history for the agent
+        // Placeholder: return empty for now
+        await Task.Delay(0);
+        return new List<object>();
+    }
 }

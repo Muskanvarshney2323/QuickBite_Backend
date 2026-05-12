@@ -20,14 +20,15 @@ namespace QuickBite.Restaurant.Application.Services
             var restaurant = new RestaurantEntity
             {
                 Id = Guid.NewGuid(),
-                Name = request.Name,
-                Description = request.Description,
-                Cuisine = request.Cuisine,
-                Address = request.Address,
-                City = request.City,
-                Phone = request.Phone,
+                Name = request.Name.Trim(),
+                Description = request.Description.Trim(),
+                Cuisine = request.Cuisine.Trim(),
+                Address = request.Address.Trim(),
+                City = request.City.Trim(),
+                Phone = request.Phone.Trim(),
                 OwnerId = request.OwnerId,
-                IsApproved = false,
+                // Demo-friendly default: created restaurants are visible to customers immediately.
+                IsApproved = true,
                 IsOpen = true,
                 MinimumOrderAmount = request.MinimumOrderAmount,
                 EstimatedDeliveryTimeInMinutes = request.EstimatedDeliveryTimeInMinutes,
@@ -65,12 +66,12 @@ namespace QuickBite.Restaurant.Application.Services
             if (restaurant == null)
                 return false;
 
-            restaurant.Name = request.Name;
-            restaurant.Description = request.Description;
-            restaurant.Cuisine = request.Cuisine;
-            restaurant.Address = request.Address;
-            restaurant.City = request.City;
-            restaurant.Phone = request.Phone;
+            restaurant.Name = request.Name.Trim();
+            restaurant.Description = request.Description.Trim();
+            restaurant.Cuisine = request.Cuisine.Trim();
+            restaurant.Address = request.Address.Trim();
+            restaurant.City = request.City.Trim();
+            restaurant.Phone = request.Phone.Trim();
             restaurant.MinimumOrderAmount = request.MinimumOrderAmount;
             restaurant.EstimatedDeliveryTimeInMinutes = request.EstimatedDeliveryTimeInMinutes;
 

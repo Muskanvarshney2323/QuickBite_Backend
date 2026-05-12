@@ -67,6 +67,9 @@ namespace QuickBite.Order.Infrastructure.Migrations
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("numeric(18,2)");
 
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");

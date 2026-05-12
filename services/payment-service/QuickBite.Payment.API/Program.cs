@@ -4,12 +4,29 @@ using Microsoft.OpenApi.Models;
 using QuickBite.Payment.Infrastructure.DependencyInjection;
 using System.Security.Claims;
 using System.Text;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Controllers + API explorer
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Allows frontend/order-service to send enum values like "UPI", "CARD", or "CASH_ON_DELIVERY".
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 builder.Services.AddEndpointsApiExplorer();
+
+// Allow React frontend / API Gateway calls during local development.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontendCors", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 // Infrastructure (DbContext via Npgsql, repositories, services, gateway stub)
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -131,6 +148,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("FrontendCors");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

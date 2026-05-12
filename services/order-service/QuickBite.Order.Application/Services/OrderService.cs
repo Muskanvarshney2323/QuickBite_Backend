@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using QuickBite.Order.Application.DTOs;
 using QuickBite.Order.Application.Interfaces;
 using QuickBite.Order.Domain.Entities;
@@ -22,21 +23,25 @@ public class OrderService : IOrderService
         OrderStatus.PLACED,
         OrderStatus.CONFIRMED,
         OrderStatus.PREPARING,
-        OrderStatus.PICKED_UP
+        OrderStatus.PICKED_UP,
+        OrderStatus.OUT_FOR_DELIVERY
     };
 
     private readonly IOrderRepository _orderRepository;
     private readonly IPaymentGateway _paymentGateway;
     private readonly IDeliveryDispatcher _deliveryDispatcher;
+    private readonly ILogger<OrderService> _logger;
 
     public OrderService(
         IOrderRepository orderRepository,
         IPaymentGateway paymentGateway,
-        IDeliveryDispatcher deliveryDispatcher)
+        IDeliveryDispatcher deliveryDispatcher,
+        ILogger<OrderService> logger)
     {
         _orderRepository = orderRepository;
         _paymentGateway = paymentGateway;
         _deliveryDispatcher = deliveryDispatcher;
+        _logger = logger;
     }
 
     /// <inheritdoc />
@@ -53,6 +58,10 @@ public class OrderService : IOrderService
         var finalAmount = totalAmount - discount;
 
         var estimatedMinutes = request.EstimatedMinutes ?? DefaultEstimatedMinutes;
+
+        _logger.LogInformation("Creating order for customer {CustomerId} at restaurant {RestaurantId}. " +
+            "Items={ItemCount}, TotalAmount={TotalAmount}, Discount={Discount}, FinalAmount={FinalAmount}, PaymentMode={Mode}",
+            request.CustomerId, request.RestaurantId, request.Items.Count, totalAmount, discount, finalAmount, request.ModeOfPayment);
 
         var order = new Domain.Entities.Order
         {
@@ -82,25 +91,61 @@ public class OrderService : IOrderService
             });
         }
 
+        // Save order to database first with PLACED status.
         await _orderRepository.AddOrderAsync(order);
         await _orderRepository.SaveChangesAsync();
+        _logger.LogInformation("Order {OrderId} created successfully with status PLACED", order.Id);
 
-        // Process payment via Payment-Service (stubbed by default).
-        var paid = await _paymentGateway.ProcessPaymentAsync(order.Id, order.FinalAmount, order.ModeOfPayment);
-        if (paid)
+        try
         {
-            order.OrderStatus = OrderStatus.CONFIRMED;
+            // Process payment via Payment-Service.
+            // For CASH_ON_DELIVERY, payment gateway returns true without hitting the payment service.
+            // For other modes, order-service calls payment-service HTTP endpoint.
+            _logger.LogInformation("Starting payment processing for order {OrderId}", order.Id);
+            var paid = await _paymentGateway.ProcessPaymentAsync(order.Id, order.CustomerId, order.FinalAmount, order.ModeOfPayment);
+
+            if (paid)
+            {
+                order.OrderStatus = OrderStatus.CONFIRMED;
+                _logger.LogInformation("Payment successful for order {OrderId}. Order status changed to CONFIRMED", order.Id);
+            }
+            else
+            {
+                _logger.LogWarning("Payment processing returned false for order {OrderId}. Order remains in PLACED status", order.Id);
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Exception occurred while processing payment for order {OrderId}. Order remains in PLACED status", order.Id);
+            // Order remains in PLACED status; payment can be retried
         }
 
-        // Ask Delivery-Service for an agent (stubbed by default).
-        var agentId = await _deliveryDispatcher.AssignAgentAsync(order.Id, order.RestaurantId, order.DeliveryAddress);
-        if (agentId.HasValue)
+        try
         {
-            order.DeliveryAgentId = agentId;
+            // Ask Delivery-Service for an agent assignment.
+            _logger.LogInformation("Requesting delivery agent assignment for order {OrderId}", order.Id);
+            var agentId = await _deliveryDispatcher.AssignAgentAsync(order.Id, order.RestaurantId, order.DeliveryAddress);
+
+            if (agentId.HasValue)
+            {
+                order.DeliveryAgentId = agentId;
+                _logger.LogInformation("Delivery agent {AgentId} assigned to order {OrderId}", agentId, order.Id);
+            }
+            else
+            {
+                _logger.LogWarning("No delivery agent available for order {OrderId}", order.Id);
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Exception occurred while assigning delivery agent to order {OrderId}", order.Id);
+            // Order continues without agent assignment; can be assigned later
         }
 
         _orderRepository.UpdateOrder(order);
         await _orderRepository.SaveChangesAsync();
+
+        _logger.LogInformation("Order {OrderId} finalized with status {Status}", order.Id, order.OrderStatus);
 
         return MapOrderToResponse(order);
     }
@@ -155,7 +200,11 @@ public class OrderService : IOrderService
             throw new InvalidOperationException("Cannot update status of a delivered order.");
 
         // Use the domain method declared on the spec class diagram.
+        var oldStatus = order.OrderStatus;
         order.UpdateStatus(request.NewStatus.ToString());
+
+        _logger.LogInformation("Order {OrderId} status changed from {OldStatus} to {NewStatus}",
+            orderId, oldStatus, order.OrderStatus);
 
         _orderRepository.UpdateOrder(order);
         await _orderRepository.SaveChangesAsync();
@@ -174,6 +223,9 @@ public class OrderService : IOrderService
 
         if (request.DeliveryAgentId == Guid.Empty)
             throw new InvalidOperationException("DeliveryAgentId is required.");
+
+        _logger.LogInformation("Assigning delivery agent {AgentId} to order {OrderId}",
+            request.DeliveryAgentId, orderId);
 
         order.DeliveryAgentId = request.DeliveryAgentId;
         _orderRepository.UpdateOrder(order);
@@ -194,15 +246,44 @@ public class OrderService : IOrderService
         if (order.OrderStatus == OrderStatus.CANCELLED)
             throw new InvalidOperationException("Order is already cancelled.");
 
+        _logger.LogInformation("Cancelling order {OrderId}. Current status: {Status}, PaymentMode: {PaymentMode}, Amount: {Amount}",
+            orderId, order.OrderStatus, order.ModeOfPayment, order.FinalAmount);
+
         // Trigger refund only for prepaid orders.
         if (order.ModeOfPayment != PaymentMode.CASH_ON_DELIVERY && order.FinalAmount > 0)
         {
-            await _paymentGateway.TriggerRefundAsync(order.Id, order.FinalAmount, order.ModeOfPayment);
+            try
+            {
+                _logger.LogInformation("Triggering refund for order {OrderId} (amount: {Amount})",
+                    orderId, order.FinalAmount);
+
+                var refundSuccess = await _paymentGateway.TriggerRefundAsync(order.Id, order.FinalAmount, order.ModeOfPayment);
+
+                if (refundSuccess)
+                {
+                    _logger.LogInformation("Refund completed successfully for order {OrderId}", orderId);
+                }
+                else
+                {
+                    _logger.LogWarning("Refund failed for order {OrderId}. Order will still be cancelled but customer may need manual refund", orderId);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception occurred while triggering refund for order {OrderId}", orderId);
+                // Order will still be cancelled; refund error is logged for manual intervention
+            }
+        }
+        else
+        {
+            _logger.LogInformation("Skipping refund for order {OrderId}: PaymentMode={PaymentMode}", orderId, order.ModeOfPayment);
         }
 
         order.OrderStatus = OrderStatus.CANCELLED;
         _orderRepository.UpdateOrder(order);
         await _orderRepository.SaveChangesAsync();
+
+        _logger.LogInformation("Order {OrderId} cancelled successfully", orderId);
 
         return MapOrderToResponse(order);
     }
@@ -218,6 +299,9 @@ public class OrderService : IOrderService
 
         if (previous.OrderItems.Count == 0)
             throw new InvalidOperationException("The previous order has no items to reorder.");
+
+        _logger.LogInformation("Creating new order from previous order {PreviousOrderId} for customer {CustomerId}",
+            request.PreviousOrderId, request.CustomerId);
 
         var placement = new PlaceOrderRequestDto
         {

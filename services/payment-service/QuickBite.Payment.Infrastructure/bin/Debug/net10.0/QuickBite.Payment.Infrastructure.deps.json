@@ -598,6 +598,7 @@
       },
       "QuickBite.Payment.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.6",
           "QuickBite.Payment.Domain": "1.0.0"
         },
         "runtime": {

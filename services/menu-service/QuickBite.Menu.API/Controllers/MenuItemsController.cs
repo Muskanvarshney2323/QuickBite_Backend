@@ -59,6 +59,18 @@ namespace QuickBite.Menu.API.Controllers
         }
 
         /// <summary>
+        /// Get menu items for one restaurant only.
+        /// This fixes the issue where one restaurant's items were visible in every restaurant.
+        /// </summary>
+        [HttpGet("restaurant/{restaurantId:guid}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetByRestaurantId(Guid restaurantId)
+        {
+            var items = await _menuItemService.GetByRestaurantIdAsync(restaurantId);
+            return Ok(items);
+        }
+
+        /// <summary>
         /// Create a new menu item
         /// </summary>
         [Authorize(Roles = "Admin,RestaurantOwner")]
@@ -68,6 +80,9 @@ namespace QuickBite.Menu.API.Controllers
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Create([FromBody] CreateMenuItemRequestDto request)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var createdItem = await _menuItemService.CreateAsync(request);
 
             return CreatedAtAction(nameof(GetById), new { id = createdItem.Id }, createdItem);

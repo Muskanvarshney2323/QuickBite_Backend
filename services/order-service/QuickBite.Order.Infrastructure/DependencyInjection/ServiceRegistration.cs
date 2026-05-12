@@ -26,7 +26,7 @@ public static class ServiceRegistration
 
         // Stubs for cross-service integrations. Swap these for HTTP-backed
         // adapters when Payment-Service and Delivery-Service are wired in.
-        services.AddScoped<IPaymentGateway, StubPaymentGateway>();
+        services.AddHttpClient<IPaymentGateway, HttpPaymentGateway>();
         services.AddScoped<IDeliveryDispatcher, StubDeliveryDispatcher>();
 
         return services;

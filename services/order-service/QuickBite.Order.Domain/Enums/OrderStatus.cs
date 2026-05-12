@@ -1,7 +1,7 @@
 namespace QuickBite.Order.Domain.Enums;
 
 /// <summary>
-/// Lifecycle status of an order, exactly as listed in the Order-Service spec.
+/// Lifecycle status of an order.
 /// </summary>
 public enum OrderStatus
 {
@@ -9,6 +9,7 @@ public enum OrderStatus
     CONFIRMED = 1,
     PREPARING = 2,
     PICKED_UP = 3,
-    DELIVERED = 4,
-    CANCELLED = 5
+    OUT_FOR_DELIVERY = 4,
+    DELIVERED = 5,
+    CANCELLED = 6
 }

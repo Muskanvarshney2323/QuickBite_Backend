@@ -22,7 +22,7 @@ public class Payment : BaseEntity
     /// <summary>Current status of the payment (PENDING / PAID / REFUNDED / FAILED).</summary>
     public PaymentStatus Status { get; set; } = PaymentStatus.PENDING;
 
-    /// <summary>How the customer paid (CARD / UPI / WALLET / COD).</summary>
+    /// <summary>How the customer paid (CASH_ON_DELIVERY / UPI / CARD / WALLET / NET_BANKING).</summary>
     public PaymentMode Mode { get; set; }
 
     /// <summary>Identifier returned by the upstream gateway (Razorpay / Stripe / wallet ledger).</summary>
