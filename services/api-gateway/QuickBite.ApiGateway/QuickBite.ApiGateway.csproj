@@ -11,8 +11,7 @@
     <PackageReference Include="Yarp.ReverseProxy" Version="2.3.0" />
 
     <!-- JWT so the gateway can validate tokens before forwarding to services. -->
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
-
+<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
     <!-- Swagger for gateway-level documentation. -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
