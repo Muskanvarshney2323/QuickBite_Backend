@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.Notification.API</name>
+    </assembly>
+    <members>
+        <member name="T:QuickBite.Notification.API.Controllers.NotificationController">
+            <summary>
+            API endpoints for notifications.
+            Route: /api/v1/notifications
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

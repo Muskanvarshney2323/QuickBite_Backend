@@ -1,0 +1,31 @@
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.deps.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Domain.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Domain.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.csproj.AssemblyReference.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.AssemblyInfoInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.csproj.CoreCompileInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.sourcelink.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBit.85D24A84.Up2Date
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\refint\QuickBite.Review.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\ref\QuickBite.Review.Application.dll
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.deps.json
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.dll
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Application.pdb
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Domain.dll
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\bin\Debug\net10.0\QuickBite.Review.Domain.pdb
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.AssemblyInfoInputs.cache
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.AssemblyInfo.cs
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBit.85D24A84.Up2Date
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.dll
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\refint\QuickBite.Review.Application.dll
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\QuickBite.Review.Application.pdb
+C:\Users\HP\Downloads\services\review-service\QuickBite.Review.Application\obj\Debug\net10.0\ref\QuickBite.Review.Application.dll

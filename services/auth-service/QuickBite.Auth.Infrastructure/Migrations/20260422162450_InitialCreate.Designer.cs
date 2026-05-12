@@ -13,6 +13,7 @@ namespace QuickBite.Auth.Infrastructure.Migrations
 {
     [DbContext(typeof(AuthDbContext))]
     [Migration("20260422162450_InitialCreate")]
+    [Migration("20260423084647_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

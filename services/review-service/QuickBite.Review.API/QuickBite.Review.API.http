@@ -1,0 +1,6 @@
+@QuickBite.Review.API_HostAddress = http://localhost:5116
+
+GET {{QuickBite.Review.API_HostAddress}}/api/v1/reviews/all
+Accept: application/json
+
+###

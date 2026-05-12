@@ -33,7 +33,7 @@ namespace QuickBite.Auth.Application.Services
                 Email = email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                 Phone = request.Phone.Trim(),
-                Role = string.IsNullOrWhiteSpace(request.Role) ? "Customer" : request.Role.Trim(),
+                Role = NormalizeRole(request.Role),
                 IsActive = true,
                 CreatedAt = DateTime.UtcNow
             };
@@ -171,6 +171,34 @@ namespace QuickBite.Auth.Application.Services
             }
 
             return Task.CompletedTask;
+        }
+
+        private static string NormalizeRole(string? role)
+        {
+            var normalized = (role ?? string.Empty).Trim().ToUpperInvariant();
+
+            return normalized switch
+            {
+                "ADMIN" => "Admin",
+                "RESTAURANT" => "RestaurantOwner",
+                "RESTAURANTOWNER" => "RestaurantOwner",
+                "RESTAURANT_OWNER" => "RestaurantOwner",
+                "OWNER" => "RestaurantOwner",
+
+                // Frontend sends DeliveryPartner, so backend must save the same role.
+                "AGENT" => "DeliveryPartner",
+                "DELIVERY" => "DeliveryPartner",
+                "DELIVERYPARTNER" => "DeliveryPartner",
+                "DELIVERY_PARTNER" => "DeliveryPartner",
+                "DELIVERY PARTNER" => "DeliveryPartner",
+                "DELIVERYAGENT" => "DeliveryPartner",
+                "DELIVERY_AGENT" => "DeliveryPartner",
+                "DELIVERY AGENT" => "DeliveryPartner",
+
+                "CUSTOMER" => "Customer",
+                "USER" => "Customer",
+                _ => "Customer"
+            };
         }
 
         private static UserResponseDto MapToUserResponse(User user)

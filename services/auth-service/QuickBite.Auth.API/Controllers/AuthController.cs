@@ -16,21 +16,27 @@ namespace QuickBite.Auth.API.Controllers
         {
             _authService = authService;
         }
-
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
             var result = await _authService.RegisterAsync(request);
-            return Ok(new { message = result });
+            var token = await _authService.LoginAsync(new LoginRequestDto
+            {
+                Email = request.Email,
+                Password = request.Password
+            });
+            var user = await _authService.GetUserByEmailAsync(request.Email);
+
+            return Ok(new { message = result, token, user });
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
             var token = await _authService.LoginAsync(request);
-            return Ok(new { token });
+            var user = await _authService.GetUserByEmailAsync(request.Email);
+            return Ok(new { token, user });
         }
-
         [Authorize]
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] LogoutRequestDto? request)
@@ -170,7 +176,7 @@ namespace QuickBite.Auth.API.Controllers
             return Ok(new { message = "Welcome Customer" });
         }
 
-        [Authorize(Roles = "Admin,Owner")]
+        [Authorize(Roles = "Admin,RestaurantOwner")]
         [HttpGet("admin-or-owner")]
         public IActionResult AdminOrOwner()
         {

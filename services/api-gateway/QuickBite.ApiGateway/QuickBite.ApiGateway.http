@@ -1,0 +1,15 @@
+@QuickBite.ApiGateway_HostAddress = http://localhost:5000
+
+### Gateway health check
+GET {{QuickBite.ApiGateway_HostAddress}}/
+Accept: application/json
+
+### Through the gateway: list all agents (forwards to delivery-agent-service on 5115)
+GET {{QuickBite.ApiGateway_HostAddress}}/api/v1/agents/activeDeliveries
+Accept: application/json
+
+### Through the gateway: list all notifications (forwards to notification-service on 5117)
+GET {{QuickBite.ApiGateway_HostAddress}}/api/v1/notifications/all
+Accept: application/json
+
+###
