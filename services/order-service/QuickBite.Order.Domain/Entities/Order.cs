@@ -47,6 +47,9 @@ public class Order : BaseEntity
     /// <summary>Optional special instructions from the customer.</summary>
     public string? SpecialInstructions { get; set; }
 
+    /// <summary>Last time order status was updated.</summary>
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
     /// <summary>Snapshot of items in this order (immutable once order is placed).</summary>
     public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
@@ -62,5 +65,8 @@ public class Order : BaseEntity
             throw new ArgumentException($"Unknown order status '{newStatus}'.", nameof(newStatus));
 
         OrderStatus = parsed;
+
+        // Save latest update time
+        UpdatedAt = DateTime.UtcNow;
     }
 }

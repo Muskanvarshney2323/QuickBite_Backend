@@ -10,5 +10,10 @@ namespace QuickBite.Menu.Application.DTOs.MenuItem
         public bool IsAvailable { get; set; }
         public string? ImageUrl { get; set; }
         public Guid MenuCategoryId { get; set; }
+
+        // These fields help the frontend filter and display menu items correctly.
+        public Guid RestaurantId { get; set; }
+        public string Category { get; set; } = string.Empty;
+        public string CategoryName { get; set; } = string.Empty;
     }
 }

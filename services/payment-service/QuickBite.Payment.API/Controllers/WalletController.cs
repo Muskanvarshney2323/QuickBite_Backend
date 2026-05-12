@@ -23,7 +23,7 @@ public class WalletController : ControllerBase
         _paymentService = paymentService;
     }
 
-    /// <summary>GET /api/v1/wallet/balance/{customerId} - get the customer's wallet balance.</summary>
+    /// <summary> get the customer's wallet balance.</summary>
     [HttpGet("balance/{customerId:guid}")]
     [SwaggerOperation(Summary = "Get wallet balance", Description = "Returns the customer's spendable wallet balance. Creates a wallet on first call.")]
     [SwaggerResponse(200, "Balance returned", typeof(WalletBalanceResponseDto))]
@@ -35,7 +35,7 @@ public class WalletController : ControllerBase
         return Ok(result);
     }
 
-    /// <summary>POST /api/v1/wallet/addToWallet - top up the customer's wallet.</summary>
+    /// <summary> top up the customer's wallet.</summary>
     [HttpPost("addToWallet")]
     [SwaggerOperation(Summary = "Top up wallet", Description = "Charges the funding source via the gateway and credits the wallet.")]
     [SwaggerResponse(200, "Wallet topped up", typeof(WalletBalanceResponseDto))]
@@ -53,7 +53,7 @@ public class WalletController : ControllerBase
         }
     }
 
-    /// <summary>POST /api/v1/wallet/payFromWallet - pay for an order from the wallet balance.</summary>
+    /// <summary>  pay for an order from the wallet balance.</summary>
     [HttpPost("payFromWallet")]
     [SwaggerOperation(Summary = "Pay from wallet", Description = "Validates sufficient balance, debits the wallet, and creates a PAID Payment record.")]
     [SwaggerResponse(201, "Payment created", typeof(PaymentResponseDto))]
@@ -75,7 +75,7 @@ public class WalletController : ControllerBase
         }
     }
 
-    /// <summary>GET /api/v1/wallet/statements/{customerId} - get the customer's wallet ledger.</summary>
+    /// <summary>  get the customer's wallet ledger.</summary>
     [HttpGet("statements/{customerId:guid}")]
     [SwaggerOperation(Summary = "Get wallet statements", Description = "Returns the wallet ledger entries (deposits + debits), newest first.")]
     [SwaggerResponse(200, "Statements returned", typeof(IReadOnlyList<WalletStatementResponseDto>))]

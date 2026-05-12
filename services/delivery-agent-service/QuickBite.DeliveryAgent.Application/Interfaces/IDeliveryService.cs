@@ -49,4 +49,7 @@ public interface IDeliveryService
 
     /// <summary>All agents currently on an active delivery (not available).</summary>
     Task<IReadOnlyList<DeliveryAgentResponseDto>> GetActiveDeliveriesAsync();
+
+    /// <summary>Fetch the delivery history of an agent.</summary>
+    Task<IEnumerable<object>> GetDeliveryHistoryAsync(Guid agentId);
 }

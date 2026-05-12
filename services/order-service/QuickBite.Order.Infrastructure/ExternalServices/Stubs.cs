@@ -17,7 +17,7 @@ public class StubPaymentGateway : IPaymentGateway
         _logger = logger;
     }
 
-    public Task<bool> ProcessPaymentAsync(Guid orderId, decimal amount, PaymentMode mode)
+    public Task<bool> ProcessPaymentAsync(Guid orderId, Guid customerId, decimal amount, PaymentMode mode)
     {
         _logger.LogInformation("[StubPaymentGateway] Processing payment for order {OrderId}: amount={Amount} mode={Mode}",
             orderId, amount, mode);

@@ -130,4 +130,18 @@ public class DeliveryController : ControllerBase
         var result = await _deliveryService.GetActiveDeliveriesAsync();
         return Ok(result);
     }
+    
+
+    // Get completed delivery history of an agent.
+    [HttpGet("{agentId:guid}/history")]
+    [SwaggerOperation(Summary = "Get delivery history")]
+    public async Task<IActionResult> GetDeliveryHistory(Guid agentId)
+    {
+        var result = await _deliveryService.GetDeliveryHistoryAsync(agentId);
+
+        if (result is null)
+            return NotFound("No delivery history found.");
+
+        return Ok(result);
+    }
 }

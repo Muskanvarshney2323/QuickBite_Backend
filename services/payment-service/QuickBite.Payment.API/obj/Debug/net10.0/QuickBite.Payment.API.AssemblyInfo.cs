@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Payment.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaf0358eeb7b6b9f520bb8ad6ddeea92d7718ee6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92bfb63404fde7cdcab82e0d634b1986019e9038")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Payment.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Payment.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -67,6 +67,12 @@
             Get menu items by category ID
             </summary>
         </member>
+        <member name="M:QuickBite.Menu.API.Controllers.MenuItemsController.GetByRestaurantId(System.Guid)">
+            <summary>
+            Get menu items for one restaurant only.
+            This fixes the issue where one restaurant's items were visible in every restaurant.
+            </summary>
+        </member>
         <member name="M:QuickBite.Menu.API.Controllers.MenuItemsController.Create(QuickBite.Menu.Application.DTOs.MenuItem.CreateMenuItemRequestDto)">
             <summary>
             Create a new menu item

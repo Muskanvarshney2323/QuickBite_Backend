@@ -1,0 +1,91 @@
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\appsettings.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.staticwebassets.endpoints.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.exe
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.deps.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.runtimeconfig.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.pdb
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\System.IO.Hashing.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Yarp.ReverseProxy.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.AssemblyInfoInputs.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.AssemblyInfo.cs
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\scopedcss\bundle\QuickBite.ApiGateway.styles.css
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBit.C1FBB8F0.Up2Date
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\refint\QuickBite.ApiGateway.dll
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.pdb
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.genruntimeconfig.cache
+C:\Users\HP\Downloads\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\ref\QuickBite.ApiGateway.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\appsettings.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.staticwebassets.endpoints.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.exe
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.deps.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.runtimeconfig.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\QuickBite.ApiGateway.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\System.IO.Hashing.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net10.0\Yarp.ReverseProxy.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.csproj.AssemblyReference.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.AssemblyInfoInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.sourcelink.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\scopedcss\bundle\QuickBite.ApiGateway.styles.css
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBit.C1FBB8F0.Up2Date
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\refint\QuickBite.ApiGateway.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\QuickBite.ApiGateway.genruntimeconfig.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net10.0\ref\QuickBite.ApiGateway.dll
