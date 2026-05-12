@@ -18,8 +18,9 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
             modelBuilder
+                .HasAnnotation("ProductVersion", "10.0.6")
+
                 .HasAnnotation("ProductVersion", "10.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
@@ -77,7 +78,6 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
 
                     b.ToTable("Restaurants");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

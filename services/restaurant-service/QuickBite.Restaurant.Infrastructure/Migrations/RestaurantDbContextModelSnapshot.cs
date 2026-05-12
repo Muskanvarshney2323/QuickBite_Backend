@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using QuickBite.Restaurant.Infrastructure.Data;
 
-#nullable disable
 
 namespace QuickBite.Restaurant.Infrastructure.Migrations
 {
@@ -15,8 +14,8 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
             modelBuilder
+                .HasAnnotation("ProductVersion", "10.0.6")
                 .HasAnnotation("ProductVersion", "10.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
@@ -74,7 +73,6 @@ namespace QuickBite.Restaurant.Infrastructure.Migrations
 
                     b.ToTable("Restaurants");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

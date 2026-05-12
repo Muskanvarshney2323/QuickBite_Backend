@@ -7,6 +7,7 @@ using QuickBite.Auth.Application.Services;
 using QuickBite.Auth.Infrastructure.Context;
 using QuickBite.Auth.Infrastructure.Repositories;
 using QuickBite.Auth.Infrastructure.Security;
+using System.Security.Claims;
 using System.Text;
 
 namespace QuickBite.Auth.API.Extensions
@@ -28,22 +29,41 @@ namespace QuickBite.Auth.API.Extensions
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
             var jwtSettings = configuration.GetSection("JwtSettings");
+
             var key = jwtSettings["Key"];
+            var issuer = jwtSettings["Issuer"];
+            var audience = jwtSettings["Audience"];
+
+            if (string.IsNullOrWhiteSpace(key))
+            {
+                throw new Exception("JWT Key is missing in appsettings.json.");
+            }
+
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
+                    options.RequireHttpsMetadata = false;
+                    options.SaveToken = true;
+
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuer = true,
+                        ValidIssuer = issuer,
+
                         ValidateAudience = true,
+                        ValidAudience = audience,
+
                         ValidateLifetime = true,
+
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = jwtSettings["Issuer"],
-                        ValidAudience = jwtSettings["Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key!)),
-                        NameClaimType = System.Security.Claims.ClaimTypes.Name,
-                        RoleClaimType = System.Security.Claims.ClaimTypes.Role
+                        IssuerSigningKey = securityKey,
+
+                        ClockSkew = TimeSpan.Zero,
+
+                        NameClaimType = ClaimTypes.Name,
+                        RoleClaimType = ClaimTypes.Role
                     };
                 });
 
@@ -69,12 +89,21 @@ namespace QuickBite.Auth.API.Extensions
 
                 options.AddSecurityDefinition(schemeId, new OpenApiSecurityScheme
                 {
+<<<<<<< HEAD
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter token like: Bearer {your JWT token}"
+=======
                     Type = SecuritySchemeType.Http,
                     Scheme = "bearer",
                     BearerFormat = "JWT",
                     Name = "Authorization",
                     In = ParameterLocation.Header,
                     Description = "Enter: Bearer {your JWT token}"
+>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
                 });
 
                 options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
