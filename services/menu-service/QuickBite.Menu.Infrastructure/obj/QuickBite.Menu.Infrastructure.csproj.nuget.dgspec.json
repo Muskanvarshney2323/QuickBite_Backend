@@ -723,13 +723,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
+<<<<<<< HEAD
               "version": "[10.0.6, )"
+=======
+              "version": "[10.0.7, )"
+>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
+<<<<<<< HEAD
               "version": "[10.0.6, )"
+=======
+              "version": "[10.0.7, )"
+>>>>>>> b526e0386aecaa83ff9113f788e89ce1d55c94ef
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
