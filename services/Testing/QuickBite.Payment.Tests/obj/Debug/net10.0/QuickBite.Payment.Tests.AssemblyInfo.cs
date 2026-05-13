@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Payment.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aa0592964e0d6f4faa858772697ac53c53585ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53af3d1d0c92170ee27ccd98388a3faa3bcd8abd")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Payment.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Payment.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

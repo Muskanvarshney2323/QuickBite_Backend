@@ -29,7 +29,7 @@ namespace QuickBite.Auth.API.Extensions
 
             // Register services
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
-            services.AddScoped<AuthService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             return services;
         }
@@ -41,7 +41,7 @@ namespace QuickBite.Auth.API.Extensions
         {
             var jwtSettings = configuration.GetSection("JwtSettings");
 
-            var secretKey = jwtSettings["Secret"];
+            var secretKey = jwtSettings["Key"];
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

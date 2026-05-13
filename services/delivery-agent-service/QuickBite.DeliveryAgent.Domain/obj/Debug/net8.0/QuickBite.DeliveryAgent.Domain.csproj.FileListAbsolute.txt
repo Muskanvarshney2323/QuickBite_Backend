@@ -1,0 +1,12 @@
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net8.0\QuickBite.DeliveryAgent.Domain.deps.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net8.0\QuickBite.DeliveryAgent.Domain.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\bin\Debug\net8.0\QuickBite.DeliveryAgent.Domain.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.AssemblyInfoInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.sourcelink.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\refint\QuickBite.DeliveryAgent.Domain.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\QuickBite.DeliveryAgent.Domain.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\delivery-agent-service\QuickBite.DeliveryAgent.Domain\obj\Debug\net8.0\ref\QuickBite.DeliveryAgent.Domain.dll
