@@ -12,8 +12,7 @@ COPY . .
 
 RUN dotnet publish QuickBite.ApiGateway/QuickBite.ApiGateway.csproj \
     -c Release \
-    -o /app/publish \
-    --no-restore
+    -o /app/publish
 
 # Runtime Stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
