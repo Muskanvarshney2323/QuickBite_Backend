@@ -1,16 +1,15 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy solution and project files
-COPY restaurant-service.sln ./
+# Copy project files
 COPY QuickBite.Restaurant.API/QuickBite.Restaurant.API.csproj QuickBite.Restaurant.API/
 COPY QuickBite.Restaurant.Application/QuickBite.Restaurant.Application.csproj QuickBite.Restaurant.Application/
 COPY QuickBite.Restaurant.Domain/QuickBite.Restaurant.Domain.csproj QuickBite.Restaurant.Domain/
 COPY QuickBite.Restaurant.Infrastructure/QuickBite.Restaurant.Infrastructure.csproj QuickBite.Restaurant.Infrastructure/
 
 # Restore packages
-RUN dotnet restore
+RUN dotnet restore QuickBite.Restaurant.API/QuickBite.Restaurant.API.csproj
 
 # Copy all source files
 COPY . .
@@ -18,11 +17,10 @@ COPY . .
 # Build and publish
 RUN dotnet publish QuickBite.Restaurant.API/QuickBite.Restaurant.API.csproj \
     -c Release \
-    -o /app/publish \
-    --no-restore
+    -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 COPY --from=build /app/publish .

@@ -1,16 +1,15 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy solution and project files
-COPY cart-service.sln ./
+# Copy project files
 COPY QuickBite.Cart.API/QuickBite.Cart.API.csproj QuickBite.Cart.API/
 COPY QuickBite.Cart.Application/QuickBite.Cart.Application.csproj QuickBite.Cart.Application/
 COPY QuickBite.Cart.Domain/QuickBite.Cart.Domain.csproj QuickBite.Cart.Domain/
 COPY QuickBite.Cart.Infrastructure/QuickBite.Cart.Infrastructure.csproj QuickBite.Cart.Infrastructure/
 
 # Restore packages
-RUN dotnet restore
+RUN dotnet restore QuickBite.Cart.API/QuickBite.Cart.API.csproj
 
 # Copy all source files
 COPY . .
@@ -18,11 +17,10 @@ COPY . .
 # Build and publish
 RUN dotnet publish QuickBite.Cart.API/QuickBite.Cart.API.csproj \
     -c Release \
-    -o /app/publish \
-    --no-restore
+    -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 COPY --from=build /app/publish .
