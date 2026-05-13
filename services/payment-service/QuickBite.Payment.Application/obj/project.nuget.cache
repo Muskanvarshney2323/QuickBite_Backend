@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wUinfY/bk6A=",
+  "dgSpecHash": "2JmwdnNAzeg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Divyanshu Dev\\OneDrive\\Desktop\\QuickBite\\services\\payment-service\\QuickBite.Payment.Application\\QuickBite.Payment.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
-    "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
+    "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Divyanshu Dev\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

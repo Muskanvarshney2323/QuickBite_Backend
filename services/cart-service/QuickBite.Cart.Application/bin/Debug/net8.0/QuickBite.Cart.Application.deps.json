@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "QuickBite.Cart.Application/1.0.0": {
+        "dependencies": {
+          "QuickBite.Cart.Domain": "1.0.0"
+        },
+        "runtime": {
+          "QuickBite.Cart.Application.dll": {}
+        }
+      },
+      "QuickBite.Cart.Domain/1.0.0": {
+        "runtime": {
+          "QuickBite.Cart.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuickBite.Cart.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuickBite.Cart.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.DeliveryAgent.API</name>
+    </assembly>
+    <members>
+        <member name="T:QuickBite.DeliveryAgent.API.Controllers.DeliveryController">
+            <summary>
+            API endpoints for delivery agents.
+            Route: /api/v1/agents
+            </summary>
+        </member>
+    </members>
+</doc>
