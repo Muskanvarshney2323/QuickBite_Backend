@@ -3,10 +3,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 WORKDIR /src
 
-COPY api-gateway.sln ./
 COPY QuickBite.ApiGateway/QuickBite.ApiGateway.csproj QuickBite.ApiGateway/
 
-RUN dotnet restore
+RUN dotnet restore QuickBite.ApiGateway/QuickBite.ApiGateway.csproj
 
 COPY . .
 

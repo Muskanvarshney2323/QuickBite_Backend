@@ -1,16 +1,15 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy solution and project files
-COPY notification-service.sln ./
+# Copy project files
 COPY QuickBite.Notification.API/QuickBite.Notification.API.csproj QuickBite.Notification.API/
 COPY QuickBite.Notification.Application/QuickBite.Notification.Application.csproj QuickBite.Notification.Application/
 COPY QuickBite.Notification.Domain/QuickBite.Notification.Domain.csproj QuickBite.Notification.Domain/
 COPY QuickBite.Notification.Infrastructure/QuickBite.Notification.Infrastructure.csproj QuickBite.Notification.Infrastructure/
 
 # Restore packages
-RUN dotnet restore
+RUN dotnet restore QuickBite.Notification.API/QuickBite.Notification.API.csproj
 
 # Copy all source files
 COPY . .
@@ -18,11 +17,10 @@ COPY . .
 # Build and publish
 RUN dotnet publish QuickBite.Notification.API/QuickBite.Notification.API.csproj \
     -c Release \
-    -o /app/publish \
-    --no-restore
+    -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 COPY --from=build /app/publish .
