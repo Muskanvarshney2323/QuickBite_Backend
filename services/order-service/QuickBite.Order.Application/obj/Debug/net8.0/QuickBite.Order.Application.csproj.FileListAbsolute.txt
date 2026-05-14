@@ -1,0 +1,16 @@
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\bin\Debug\net8.0\QuickBite.Order.Application.deps.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\bin\Debug\net8.0\QuickBite.Order.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\bin\Debug\net8.0\QuickBite.Order.Application.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\bin\Debug\net8.0\QuickBite.Order.Domain.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\bin\Debug\net8.0\QuickBite.Order.Domain.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.csproj.AssemblyReference.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.AssemblyInfoInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.AssemblyInfo.cs
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.csproj.CoreCompileInputs.cache
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.sourcelink.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBit.035777A3.Up2Date
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\refint\QuickBite.Order.Application.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\QuickBite.Order.Application.pdb
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\order-service\QuickBite.Order.Application\obj\Debug\net8.0\ref\QuickBite.Order.Application.dll

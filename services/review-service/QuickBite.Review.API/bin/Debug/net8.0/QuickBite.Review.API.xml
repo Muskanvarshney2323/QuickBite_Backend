@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickBite.Review.API</name>
+    </assembly>
+    <members>
+        <member name="T:QuickBite.Review.API.Controllers.ReviewController">
+            <summary>
+            API endpoints for reviews.
+            Route: /api/v1/reviews
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "QuickBite.Notification.Application/1.0.0": {
+        "dependencies": {
+          "QuickBite.Notification.Domain": "1.0.0"
+        },
+        "runtime": {
+          "QuickBite.Notification.Application.dll": {}
+        }
+      },
+      "QuickBite.Notification.Domain/1.0.0": {
+        "runtime": {
+          "QuickBite.Notification.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuickBite.Notification.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuickBite.Notification.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
