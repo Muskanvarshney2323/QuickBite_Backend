@@ -6,14 +6,30 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Get CORS settings from configuration
+var corsSettings = builder.Configuration.GetSection("Cors");
+var allowedOrigins = corsSettings.GetSection("AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
+
 // ---------------- CORS ----------------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        if (builder.Environment.IsDevelopment() && (allowedOrigins == null || allowedOrigins.Length == 0))
+        {
+            // Development fallback: allow any origin
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        }
+        else if (allowedOrigins.Length > 0)
+        {
+            // Production: restrict to specific origins
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        }
     });
 });
 
