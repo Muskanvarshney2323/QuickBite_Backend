@@ -44,3 +44,5 @@ C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net8.0\QuickBite.ApiGateway.pdb
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net8.0\QuickBite.ApiGateway.genruntimeconfig.cache
 C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\obj\Debug\net8.0\ref\QuickBite.ApiGateway.dll
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net8.0\appsettings.Docker.json
+C:\Users\Divyanshu Dev\OneDrive\Desktop\QuickBite\services\api-gateway\QuickBite.ApiGateway\bin\Debug\net8.0\Routes\reverseproxy.Production.json

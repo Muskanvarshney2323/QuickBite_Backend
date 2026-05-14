@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Cart.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c9278c4b6af4f0aa9dd3cd3f0a9327c11cb84a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a35a8efd2ba8be64f5169231d2c2d762bd8e9a56")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Cart.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Cart.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
