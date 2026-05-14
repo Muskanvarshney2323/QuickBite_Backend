@@ -6,6 +6,19 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+if (string.Equals(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER"), "true", StringComparison.OrdinalIgnoreCase))
+{
+    // docker-compose keeps ASPNETCORE_ENVIRONMENT=Development so downstream services expose Swagger,
+    // but the gateway must use container DNS names instead of localhost destinations.
+    builder.Configuration.AddJsonFile("appsettings.Docker.json", optional: true, reloadOnChange: true);
+}
+
+if (builder.Environment.IsProduction())
+{
+    builder.Configuration.AddJsonFile("Routes/reverseproxy.Production.json", optional: true, reloadOnChange: true);
+}
+
+
 // Get CORS settings from configuration
 var corsSettings = builder.Configuration.GetSection("Cors");
 var allowedOrigins = corsSettings.GetSection("AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
@@ -110,7 +123,7 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // ---------------- Swagger UI ----------------
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
 {
     app.UseSwagger();
 
@@ -126,6 +139,9 @@ if (app.Environment.IsDevelopment())
         options.SwaggerEndpoint("/cart/swagger/v1/swagger.json", "Cart Service");
         options.SwaggerEndpoint("/order/swagger/v1/swagger.json", "Order Service");
         options.SwaggerEndpoint("/payment/swagger/v1/swagger.json", "Payment Service");
+        options.SwaggerEndpoint("/delivery-agent/swagger/v1/swagger.json", "Delivery Agent Service");
+        options.SwaggerEndpoint("/review/swagger/v1/swagger.json", "Review Service");
+        options.SwaggerEndpoint("/notification/swagger/v1/swagger.json", "Notification Service");
     });
 }
 
