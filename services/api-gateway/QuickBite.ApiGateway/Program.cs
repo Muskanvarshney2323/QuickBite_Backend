@@ -10,8 +10,6 @@ builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 if (string.Equals(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER"), "true", StringComparison.OrdinalIgnoreCase))
 {
-    // docker-compose keeps ASPNETCORE_ENVIRONMENT=Development so downstream services expose Swagger,
-    // but the gateway must use container DNS names instead of localhost destinations.
     builder.Configuration.AddJsonFile("appsettings.Docker.json", optional: true, reloadOnChange: true);
 }
 
@@ -19,7 +17,6 @@ if (builder.Environment.IsProduction())
 {
     builder.Configuration.AddJsonFile("Routes/reverseproxy.Production.json", optional: true, reloadOnChange: true);
 }
-
 
 // Get CORS settings from configuration
 var corsSettings = builder.Configuration.GetSection("Cors");
@@ -30,21 +27,22 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        if (builder.Environment.IsDevelopment() && (allowedOrigins == null || allowedOrigins.Length == 0))
+        if (allowedOrigins.Length > 0)
         {
-            // Development fallback: allow any origin
-            policy.AllowAnyOrigin()
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        }
-        else if (allowedOrigins.Length > 0)
-        {
-            // Production: restrict to specific origins
+            // Origins explicitly configured — use them in all environments
             policy.WithOrigins(allowedOrigins)
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
         }
+        else if (builder.Environment.IsDevelopment())
+        {
+            // Development fallback only when no origins are configured
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        }
+        // If production AND no origins configured: no policy applied (safe default — blocks all cross-origin)
     });
 });
 
@@ -153,15 +151,13 @@ app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Only gateway test endpoint
 app.MapGet("/", () => Results.Ok(new
 {
     service = "QuickBite API Gateway",
     status = "running",
-    swagger = "http://localhost:5000/swagger"
+    swagger = "/swagger"
 }));
 
-// Real APIs are forwarded by YARP from appsettings.json
 app.MapReverseProxy();
 
 app.Run();
