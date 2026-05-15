@@ -31,7 +31,7 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors("AllowQuickBiteFrontend");
-app.UseHttpsRedirection();
+
 
 app.UseAuthentication();
 app.UseAuthorization();
