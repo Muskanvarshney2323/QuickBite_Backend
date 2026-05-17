@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickBite.Menu.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f1fdda0af0ef06ab664718c83ff185f775b3bd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acfd8c5c332057a4017b512a4aca22f5aa72c321")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickBite.Menu.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickBite.Menu.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

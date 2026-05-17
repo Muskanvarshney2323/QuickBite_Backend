@@ -1,34 +1,64 @@
+// Used for logging operations and errors
 using Microsoft.Extensions.Logging;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Payment.Application.DTOs;
+
+// Service interface definitions
 using QuickBite.Payment.Application.Interfaces;
+
+// Domain entity classes
 using QuickBite.Payment.Domain.Entities;
+
+// Enum types (payment modes, statuses)
 using QuickBite.Payment.Domain.Enums;
 
+// Namespace for service classes
 namespace QuickBite.Payment.Application.Services;
 
+// ========================= SUMMARY =========================
 /// <summary>
-/// Business logic for payments and wallets.
-/// Validates sufficient wallet balance before debiting; charges via the
-/// configured gateway client (Razorpay / Stripe in production); records
-/// every wallet movement as a WalletStatement entry; and triggers refunds
-/// when a payment is reversed (e.g. on order cancellation).
+/// PaymentService: Business logic for payment processing and wallet management
+/// Features:
+/// - Multi-mode payment support (COD, CARD, UPI, WALLET)
+/// - Payment gateway integration (Razorpay/Stripe in production)
+/// - Wallet balance validation and debit tracking
+/// - Refund processing for cancelled orders
+/// - Transaction logging and audit trail
 /// </summary>
 public class PaymentService : IPaymentService
 {
+    // Repository for accessing Payment data from database
     private readonly IPaymentRepository _paymentRepository;
+
+    // Repository for accessing Wallet data from database
     private readonly IWalletRepository _walletRepository;
+
+    // Client for charging payment gateway (Razorpay, Stripe, etc.)
     private readonly IPaymentGatewayClient _gateway;
+
+    // Logger for tracking payment operations
     private readonly ILogger<PaymentService> _logger;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
     public PaymentService(
         IPaymentRepository paymentRepository,
         IWalletRepository walletRepository,
         IPaymentGatewayClient gateway,
         ILogger<PaymentService> logger)
     {
+        // Store payment repository reference
         _paymentRepository = paymentRepository;
+
+        // Store wallet repository reference
         _walletRepository = walletRepository;
+
+        // Store payment gateway client reference
         _gateway = gateway;
+
+        // Store logger reference
         _logger = logger;
     }
 

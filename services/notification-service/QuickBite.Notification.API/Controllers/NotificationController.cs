@@ -1,25 +1,54 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Notification.Application.DTOs;
+
+// Service interface for business logic
 using QuickBite.Notification.Application.Interfaces;
+
+// Used for Swagger/OpenAPI documentation
 using Swashbuckle.AspNetCore.Annotations;
 
+// Namespace for this controller
 namespace QuickBite.Notification.API.Controllers;
 
+// ========================= NOTIFICATION CONTROLLER SUMMARY =========================
 /// <summary>
-/// API endpoints for notifications.
-/// Route: /api/v1/notifications
+/// NotificationController: Exposes HTTP endpoints for notification operations
+/// Supports multiple channels: Push, Email, SMS
+/// Endpoints: send single/bulk, email, SMS, get by recipient, mark as read, get unread count, delete, get all
 /// </summary>
+
+// ========================= ATTRIBUTES =========================
+
+// Mark this class as an API Controller (enables automatic model validation)
 [ApiController]
+
+// Base route for all endpoints in this controller
+// Example: POST /api/v1/notifications
 [Route("api/v1/notifications")]
+
+// Requires JWT authentication token for all endpoints
 [Authorize]
+
+// Swagger documentation tag
 [SwaggerTag("Notification operations: send (single/bulk/email/sms), get by recipient, mark as read, unread count, delete, get all")]
 public class NotificationController : ControllerBase
 {
+    // Service object that contains all notification business logic
     private readonly INotificationService _notificationService;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
+    // ASP.NET automatically injects INotificationService from DI container
     public NotificationController(INotificationService notificationService)
     {
+        // Store service reference for use in endpoint methods
         _notificationService = notificationService;
     }
 

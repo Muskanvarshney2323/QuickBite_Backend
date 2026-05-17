@@ -1,24 +1,54 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Cart.Application.DTOs;
+
+// Service interface for business logic
 using QuickBite.Cart.Application.Interfaces;
+
+// Used for Swagger/OpenAPI documentation
 using Swashbuckle.AspNetCore.Annotations;
 
+// Namespace for this controller
 namespace QuickBite.Cart.API.Controllers;
 
+// ========================= CART CONTROLLER SUMMARY =========================
 /// <summary>
-/// Single-restaurant ordering is enforced by the service layer.
+/// CartController: Exposes HTTP endpoints for shopping cart operations
+/// Enforces single-restaurant ordering via service layer
+/// Endpoints: get/clear cart, add/remove/update items, apply promo, change restaurant
 /// </summary>
+
+// ========================= ATTRIBUTES =========================
+
+// Mark this class as an API Controller (enables automatic model validation)
 [ApiController]
+
+// Base route for all endpoints in this controller
+// Example: GET /api/v1/cart/{customerId}
 [Route("api/v1/cart")]
+
+// Requires JWT authentication token for all endpoints
 [Authorize]
+
+// Swagger documentation tag
 [SwaggerTag("Cart operations: get by customer, add/update/remove items, clear, apply promo, change restaurant, get all")]
 public class CartController : ControllerBase
 {
+    // Service object that contains all cart business logic
     private readonly ICartService _cartService;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
+    // ASP.NET automatically injects ICartService from DI container
     public CartController(ICartService cartService)
     {
+        // Store service reference for use in endpoint methods
         _cartService = cartService;
     }
 

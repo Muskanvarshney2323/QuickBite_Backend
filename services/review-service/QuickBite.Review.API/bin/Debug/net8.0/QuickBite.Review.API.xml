@@ -6,8 +6,8 @@
     <members>
         <member name="T:QuickBite.Review.API.Controllers.ReviewController">
             <summary>
-            API endpoints for reviews.
-            Route: /api/v1/reviews
+            ReviewController: Exposes HTTP endpoints for review and rating operations
+            Handles: add review, get by restaurant/customer/order/agent, update, delete, get average ratings
             </summary>
         </member>
     </members>

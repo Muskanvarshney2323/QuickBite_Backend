@@ -49,7 +49,9 @@
         </member>
         <member name="T:QuickBite.Menu.API.Controllers.MenuItemsController">
             <summary>
-            Controller responsible for managing menu items
+            MenuItemsController: Exposes HTTP endpoints for menu item operations
+            Handles: get all items, get by ID, get by category, get by restaurant,
+            create, update, delete menu items
             </summary>
         </member>
         <member name="M:QuickBite.Menu.API.Controllers.MenuItemsController.GetAll">

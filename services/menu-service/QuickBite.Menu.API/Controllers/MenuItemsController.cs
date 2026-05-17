@@ -1,22 +1,45 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Menu.Application.DTOs.MenuItem;
+
+// Service interface for business logic
 using QuickBite.Menu.Application.Interfaces;
 
+// Namespace for this controller
 namespace QuickBite.Menu.API.Controllers
 {
+    // ========================= MENU ITEMS CONTROLLER SUMMARY =========================
     /// <summary>
-    /// Controller responsible for managing menu items
+    /// MenuItemsController: Exposes HTTP endpoints for menu item operations
+    /// Handles: get all items, get by ID, get by category, get by restaurant,
+    /// create, update, delete menu items
     /// </summary>
+
+    // ========================= ATTRIBUTES =========================
+
+    // Base route for all endpoints in this controller
+    // Example: GET /api/menuitems
     [Route("api/[controller]")]
+
+    // Mark this class as an API Controller (enables automatic model validation)
     [ApiController]
     public class MenuItemsController : ControllerBase
     {
+        // Service object that contains all menu item business logic
         private readonly IMenuItemService _menuItemService;
 
-        // Constructor injection
+        // ========================= CONSTRUCTOR =========================
+
+        // Constructor with Dependency Injection
+        // ASP.NET automatically injects IMenuItemService from DI container
         public MenuItemsController(IMenuItemService menuItemService)
         {
+            // Store service reference for use in endpoint methods
             _menuItemService = menuItemService;
         }
 

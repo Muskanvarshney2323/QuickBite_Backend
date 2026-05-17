@@ -6,7 +6,9 @@
     <members>
         <member name="T:QuickBite.Cart.API.Controllers.CartController">
             <summary>
-            Single-restaurant ordering is enforced by the service layer.
+            CartController: Exposes HTTP endpoints for shopping cart operations
+            Enforces single-restaurant ordering via service layer
+            Endpoints: get/clear cart, add/remove/update items, apply promo, change restaurant
             </summary>
         </member>
         <member name="M:QuickBite.Cart.API.Controllers.CartController.GetCartByCustomer(System.Guid)">

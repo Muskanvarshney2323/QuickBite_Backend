@@ -1,25 +1,54 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Payment.Application.DTOs;
+
+// Service interface for business logic
 using QuickBite.Payment.Application.Interfaces;
+
+// Used for Swagger/OpenAPI documentation
 using Swashbuckle.AspNetCore.Annotations;
 
+// Namespace for this controller
 namespace QuickBite.Payment.API.Controllers;
 
+// ========================= PAYMENTS CONTROLLER SUMMARY =========================
 /// <summary>
-/// Exposes /api/v1/payments endpoints for processing payments,
-/// retrieving payment records, refunds, and status updates.
+/// PaymentsController: Exposes HTTP endpoints for payment operations
+/// Supports multiple payment modes: COD, CARD, UPI, WALLET
+/// Endpoints: process payment, get by order, get by customer, refund, update status
 /// </summary>
+
+// ========================= ATTRIBUTES =========================
+
+// Mark this class as an API Controller (enables automatic model validation)
 [ApiController]
+
+// Base route for all endpoints in this controller
+// Example: POST /api/v1/payments/process
 [Route("api/v1/payments")]
+
+// Requires JWT authentication token for all endpoints
 [Authorize]
+
+// Swagger documentation tag
 [SwaggerTag("Payment operations: process, get by order, get by customer, refund, update status")]
 public class PaymentsController : ControllerBase
 {
+    // Service object that contains all payment business logic
     private readonly IPaymentService _paymentService;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
+    // ASP.NET automatically injects IPaymentService from DI container
     public PaymentsController(IPaymentService paymentService)
     {
+        // Store service reference for use in endpoint methods
         _paymentService = paymentService;
     }
 

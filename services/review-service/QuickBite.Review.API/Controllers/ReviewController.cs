@@ -1,25 +1,53 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Review.Application.DTOs;
+
+// Service interface for business logic
 using QuickBite.Review.Application.Interfaces;
+
+// Used for Swagger/OpenAPI documentation
 using Swashbuckle.AspNetCore.Annotations;
 
+// Namespace for this controller
 namespace QuickBite.Review.API.Controllers;
 
+// ========================= REVIEW CONTROLLER SUMMARY =========================
 /// <summary>
-/// API endpoints for reviews.
-/// Route: /api/v1/reviews
+/// ReviewController: Exposes HTTP endpoints for review and rating operations
+/// Handles: add review, get by restaurant/customer/order/agent, update, delete, get average ratings
 /// </summary>
+
+// ========================= ATTRIBUTES =========================
+
+// Mark this class as an API Controller (enables automatic model validation)
 [ApiController]
+
+// Base route for all endpoints in this controller
+// Example: POST /api/v1/reviews
 [Route("api/v1/reviews")]
+
+// Requires JWT authentication token for all endpoints
 [Authorize]
+
+// Swagger documentation tag
 [SwaggerTag("Review operations: add, get (by restaurant/customer/order/agent/all), update, delete, average ratings")]
 public class ReviewController : ControllerBase
 {
+    // Service object that contains all review business logic
     private readonly IReviewService _reviewService;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
+    // ASP.NET automatically injects IReviewService from DI container
     public ReviewController(IReviewService reviewService)
     {
+        // Store service reference for use in endpoint methods
         _reviewService = reviewService;
     }
 

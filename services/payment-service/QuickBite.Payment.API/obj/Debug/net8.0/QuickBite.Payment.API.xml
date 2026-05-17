@@ -6,8 +6,9 @@
     <members>
         <member name="T:QuickBite.Payment.API.Controllers.PaymentsController">
             <summary>
-            Exposes /api/v1/payments endpoints for processing payments,
-            retrieving payment records, refunds, and status updates.
+            PaymentsController: Exposes HTTP endpoints for payment operations
+            Supports multiple payment modes: COD, CARD, UPI, WALLET
+            Endpoints: process payment, get by order, get by customer, refund, update status
             </summary>
         </member>
         <member name="M:QuickBite.Payment.API.Controllers.PaymentsController.Process(QuickBite.Payment.Application.DTOs.ProcessPaymentRequestDto)">

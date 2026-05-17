@@ -1,32 +1,70 @@
+// Used for authorization features like [Authorize] attribute
 using Microsoft.AspNetCore.Authorization;
+
+// Used for Web API controller features, routing, IActionResult, etc.
 using Microsoft.AspNetCore.Mvc;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Order.Application.DTOs;
+
+// Service interface for business logic
 using QuickBite.Order.Application.Interfaces;
+
+// Used for Swagger/OpenAPI documentation
 using Swashbuckle.AspNetCore.Annotations;
+
+// Used for database context access
 using Microsoft.EntityFrameworkCore;
+
+// Enum types for order status and payment modes
 using QuickBite.Order.Domain.Enums;
+
+// Database context for orders
 using QuickBite.Order.Infrastructure.Data;
 
+// Namespace for this controller
 namespace QuickBite.Order.API.Controllers;
 
+// ========================= ORDER CONTROLLER SUMMARY =========================
 /// <summary>
-/// Exposes /api/v1/orders endpoints for placement, retrieval,
-/// status management, agent assignment, cancellation, and reorder.
+/// OrderController: Exposes HTTP endpoints for order operations
+/// Endpoints: place order, get order, get by customer/restaurant, get active orders,
+/// update status, assign delivery agent, cancel order, reorder
 /// </summary>
+
+// ========================= ATTRIBUTES =========================
+
+// Mark this class as an API Controller (enables automatic model validation)
 [ApiController]
+
+// Base route for all endpoints in this controller
+// Example: POST /api/v1/orders
 [Route("api/v1/orders")]
+
+// Requires JWT authentication token for all endpoints
 [Authorize]
+
+// Swagger documentation tag
 [SwaggerTag("Order operations")]
 public class OrderController : ControllerBase
 {
+    // Service object that contains all order business logic
     private readonly IOrderService _orderService;
+
+    // Database context for direct database access (used for reporting)
     private readonly OrderDbContext _context;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
     public OrderController(
         IOrderService orderService,
         OrderDbContext context)
     {
+        // Store service reference for use in endpoint methods
         _orderService = orderService;
+
+        // Store context reference
         _context = context;
     }
 

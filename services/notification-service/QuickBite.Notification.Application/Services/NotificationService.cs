@@ -1,23 +1,42 @@
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Notification.Application.DTOs;
+
+// Service interface definitions
 using QuickBite.Notification.Application.Interfaces;
+
+// Enum types (notification channels, types)
 using QuickBite.Notification.Domain.Enums;
 
 // Alias so "NotificationEntity" always means the class,
 // not the "QuickBite.Notification" namespace.
 using NotificationEntity = QuickBite.Notification.Domain.Entities.Notification;
 
+// Namespace for service classes
 namespace QuickBite.Notification.Application.Services;
 
+// ========================= SUMMARY =========================
 /// <summary>
-/// Business logic for notifications.
-/// Handles send (single, bulk, email, SMS), mark-as-read, counts, and deletion.
+/// NotificationService: Business logic for notification management
+/// Features:
+/// - Send single notifications to recipients
+/// - Send bulk notifications to multiple recipients at once
+/// - Support for multiple channels (Push, Email, SMS)
+/// - Mark notifications as read (single and batch)
+/// - Retrieve notifications by recipient
+/// - Track unread notification count
+/// - Delete notifications
 /// </summary>
 public class NotificationService : INotificationService
 {
+    // Repository for accessing Notification data from database
     private readonly INotificationRepository _repository;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
     public NotificationService(INotificationRepository repository)
     {
+        // Store repository reference
         _repository = repository;
     }
 

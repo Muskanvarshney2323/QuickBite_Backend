@@ -6,8 +6,9 @@
     <members>
         <member name="T:QuickBite.Notification.API.Controllers.NotificationController">
             <summary>
-            API endpoints for notifications.
-            Route: /api/v1/notifications
+            NotificationController: Exposes HTTP endpoints for notification operations
+            Supports multiple channels: Push, Email, SMS
+            Endpoints: send single/bulk, email, SMS, get by recipient, mark as read, get unread count, delete, get all
             </summary>
         </member>
     </members>

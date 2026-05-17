@@ -1,46 +1,89 @@
+// Used for logging operations and errors
 using Microsoft.Extensions.Logging;
+
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Order.Application.DTOs;
+
+// Service interface definitions
 using QuickBite.Order.Application.Interfaces;
+
+// Domain entity classes
 using QuickBite.Order.Domain.Entities;
+
+// Enum types (order statuses, payment modes)
 using QuickBite.Order.Domain.Enums;
 
+// Namespace for service classes
 namespace QuickBite.Order.Application.Services;
 
+// ========================= SUMMARY =========================
 /// <summary>
-/// Central orchestration service for orders.
-/// Converts a confirmed cart snapshot into an Order, processes payment,
-/// asks for a delivery agent, and walks the order through its lifecycle.
-/// Cancellation triggers a refund for prepaid orders. Reorder copies a
-/// previous order into a fresh placement.
+/// OrderService: Central orchestration service for order management
+/// Complex business logic including:
+/// - Order placement with cart snapshot conversion
+/// - Payment processing integration (calls Payment Service)
+/// - Delivery agent assignment (calls Delivery Agent Service)
+/// - Order status lifecycle management (PLACED → CONFIRMED → PREPARING → PICKED_UP → OUT_FOR_DELIVERY → DELIVERED)
+/// - Order cancellation with refunds for prepaid orders
+/// - Reorder functionality (copies previous order into new placement)
 /// </summary>
 public class OrderService : IOrderService
 {
+    // Default estimated delivery time in minutes if not specified
     private const int DefaultEstimatedMinutes = 45;
 
-    // Statuses considered "active" for live tracking dashboards.
+    // ========================= ACTIVE STATUSES =========================
+    // Statuses considered "active" for live tracking dashboards
+    // These are orders in progress that require real-time updates
     private static readonly OrderStatus[] ActiveStatuses =
     {
+        // Order placed but payment not yet processed
         OrderStatus.PLACED,
+
+        // Order placed and payment confirmed
         OrderStatus.CONFIRMED,
+
+        // Restaurant is preparing the order
         OrderStatus.PREPARING,
+
+        // Order picked up from restaurant
         OrderStatus.PICKED_UP,
+
+        // Delivery agent is transporting to customer
         OrderStatus.OUT_FOR_DELIVERY
     };
 
+    // Repository for accessing Order data from database
     private readonly IOrderRepository _orderRepository;
+
+    // Gateway for payment processing (calls Payment Service)
     private readonly IPaymentGateway _paymentGateway;
+
+    // Dispatcher for delivery agent assignment (calls Delivery Agent Service)
     private readonly IDeliveryDispatcher _deliveryDispatcher;
+
+    // Logger for tracking order operations
     private readonly ILogger<OrderService> _logger;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
     public OrderService(
         IOrderRepository orderRepository,
         IPaymentGateway paymentGateway,
         IDeliveryDispatcher deliveryDispatcher,
         ILogger<OrderService> logger)
     {
+        // Store repository reference
         _orderRepository = orderRepository;
+
+        // Store payment gateway reference
         _paymentGateway = paymentGateway;
+
+        // Store delivery dispatcher reference
         _deliveryDispatcher = deliveryDispatcher;
+
+        // Store logger reference
         _logger = logger;
     }
 

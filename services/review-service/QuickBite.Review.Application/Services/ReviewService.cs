@@ -1,23 +1,39 @@
+// DTO (Data Transfer Object) classes for request/response
 using QuickBite.Review.Application.DTOs;
+
+// Service interface definitions
 using QuickBite.Review.Application.Interfaces;
 
 // Alias so "ReviewEntity" always means the class,
 // not the "QuickBite.Review" namespace.
 using ReviewEntity = QuickBite.Review.Domain.Entities.Review;
 
+// Namespace for service classes
 namespace QuickBite.Review.Application.Services;
 
+// ========================= SUMMARY =========================
 /// <summary>
-/// Business logic for reviews.
-/// Handles add, get (by order/restaurant/customer/agent/all), update, delete,
-/// and average rating lookups.
+/// ReviewService: Business logic for review and rating management
+/// Features:
+/// - Add new reviews for completed orders (one review per order)
+/// - Retrieve reviews by restaurant, customer, order, or delivery agent
+/// - Update review ratings and comments
+/// - Delete reviews
+/// - Calculate average food rating for restaurants
+/// - Calculate average delivery rating for agents
+/// - Retrieve all reviews in the system
 /// </summary>
 public class ReviewService : IReviewService
 {
+    // Repository for accessing Review data from database
     private readonly IReviewRepository _repository;
 
+    // ========================= CONSTRUCTOR =========================
+
+    // Constructor with Dependency Injection
     public ReviewService(IReviewRepository repository)
     {
+        // Store repository reference
         _repository = repository;
     }
 
