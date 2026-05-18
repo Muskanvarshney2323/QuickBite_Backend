@@ -17,7 +17,7 @@
 +-------------+ +-------------+ +-------------+ +-------------+ +-------------+
 | Register()  | | AddItem()   | | CreateOrder| | MakePayment| | AddReview() |
 | Login()     | | GetMenu()   | | CancelOrder| | Refund()   | | GetReviews()|
-| GenerateJWT | | UpdateItem()| | GetOrders()| | VerifyPay()| | DeleteReview|
+| GenerateJWT | | UpdateItem()| | GetOrders()| |            | |             |
 +------+------+ +------+------+ +------+------+ +------+------+ +------+------+
        |                |                |                |               |
        v                v                v                v               v
@@ -45,5 +45,4 @@
                         +------------------+
                         | Assign Agent     |
                         | Track Delivery   |
-                        | Update Status    |
                         +------------------+
